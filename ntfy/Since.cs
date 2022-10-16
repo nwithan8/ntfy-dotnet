@@ -1,0 +1,43 @@
+namespace ntfy;
+
+public class Since
+{
+    internal readonly string Value;
+
+    public static readonly Since All = new Since("all");
+
+    public Since(DelayDuration time)
+    {
+        Value = time.Value;
+    }
+
+    public Since(DelayTime time)
+    {
+        Value = time.Value;
+    }
+
+    public Since(string messageId)
+    {
+        Value = messageId;
+    }
+
+    public static implicit operator Since(int timestamp)
+    {
+        return new Since(new DelayTime(timestamp));
+    }
+
+    public static implicit operator Since(DelayDuration time)
+    {
+        return new Since(time);
+    }
+
+    public static implicit operator Since(DelayTime time)
+    {
+        return new Since(time);
+    }
+
+    public static implicit operator Since(string messageId)
+    {
+        return new Since(messageId);
+    }
+}
