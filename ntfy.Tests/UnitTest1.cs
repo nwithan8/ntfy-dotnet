@@ -12,9 +12,9 @@ public class UnitTest1
         _testOutputHelper = testOutputHelper;
     }
 
-    private Client GetClient() => new Client("http://127.0.0.1:80");
+    private Client GetClient() => new Client("https://ntfy.nateharr.is");
 
-    private List<string> GetTopics() => new List<string> { "topic" };
+    private List<string> GetTopics() => new List<string> { "csharp-test" };
 
     [Fact]
     public async Task TestPublish()
@@ -103,5 +103,27 @@ public class UnitTest1
         var allowed = await client.CheckAuthentication(GetTopics()[0]);
         
         Assert.True(allowed);
+    }
+
+    [Fact]
+    public async Task TestServerInfo()
+    {
+        var client = GetClient();
+        
+        var info = await client.GetServerInfo();
+        
+        Assert.NotNull(info);
+    }
+
+    [Fact]
+    public async Task TestUserStats()
+    {
+        var client = GetClient();
+
+        var user = new User("nate", "raspberry");
+        
+        var stats = await client.GetUserStats(user);
+        
+        Assert.NotNull(stats);
     }
 }

@@ -4,8 +4,9 @@ namespace ntfy;
 
 public class User
 {
-    internal string Username { get; set; }
+    internal string AuthHeader => Convert.ToBase64String(Encoding.UTF8.GetBytes($"{Username}:{Password}"));
     internal string Password { get; set; }
+    internal string Username { get; set; }
 
     public User(string username, string password)
     {
@@ -13,7 +14,8 @@ public class User
         Password = password;
     }
 
-    public override string ToString() => Username;
-
-    internal string AuthHeader => Convert.ToBase64String(Encoding.UTF8.GetBytes($"{Username}:{Password}"));
+    public override string ToString()
+    {
+        return Username;
+    }
 }

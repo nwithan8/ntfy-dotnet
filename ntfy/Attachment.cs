@@ -4,20 +4,24 @@ namespace ntfy;
 
 public class Attachment
 {
+    #region JSON Properties
+
     [JsonProperty("name", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
     public string Name { get; set; } = null!;
-
-    [JsonProperty("url", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
-    public Uri Url { get; set; } = null!;
-
-    [JsonProperty("type", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
-    public string Type { get; set; } = null!;
 
     [JsonProperty("size", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
     public int Size { get; set; }
 
+    [JsonProperty("type", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
+    public string Type { get; set; } = null!;
+
+    [JsonProperty("url", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
+    public Uri Url { get; set; } = null!;
+
     [JsonProperty("expires", Required = Required.Always, NullValueHandling = NullValueHandling.Ignore)]
     private int ExpiresTimestamp { get; set; }
+
+    #endregion
 
     [JsonIgnore]
     public DateTime Expires

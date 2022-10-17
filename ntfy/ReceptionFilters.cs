@@ -7,11 +7,11 @@ public class ReceptionFilters
 
     public string? Message { get; set; }
 
-    public string? Title { get; set; }
-
     public List<PriorityLevel>? Priorities { get; set; }
 
     public string[]? Tags { get; set; }
+
+    public string? Title { get; set; }
 
     internal string ToQueryString()
     {
@@ -23,9 +23,9 @@ public class ReceptionFilters
         if (Title != null)
             queryElements.Add("title", Title);
         if (Priorities != null)
-            queryElements.Add("priority", Priorities.Aggregate("", (current, priority) => current + (priority.Word + ",")));
+            queryElements.Add("priority", Priorities.Aggregate("", (current, priority) => current + priority.Word + ","));
         if (Tags != null)
             queryElements.Add("tags", string.Join(",", Tags));
-        return queryElements.Aggregate("", (current, queryElement) => current + (queryElement.Key + "=" + queryElement.Value + "&"));
+        return queryElements.Aggregate("", (current, queryElement) => current + queryElement.Key + "=" + queryElement.Value + "&");
     }
 }

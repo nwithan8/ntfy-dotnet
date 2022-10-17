@@ -6,17 +6,36 @@ internal static class Constants
 
     internal static readonly Since DefaultSince = Since.All;
 
-    internal static string TopicSend(string topic) => $"{topic}";
+    internal const string ServerInfoEndpoint = "config.js";
 
-    private static string AddFutureMessages(string url) => $"{url}&sched=1";
+    internal const string UserStatsEndpoint = "user/stats";
 
-    private static string AddPolling(string url) => $"{url}&poll=1";
+    private const string ValidTopicRegex = @"^[-_A-Za-z0-9]{1,64}$";
 
-    private static string AddFilters(string url, ReceptionFilters filters) => $"{url}&{filters.ToQueryString()}";
+    internal static string TopicAuth(string topic)
+    {
+        if (!IsValidTopic(topic))
+        {
+            throw new InvalidTopicException(topic);
+        }
+        
+        return $"{topic}/auth";
+    }
 
     internal static string TopicReceive(StreamType streamType, IEnumerable<string> topics, Since since, bool getFutureMessages = false, ReceptionFilters? filters = null, bool poll = false)
     {
-        var topicString = string.Join(",", topics);
+        var topicString = "";
+        foreach (var topic in topics)
+        {
+            if (!IsValidTopic(topic))
+            {
+                throw new InvalidTopicException(topic);
+            }
+            
+            topicString += $"{topic},";
+        }
+        topicString = topicString.TrimEnd(',');
+        
         var url = $"{topicString}/{streamType.Endpoint}?since={since.Value}";
         if (getFutureMessages)
             url = AddFutureMessages(url);
@@ -27,5 +46,33 @@ internal static class Constants
         return url;
     }
 
-    internal static string TopicAuth(string topic) => $"{topic}/auth";
+    internal static string TopicSend(string topic)
+    {
+        if (!IsValidTopic(topic))
+        {
+            throw new InvalidTopicException(topic);
+        }
+        
+        return $"{topic}";
+    }
+
+    private static string AddFilters(string url, ReceptionFilters filters)
+    {
+        return $"{url}&{filters.ToQueryString()}";
+    }
+
+    private static string AddFutureMessages(string url)
+    {
+        return $"{url}&sched=1";
+    }
+
+    private static string AddPolling(string url)
+    {
+        return $"{url}&poll=1";
+    }
+
+    private static bool IsValidTopic(string topic)
+    {
+        return NetTools.RegularExpressions.Matches(topic, ValidTopicRegex);
+    }
 }

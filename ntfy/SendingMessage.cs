@@ -1,62 +1,58 @@
 using NetTools;
+using NetTools.HTTP;
 using Newtonsoft.Json;
 
 namespace ntfy;
 
 public class SendingMessage
 {
-    [JsonProperty("topic", Required = Required.Always)]
-    internal string Topic { get; set; } = null!;
-
-    [JsonProperty("message", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Message { get; set; }
-
-    [JsonProperty("title", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Title { get; set; }
-
-    [JsonProperty("tags", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    public string[]? Tags { get; set; }
-
-    [JsonProperty("priority", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    private int? PriorityInt { get; set; }
-
-    [JsonIgnore]
-    public PriorityLevel? Priority
-    {
-        get => ValueEnum.FromValue<PriorityLevel>(PriorityInt);
-        set => PriorityInt = (int)(value?.Value ?? 0);
-    }
+    #region JSON Properties
 
     [JsonProperty("actions", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
     public Action.Action[]? Actions { get; set; }
 
-    [JsonProperty("click", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    public Uri? Click { get; set; }
-
     [JsonProperty("attach", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
     public Uri[]? Attach { get; set; }
 
-    [JsonProperty("filename", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    public string? Filename { get; set; }
+    [JsonProperty("click", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    public Uri? Click { get; set; }
 
     [JsonProperty("delay", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
     public string? DelayString { get; set; }
 
-    [JsonIgnore]
-    public IDelay? Delay
-    {
-        // no getter since it could be one of multiple different constructors
-        set => DelayString = value?.Value;
-    }
-
     [JsonProperty("email", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
     public string? Email { get; set; }
+
+    [JsonProperty("filename", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Filename { get; set; }
 
     [JsonProperty("icon", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
     public string? Icon { get; set; }
 
+    [JsonProperty("message", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Message { get; set; }
+
+    [JsonProperty("tags", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    public string[]? Tags { get; set; }
+
+    [JsonProperty("title", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    public string? Title { get; set; }
+    [JsonProperty("topic", Required = Required.Always)]
+    internal string Topic { get; set; } = null!;
+
     [JsonProperty("cache", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
     private string CacheString { get; set; } = "yes";
+
+    [JsonProperty("firebase", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    private string FirebaseString { get; set; } = "yes";
+
+    [JsonProperty("priority", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    private int? PriorityInt { get; set; }
+
+    [JsonProperty("unifiedpush", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
+    private int UnifiedPushInt { get; set; }
+
+    #endregion
 
     [JsonIgnore]
     public bool Cache
@@ -85,8 +81,12 @@ public class SendingMessage
         }
     }
 
-    [JsonProperty("firebase", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    private string FirebaseString { get; set; } = "yes";
+    [JsonIgnore]
+    public IDelay? Delay
+    {
+        // no getter since it could be one of multiple different constructors
+        set => DelayString = value?.Value;
+    }
 
     [JsonIgnore]
     public bool Firebase
@@ -115,8 +115,12 @@ public class SendingMessage
         }
     }
 
-    [JsonProperty("unifiedpush", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    private int UnifiedPushInt { get; set; } = 0;
+    [JsonIgnore]
+    public PriorityLevel? Priority
+    {
+        get => ValueEnum.FromValue<PriorityLevel>(PriorityInt);
+        set => PriorityInt = (int)(value?.Value ?? 0);
+    }
 
     [JsonIgnore]
     public bool UnifiedPush
@@ -148,6 +152,6 @@ public class SendingMessage
     internal string ToData(string topic)
     {
         Topic = topic;
-        return NetTools.HTTP.JsonSerialization.ConvertObjectToJson(this);
+        return JsonSerialization.ConvertObjectToJson(this);
     }
 }

@@ -4,10 +4,10 @@ namespace ntfy;
 
 public class DelayUnit : Enum
 {
-    public static readonly DelayUnit Seconds = new DelayUnit(0, "s");
-    public static readonly DelayUnit Minutes = new DelayUnit(1, "m");
-    public static readonly DelayUnit Hours = new DelayUnit(2, "h");
-    public static readonly DelayUnit Days = new DelayUnit(3, "d");
+    public static readonly DelayUnit Days = new(3, "d");
+    public static readonly DelayUnit Hours = new(2, "h");
+    public static readonly DelayUnit Minutes = new(1, "m");
+    public static readonly DelayUnit Seconds = new(0, "s");
 
     internal readonly string Suffix;
 

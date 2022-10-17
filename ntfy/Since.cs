@@ -2,9 +2,8 @@ namespace ntfy;
 
 public class Since
 {
+    public static readonly Since All = new("all");
     internal readonly string Value;
-
-    public static readonly Since All = new Since("all");
 
     public Since(DelayDuration time)
     {
