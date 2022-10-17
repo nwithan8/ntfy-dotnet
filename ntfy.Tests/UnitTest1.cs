@@ -35,6 +35,11 @@ public class UnitTest1
             }
         };
 
+        foreach (var action in message.Actions)
+        {
+            var type = action.ActionType;
+        }
+
         await client.Publish("topic", message);
     }
 
