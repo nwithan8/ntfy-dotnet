@@ -2,17 +2,18 @@
 
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>ntfy</id>
-        <title>ntfy</title>
-        <version>0.1.0</version>
-        <authors>nwithan8</authors>
+        <!-- Id will be extracted from the assembly info -->
+        <!-- Title will be extracted from the assembly info -->
+        <!-- Description will be extracted from the assembly info -->
+        <!-- Authors will be extracted from the assembly info -->
+        <!-- Version will be extracted from the assembly info -->
         <owners>nwithan8</owners>
-        <projectUrl>https://github.com/nwithan8/CodeGen</projectUrl>
-        <license type="expression">GPL-3.0-or-later</license>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>A .NET package for interacting with a ntfy instance</description>
+        <!-- Project URL will be extracted from the assembly info -->
+        <!-- License will be extracted from the assembly info -->
+        <!-- Copyright will be extracted from the assembly info -->
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>>
         <tags>ntfy notifications push</tags>
-        <releaseNotes>See Release Notes at https://github.com/nwithan8/ntfy-csharp/releases</releaseNotes>
+        <releaseNotes>See Release Notes at https://github.com/nwithan8/ntfy-dotnet/releases</releaseNotes>
         <dependencies>
             <group targetFramework="netstandard2.0">
                 <dependency id="Microsoft.Bcl.AsyncInterfaces" version="6.0.0"/>

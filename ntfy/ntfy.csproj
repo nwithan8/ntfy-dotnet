@@ -7,11 +7,20 @@
         <Nullable>enable</Nullable>
         <OutputType>Library</OutputType>
         <RootNamespace>ntfy</RootNamespace>
-        <AssemblyName>ntfy</AssemblyName>
+        <AssemblyName>ntfy</AssemblyName> <!-- Used as PackageId, which is used as "Id" in .nuspsec -->
         <Configurations>Release;Debug</Configurations>
         <Platforms>AnyCPU</Platforms>
-        <PackageId>ntfy</PackageId>
         <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo> <!-- Will use the info already in AssemblyInfo.cs -->
+        <Authors>Nate Harris</Authors>
+        <Company>nwithan8</Company>
+        <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageProjectUrl>https://github.com/nwithan8/ntfy-dotnet</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nwithan8/ntfy-dotnet</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -34,6 +43,7 @@
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <DocumentationFile>..\lib\net\ntfy.XML</DocumentationFile>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <NoWarn>1701;1702;1591;1570;CS8618;CS8603;CS8602;CS8765;CS8767;CS0659;CS0618</NoWarn>
@@ -47,13 +57,9 @@
         <SignAssembly>false</SignAssembly>
     </PropertyGroup>
 
-    <PropertyGroup>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    </PropertyGroup>
-
     <ItemGroup>
-        <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0"/>
-        <PackageReference Include="N8.NetTools.HTTP" Version="0.2.0"/>
+        <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
+        <PackageReference Include="N8.NetTools.HTTP" Version="0.2.0" />
     </ItemGroup>
 
 </Project>
