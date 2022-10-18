@@ -4,15 +4,15 @@
     <metadata>
         <id>ntfy</id>
         <title>ntfy</title>
+        <description>A .NET package for interacting with a ntfy instance</description>
         <version>0.1.0</version>
-        <authors>nwithan8</authors>
+        <authors>Nate Harris</authors>
         <owners>nwithan8</owners>
-        <projectUrl>https://github.com/nwithan8/CodeGen</projectUrl>
+        <projectUrl>https://github.com/nwithan8/ntfy-dotnet</projectUrl>
         <license type="expression">GPL-3.0-or-later</license>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>A .NET package for interacting with a ntfy instance</description>
         <tags>ntfy notifications push</tags>
-        <releaseNotes>See Release Notes at https://github.com/nwithan8/ntfy-csharp/releases</releaseNotes>
+        <releaseNotes>See Release Notes at https://github.com/nwithan8/ntfy-dotnet/releases</releaseNotes>
         <dependencies>
             <group targetFramework="netstandard2.0">
                 <dependency id="Microsoft.Bcl.AsyncInterfaces" version="6.0.0"/>
@@ -47,6 +47,6 @@
         <file src="..\lib\net\net5.0\ntfy.XML" target="lib\net5.0"/>
         <file src="..\lib\net\net6.0\ntfy.dll" target="lib\net6.0"/>
         <file src="..\lib\net\net6.0\ntfy.XML" target="lib\net6.0"/>
-        <file src="..\README.md" target="docs\"/>
+        <!-- <file src="..\README.md" target="docs\"/>  -->
     </files>
 </package>
