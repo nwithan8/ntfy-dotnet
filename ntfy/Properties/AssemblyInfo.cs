@@ -5,5 +5,5 @@
 // associated with an assembly.
 [assembly: AssemblyProduct("ntfy")]  // Product ID
 [assembly: AssemblyTitle("ntfy")] // Human-friendly project name
-[assembly: AssemblyDescription("ntfy is a .NEY library for interacting with a ntfy server")]
+[assembly: AssemblyDescription("ntfy is a .NET library for interacting with a ntfy server")]
 [assembly: AssemblyCopyright("Copyright © 2022")]
