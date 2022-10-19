@@ -83,6 +83,9 @@ public class DelayTime : Delay
     }
 }
 
+/// <summary>
+///     An abstract class representing a delay.
+/// </summary>
 public abstract class Delay
 {
     /// <summary>

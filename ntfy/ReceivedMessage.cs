@@ -109,7 +109,7 @@ public class ReceivedMessage
     }
 
     /// <summary>
-    ///     The datetime of this message, as a <see cref="DateTime" />.
+    ///     The datetime of this message, as a DateTime object.
     /// </summary>
     [JsonIgnore]
     public DateTime Time

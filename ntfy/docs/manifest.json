@@ -1,0 +1,434 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/nharris/code/ntfy/ntfy",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Action.Action.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Action.Action.html",
+          "hash": "8+yV7FfzfXgeJ/aYYOHIQtJYtZn3ucnqHCXGmtWFm1U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Action.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Action.Broadcast.html",
+          "hash": "lNJHhkDu8QxzIKhbLTD1yRoiG6utKyQO2d8UuB9ZL6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Action.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Action.Http.html",
+          "hash": "3d/9OBJpZ/3UIROSBVXUUgil/BotDsa2mtDUHPD6PaQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Action.IAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Action.IAction.html",
+          "hash": "23eB1Vy4kYvjcriUPlHts5fW2jCG5f0/bsAxkcQxwnc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Action.View.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Action.View.html",
+          "hash": "5pwA2vQ547erWLq/YhbUopJJAa0hIwO+fiGPsh8oRMY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Action.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Action.html",
+          "hash": "l9cLNwqpFtBWdR2T1UBFFqcGClRV759g538skpynGwc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ActionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ActionType.html",
+          "hash": "A/ET36twnAuFAnwUlIY3oOZpja5IKgoh30X7xYHLpPU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Attachment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Attachment.html",
+          "hash": "auozhejnO0CnoYRncL5uKCov9q8sgZvpRTVEXx6SZGk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Client.html",
+          "hash": "hAPEFgoZ852KJ7lIvhBd1snYW5+HiIUQ0nsDbT+9oy4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Delay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Delay.html",
+          "hash": "L5GxjOty0bCfOk/9mY/7sghADKRq2YrN56zhhkYo8zQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayDuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayDuration.html",
+          "hash": "dsdeP6bW23N/FCWXqGKW+gH16QVFgcAygbKkmxVyIBY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayStatement.html",
+          "hash": "pA0tOclKm98B9ZckS39vWNrtUaqGJRRfHw+0r4GgGwQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayTime.html",
+          "hash": "O7JaeLLcOvPF4x4blxwirSaPBFyDRFu9ICEr9xfox1g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayUnit.html",
+          "hash": "Wo1aMoBvIXAz9bPGpsWDotyYxLnxbTJboRjMJk/mG+A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.EntityTooLargeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.EntityTooLargeException.html",
+          "hash": "DT7pVnZk2W4D8NxIrcfL2Ydq3EIA83gXgFvWiSHPaow="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.EventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.EventType.html",
+          "hash": "gB4Z9ZCQPi7PfnQW6w+xW7dg0YPob7Sla7VkPsZ3Gbk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.InvalidParameterException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.InvalidParameterException.html",
+          "hash": "ML4SAAC9KmJbpI1g0CpWMb0uah0OU6MvUtnw4R5IMKc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.InvalidTopicException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.InvalidTopicException.html",
+          "hash": "z2zgm7QditK1jPB+5ujUxDPZtuRxcAWPvbd7POGORYw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.NftyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.NftyException.html",
+          "hash": "DB/58QLeVtv9uJk7qcCU2DChpR/urA3X4bHCbJpGDqA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.PriorityLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.PriorityLevel.html",
+          "hash": "9z9DvEiehvvHQ9LbPN12PD7+RoOXpMX7efsLOgTJrv4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ReceivedMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ReceivedMessage.html",
+          "hash": "GiFFnAAQg8mxntW9ZLePHOg0obUZGaj6XCzx15bjHlI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ReceptionFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ReceptionFilters.html",
+          "hash": "sdFUH01p73QNY0y8FDb/g5XQkXNEZ81N3lp9Z8QSusY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.SendingMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.SendingMessage.html",
+          "hash": "JpKK3REIvFXSFoALfyjitQ4gCk64mdXl8TiEYM6Nyp4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ServerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ServerInfo.html",
+          "hash": "oZ3PHHAtF+VQqflbNWGoYljmPpj5Miy+GCM8kyWB8sI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Since.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Since.html",
+          "hash": "C9s5A6QUKL+1/CUh89WAlpkC+cRs6TZnnB9vaVxl3iI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.TooManyRequestsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.TooManyRequestsException.html",
+          "hash": "aKkHgeoZ7cJF2kLGf7jrZqRcze57ab08GhbhJ1+KJOI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.UnauthorizedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.UnauthorizedException.html",
+          "hash": "MQsDmDErsrzYG7nYR3A++sM4SXEsJgzQdiGRWpieiOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.UnexpectedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.UnexpectedException.html",
+          "hash": "jhKNRG86PkcbflDqU6oI2imlD2ARjmzDfB5RT/ZrYNk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.User.html",
+          "hash": "QWyvvWggRV7UuycXOYCg8FodvGBJkZhunpsA9cU9R6k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.UserStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.UserStats.html",
+          "hash": "fXELnorU1uXDy6t1C6II00EW9hn/NC+MmTOMq/lkwOw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.html",
+          "hash": "3b6Qm9hZMg7/Pvmyyl/39N0y1Vw9VpicDj5YxUpDTgE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Kbd7yBJb1GwrRQYjRWSI/GwFH320q51hOrqRWMFnBR8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 31,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

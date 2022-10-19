@@ -1,0 +1,881 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Client
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Client
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ntfy.Client">
+  
+  
+  <h1 id="ntfy_Client" data-uid="ntfy.Client" class="text-break">Class Client
+  </h1>
+  <div class="markdown level0 summary"><p>A Client to interact with the ntfy.sh API.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Client</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ntfy.html">ntfy</a></h6>
+  <h6><strong>Assembly</strong>: ntfy.dll</h6>
+  <h5 id="ntfy_Client_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Client : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client__ctor_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20ntfy.Client.%23ctor(System.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L26">View Source</a>
+  </span>
+  <a id="ntfy_Client__ctor_" data-uid="ntfy.Client.#ctor*"></a>
+  <h4 id="ntfy_Client__ctor_System_Nullable_System_String__" data-uid="ntfy.Client.#ctor(System.Nullable{System.String})">Client(Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new <a class="xref" href="ntfy.Client.html">Client</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Client(string? serverUrl = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">serverUrl</span></td>
+        <td><p>The base URL of the ntfy.sh server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_CheckAuthentication_System_String_ntfy_User_.md&amp;value=---%0Auid%3A%20ntfy.Client.CheckAuthentication(System.String%2Cntfy.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L39">View Source</a>
+  </span>
+  <a id="ntfy_Client_CheckAuthentication_" data-uid="ntfy.Client.CheckAuthentication*"></a>
+  <h4 id="ntfy_Client_CheckAuthentication_System_String_ntfy_User_" data-uid="ntfy.Client.CheckAuthentication(System.String,ntfy.User)">CheckAuthentication(String, User)</h4>
+  <div class="markdown level1 summary"><p>Check if the provided user is authorized to access the provided topic.
+If not user is provided, check if the provided topic is anonymously accessible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; CheckAuthentication(string topic, User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topic</span></td>
+        <td><p>Topic the user is attempting to access.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Optional specific user attempting to access the topic.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the topic is accessible, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ntfy.UnexpectedException.html">UnexpectedException</a></td>
+        <td><p>An unexpected HTTP status code was encountered during the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_GetAttachmentAllowance.md&amp;value=---%0Auid%3A%20ntfy.Client.GetAttachmentAllowance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L66">View Source</a>
+  </span>
+  <a id="ntfy_Client_GetAttachmentAllowance_" data-uid="ntfy.Client.GetAttachmentAllowance*"></a>
+  <h4 id="ntfy_Client_GetAttachmentAllowance" data-uid="ntfy.Client.GetAttachmentAllowance">GetAttachmentAllowance()</h4>
+  <div class="markdown level1 summary"><p>Get the total storage allowance for attachments, in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;long&gt; GetAttachmentAllowance()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><p>The max amount of bytes of attachments any user can upload to the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_GetAttachmentAllowanceRemaining_ntfy_User_.md&amp;value=---%0Auid%3A%20ntfy.Client.GetAttachmentAllowanceRemaining(ntfy.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L80">View Source</a>
+  </span>
+  <a id="ntfy_Client_GetAttachmentAllowanceRemaining_" data-uid="ntfy.Client.GetAttachmentAllowanceRemaining*"></a>
+  <h4 id="ntfy_Client_GetAttachmentAllowanceRemaining_ntfy_User_" data-uid="ntfy.Client.GetAttachmentAllowanceRemaining(ntfy.User)">GetAttachmentAllowanceRemaining(User)</h4>
+  <div class="markdown level1 summary"><p>Get the remaining storage allowance for attachments for a specific user, in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;long&gt; GetAttachmentAllowanceRemaining(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User to check the allowance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><p>The remaining amount of bytes of attachments the specific user can upload to the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_GetAttachmentAllowanceUsed_ntfy_User_.md&amp;value=---%0Auid%3A%20ntfy.Client.GetAttachmentAllowanceUsed(ntfy.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L92">View Source</a>
+  </span>
+  <a id="ntfy_Client_GetAttachmentAllowanceUsed_" data-uid="ntfy.Client.GetAttachmentAllowanceUsed*"></a>
+  <h4 id="ntfy_Client_GetAttachmentAllowanceUsed_ntfy_User_" data-uid="ntfy.Client.GetAttachmentAllowanceUsed(ntfy.User)">GetAttachmentAllowanceUsed(User)</h4>
+  <div class="markdown level1 summary"><p>Get the user storage allowance for attachments for a specific user, in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;long&gt; GetAttachmentAllowanceUsed(User user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User to check the allowance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><p>The amount of bytes of attachments the specific user has previously uploaded to the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_GetAttachmentSizeByteLimit.md&amp;value=---%0Auid%3A%20ntfy.Client.GetAttachmentSizeByteLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L103">View Source</a>
+  </span>
+  <a id="ntfy_Client_GetAttachmentSizeByteLimit_" data-uid="ntfy.Client.GetAttachmentSizeByteLimit*"></a>
+  <h4 id="ntfy_Client_GetAttachmentSizeByteLimit" data-uid="ntfy.Client.GetAttachmentSizeByteLimit">GetAttachmentSizeByteLimit()</h4>
+  <div class="markdown level1 summary"><p>Get the maximum allowed file size for an attachment, in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;long&gt; GetAttachmentSizeByteLimit()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><p>The maximum allowed file size for an attachment, in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_GetServerInfo.md&amp;value=---%0Auid%3A%20ntfy.Client.GetServerInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L116">View Source</a>
+  </span>
+  <a id="ntfy_Client_GetServerInfo_" data-uid="ntfy.Client.GetServerInfo*"></a>
+  <h4 id="ntfy_Client_GetServerInfo" data-uid="ntfy.Client.GetServerInfo">GetServerInfo()</h4>
+  <div class="markdown level1 summary"><p>Get information about the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ServerInfo&gt; GetServerInfo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="ntfy.ServerInfo.html">ServerInfo</a>&gt;</td>
+        <td><p>Information about the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_GetUserStats_ntfy_User_.md&amp;value=---%0Auid%3A%20ntfy.Client.GetUserStats(ntfy.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L135">View Source</a>
+  </span>
+  <a id="ntfy_Client_GetUserStats_" data-uid="ntfy.Client.GetUserStats*"></a>
+  <h4 id="ntfy_Client_GetUserStats_ntfy_User_" data-uid="ntfy.Client.GetUserStats(ntfy.User)">GetUserStats(User)</h4>
+  <div class="markdown level1 summary"><p>Get stats about the provided user.
+Get server-wide stats if no user is provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;UserStats&gt; GetUserStats(User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Optional user to get stats for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="ntfy.UserStats.html">UserStats</a>&gt;</td>
+        <td><p>Stats about the specific user, or server-wide stats if no user is provided.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_IsAttachmentOfSizeAllowed_ntfy_User_System_Int64_.md&amp;value=---%0Auid%3A%20ntfy.Client.IsAttachmentOfSizeAllowed(ntfy.User%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L154">View Source</a>
+  </span>
+  <a id="ntfy_Client_IsAttachmentOfSizeAllowed_" data-uid="ntfy.Client.IsAttachmentOfSizeAllowed*"></a>
+  <h4 id="ntfy_Client_IsAttachmentOfSizeAllowed_ntfy_User_System_Int64_" data-uid="ntfy.Client.IsAttachmentOfSizeAllowed(ntfy.User,System.Int64)">IsAttachmentOfSizeAllowed(User, Int64)</h4>
+  <div class="markdown level1 summary"><p>Check if the provided attachment size is within the provided user's attachment allowance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; IsAttachmentOfSizeAllowed(User user, long size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>User attempting to upload an attachment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>Size of the attempted attachment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the provided user can upload the attachment, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_Poll_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_.md&amp;value=---%0Auid%3A%20ntfy.Client.Poll(IEnumerable%7BSystem.String%7D%2Cntfy.Since%2CSystem.Boolean%2Cntfy.ReceptionFilters%2Cntfy.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L170">View Source</a>
+  </span>
+  <a id="ntfy_Client_Poll_" data-uid="ntfy.Client.Poll*"></a>
+  <h4 id="ntfy_Client_Poll_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_" data-uid="ntfy.Client.Poll(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User)">Poll(IEnumerable&lt;String&gt;, Since, Boolean, ReceptionFilters, User)</h4>
+  <div class="markdown level1 summary"><p>Poll the server for new messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;List&lt;ReceivedMessage&gt;&gt; Poll(IEnumerable&lt;string&gt; topics, Since since = null, bool getScheduledMessages = false, ReceptionFilters filters = null, User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">topics</span></td>
+        <td><p>A list of topics to poll messages for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.Since.html">Since</a></td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Optional since filter to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">getScheduledMessages</span></td>
+        <td><p>Whether to get messages scheduled for the future. Defaults to <code>false</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.ReceptionFilters.html">ReceptionFilters</a></td>
+        <td><span class="parametername">filters</span></td>
+        <td><p>Optional additional filters to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Optional user to use when polling.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a>&gt;&gt;</td>
+        <td><p>A list of all filtered <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_Publish_System_String_ntfy_SendingMessage_ntfy_User_.md&amp;value=---%0Auid%3A%20ntfy.Client.Publish(System.String%2Cntfy.SendingMessage%2Cntfy.User)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L195">View Source</a>
+  </span>
+  <a id="ntfy_Client_Publish_" data-uid="ntfy.Client.Publish*"></a>
+  <h4 id="ntfy_Client_Publish_System_String_ntfy_SendingMessage_ntfy_User_" data-uid="ntfy.Client.Publish(System.String,ntfy.SendingMessage,ntfy.User)">Publish(String, SendingMessage, User)</h4>
+  <div class="markdown level1 summary"><p>Publish a message to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task Publish(string topic, SendingMessage message, User user = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">topic</span></td>
+        <td><p>Topic to publish the message to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p><a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a> message to publish.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Optional user to use when publishing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ntfy.UnauthorizedException.html">UnauthorizedException</a></td>
+        <td><p>Provided user is unauthorized to publish to the topic.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.EntityTooLargeException.html">EntityTooLargeException</a></td>
+        <td><p>Provided <a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a> payload is too large to publish.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.TooManyRequestsException.html">TooManyRequestsException</a></td>
+        <td><p>Server is rate-limiting due to too many requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.UnexpectedException.html">UnexpectedException</a></td>
+        <td><p>An unexpected HTTP status code was encountered during the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__.md&amp;value=---%0Auid%3A%20ntfy.Client.Subscribe(IEnumerable%7BSystem.String%7D%2Cntfy.Since%2CSystem.Boolean%2Cntfy.ReceptionFilters%2Cntfy.User%2CSystem.Nullable%7BCancellationToken%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L231">View Source</a>
+  </span>
+  <a id="ntfy_Client_Subscribe_" data-uid="ntfy.Client.Subscribe*"></a>
+  <h4 id="ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__" data-uid="ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})">Subscribe(IEnumerable&lt;String&gt;, Since, Boolean, ReceptionFilters, User, Nullable&lt;CancellationToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe to a topic.
+Opens an asynchronous stream to the server and returns an IAsyncEnumerable of <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> objects.
+New messages will be pushed to the stream as they are received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async IAsyncEnumerable&lt;ReceivedMessage&gt; Subscribe(IEnumerable&lt;string&gt; topics, Since since = null, bool getScheduledMessages = false, ReceptionFilters filters = null, User user = null, CancellationToken? cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">topics</span></td>
+        <td><p>List of topics to subscribe to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.Since.html">Since</a></td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Optional since filter to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">getScheduledMessages</span></td>
+        <td><p>Whether to get messages scheduled for the future. Defaults to <code>false</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.ReceptionFilters.html">ReceptionFilters</a></td>
+        <td><span class="parametername">filters</span></td>
+        <td><p>Optional additional filters to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Optional user to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">CancellationToken</span>&gt;</td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional cancellation token to use to cancel the stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IAsyncEnumerable</span>&lt;<a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a>&gt;</td>
+        <td><p>An IAsyncEnumerable of <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__.md&amp;value=---%0Auid%3A%20ntfy.Client.SubscribeAndProcess(IEnumerable%7BSystem.String%7D%2CFunc%7Bntfy.ReceivedMessage%2CTask%7D%2Cntfy.Since%2CSystem.Boolean%2Cntfy.ReceptionFilters%2Cntfy.User%2CSystem.Nullable%7BCancellationToken%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L259">View Source</a>
+  </span>
+  <a id="ntfy_Client_SubscribeAndProcess_" data-uid="ntfy.Client.SubscribeAndProcess*"></a>
+  <h4 id="ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__" data-uid="ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})">SubscribeAndProcess(IEnumerable&lt;String&gt;, Func&lt;ReceivedMessage, Task&gt;, Since, Boolean, ReceptionFilters, User, Nullable&lt;CancellationToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Subscribe to a topic.
+Opens an asynchronous stream to the server and processes each <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> object as it is
+received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task SubscribeAndProcess(IEnumerable&lt;string&gt; topics, Func&lt;ReceivedMessage, Task&gt; onNotification, Since since = null, bool getScheduledMessages = false, ReceptionFilters filters = null, User user = null, CancellationToken? cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">topics</span></td>
+        <td><p>List of topics to subscribe to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">onNotification</span></td>
+        <td><p>Function to execute when a new message is received.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.Since.html">Since</a></td>
+        <td><span class="parametername">since</span></td>
+        <td><p>Optional since filter to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">getScheduledMessages</span></td>
+        <td><p>Whether to get messages scheduled for the future. Defaults to <code>false</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.ReceptionFilters.html">ReceptionFilters</a></td>
+        <td><span class="parametername">filters</span></td>
+        <td><p>Optional additional filters to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ntfy.User.html">User</a></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Optional user to use when polling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">CancellationToken</span>&gt;</td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional cancellation token to use to cancel the stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client.md&amp;value=---%0Auid%3A%20ntfy.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

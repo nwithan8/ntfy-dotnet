@@ -218,8 +218,7 @@ public class Client
 
     /// <summary>
     ///     Subscribe to a topic.
-    ///     Opens an asynchronous stream to the server and returns an <see cref="IAsyncEnumerable{T}" /> of
-    ///     <see cref="ReceivedMessage" /> objects.
+    ///     Opens an asynchronous stream to the server and returns an IAsyncEnumerable of <see cref="ReceivedMessage"/> objects.
     ///     New messages will be pushed to the stream as they are received.
     /// </summary>
     /// <param name="topics">List of topics to subscribe to.</param>
@@ -228,7 +227,7 @@ public class Client
     /// <param name="filters">Optional additional filters to use when polling.</param>
     /// <param name="user">Optional user to use when polling.</param>
     /// <param name="cancellationToken">Optional cancellation token to use to cancel the stream.</param>
-    /// <returns>An <see cref="IAsyncEnumerable{T}" /> of <see cref="ReceivedMessage" /> objects.</returns>
+    /// <returns>An IAsyncEnumerable of <see cref="ReceivedMessage"/> objects.</returns>
     public async IAsyncEnumerable<ReceivedMessage> Subscribe(IEnumerable<string> topics, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null, CancellationToken? cancellationToken = default)
     {
         var endpoint = Constants.TopicReceive(StreamType.Json, topics, since ?? Constants.DefaultSince, getScheduledMessages, filters);

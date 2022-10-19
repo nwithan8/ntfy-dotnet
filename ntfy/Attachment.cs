@@ -42,7 +42,7 @@ public class Attachment
     #endregion
 
     /// <summary>
-    ///     The expiry date of the attachment, as a <see cref="DateTime" /> object.
+    ///     The expiry date of the attachment, as a DateTime object.
     ///     Only defined if the attachment was uploaded to the ntfy server.
     /// </summary>
     [JsonIgnore]
