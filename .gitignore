@@ -1,5 +1,16 @@
-bin/
-obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+###############
+#    folder   #
+###############
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site/
+/ntfy/api/
+/ntfy/apidoc/
+/ntfy/articles/
+/ntfy/images/
+/ntfy/src/
+lib/
+.DS_Store
