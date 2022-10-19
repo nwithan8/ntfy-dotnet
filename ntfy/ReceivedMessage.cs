@@ -123,9 +123,9 @@ public class ReceivedMessage
     ///     Only one for all message events, but may be a list in open events.
     /// </summary>
     [JsonIgnore]
-    public List<string> Topic
+    public string[] Topic
     {
-        get => TopicString.Split(',').ToList();
+        get => TopicString.Split(',');
         set => TopicString = string.Join(",", value);
     }
 }

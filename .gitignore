@@ -12,5 +12,8 @@ _site/
 /ntfy/articles/
 /ntfy/images/
 /ntfy/src/
+/ntfy/index.md
+/ntfy/log.txt
+/ntfy/toc.yml
 lib/
 .DS_Store

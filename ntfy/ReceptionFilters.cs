@@ -19,7 +19,7 @@ public class ReceptionFilters
     /// <summary>
     ///     Only return messages that match any priority listed.
     /// </summary>
-    public List<PriorityLevel>? Priorities { get; set; }
+    public PriorityLevel[]? Priorities { get; set; }
 
     /// <summary>
     ///     Only return messages that match all listed tags.

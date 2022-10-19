@@ -14,7 +14,7 @@ public class UnitTest1
 
     private Client GetClient() => new Client("https://ntfy.nateharr.is");
 
-    private List<string> GetTopics() => new List<string> { "csharp-test" };
+    private string[] GetTopics() => new string[] { "csharp-test" };
 
     [Fact]
     public async Task TestPublish()
@@ -50,14 +50,16 @@ public class UnitTest1
 
         var filter = new ReceptionFilters
         {
-            Priorities = new List<PriorityLevel>
+            Priorities = new PriorityLevel[]
             {
                 PriorityLevel.Low,
                 PriorityLevel.Default,
             }
         };
+        
+        var since = new Since(new DelayDuration(1, DelayUnit.Hours));
 
-        var subscription = client.Subscribe(GetTopics(), filters: filter);
+        var subscription = client.Subscribe(GetTopics(), since: since, filters: filter);
 
         await foreach (var notification in subscription.WithCancellation(default))
         {
@@ -85,7 +87,7 @@ public class UnitTest1
 
         var filter = new ReceptionFilters
         {
-            Priorities = new List<PriorityLevel>
+            Priorities = new PriorityLevel[]
             {
                 PriorityLevel.Low,
                 PriorityLevel.Default,
