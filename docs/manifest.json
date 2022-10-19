@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.ReceivedMessage.html",
-          "hash": "8ukSq7AE+HFOCBc1KboiOY+vKzPVIXeMlcipFZ/nfqA="
+          "hash": "iCZTPeV7tTqzLCMCNjhPlD0bEXpYuT0ed67r+Yv7ww4="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.ReceptionFilters.html",
-          "hash": "+KO84J1ziD3JmDJB/4SvuBpw3lyqU2G02L9WEBi/oIE="
+          "hash": "ZcVxHR55P/r1u/Vq1G96nPEVCOLNmjpnkn7/eS65tf8="
         }
       },
       "is_incremental": false,
