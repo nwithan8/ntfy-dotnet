@@ -11,7 +11,7 @@ Useful for:
 
 ### Installation
 
-Download the latest release from the [releases page](https://github.com/nwithan8/ntfy-dotnet/releases) or from [NuGet](https://www.nuget.org/packages/ntfy-dotnet/).
+Download the latest release from the [releases page](https://github.com/nwithan8/ntfy-dotnet/releases) or from [NuGet](https://www.nuget.org/packages/ntfy/).
 
 ### Usage
 
