@@ -2,12 +2,6 @@
   "version": 1,
   "dependencies": {
     ".NETCoreApp,Version=v3.1": {
-      "docfx.console": {
-        "type": "Direct",
-        "requested": "[2.59.4, )",
-        "resolved": "2.59.4",
-        "contentHash": "2tdrfFuPawcJvM5r19Po1U4ML19DSJlrKfqyjx0T90A7r6VG4DWmIkF0GBf0PBqJRMCiOXfhXRL/ssfVGZ4ppA=="
-      },
       "Microsoft.Bcl.AsyncInterfaces": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -50,12 +44,6 @@
       }
     },
     ".NETStandard,Version=v2.0": {
-      "docfx.console": {
-        "type": "Direct",
-        "requested": "[2.59.4, )",
-        "resolved": "2.59.4",
-        "contentHash": "2tdrfFuPawcJvM5r19Po1U4ML19DSJlrKfqyjx0T90A7r6VG4DWmIkF0GBf0PBqJRMCiOXfhXRL/ssfVGZ4ppA=="
-      },
       "Microsoft.Bcl.AsyncInterfaces": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -165,12 +153,6 @@
       }
     },
     ".NETStandard,Version=v2.1": {
-      "docfx.console": {
-        "type": "Direct",
-        "requested": "[2.59.4, )",
-        "resolved": "2.59.4",
-        "contentHash": "2tdrfFuPawcJvM5r19Po1U4ML19DSJlrKfqyjx0T90A7r6VG4DWmIkF0GBf0PBqJRMCiOXfhXRL/ssfVGZ4ppA=="
-      },
       "Microsoft.Bcl.AsyncInterfaces": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -260,12 +242,6 @@
       }
     },
     ".NETCoreApp,Version=v5.0": {
-      "docfx.console": {
-        "type": "Direct",
-        "requested": "[2.59.4, )",
-        "resolved": "2.59.4",
-        "contentHash": "2tdrfFuPawcJvM5r19Po1U4ML19DSJlrKfqyjx0T90A7r6VG4DWmIkF0GBf0PBqJRMCiOXfhXRL/ssfVGZ4ppA=="
-      },
       "Microsoft.Bcl.AsyncInterfaces": {
         "type": "Direct",
         "requested": "[6.0.0, )",
@@ -308,12 +284,6 @@
       }
     },
     "net6.0": {
-      "docfx.console": {
-        "type": "Direct",
-        "requested": "[2.59.4, )",
-        "resolved": "2.59.4",
-        "contentHash": "2tdrfFuPawcJvM5r19Po1U4ML19DSJlrKfqyjx0T90A7r6VG4DWmIkF0GBf0PBqJRMCiOXfhXRL/ssfVGZ4ppA=="
-      },
       "Microsoft.Bcl.AsyncInterfaces": {
         "type": "Direct",
         "requested": "[6.0.0, )",

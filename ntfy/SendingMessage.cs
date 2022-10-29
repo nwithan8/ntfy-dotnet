@@ -1,6 +1,8 @@
 using NetTools;
 using NetTools.HTTP;
 using Newtonsoft.Json;
+using ntfy.Actions;
+using Action = ntfy.Actions.Action;
 
 namespace ntfy;
 
@@ -13,11 +15,11 @@ public class SendingMessage
 
     /// <summary>
     ///     A list of actions to include in this message.
-    ///     Available actions include <see cref="ntfy.Action.View" />, <see cref="ntfy.Action.Broadcast" /> and
-    ///     <see cref="ntfy.Action.Http" />.
+    ///     Available actions include <see cref="View" />, <see cref="Broadcast" /> and
+    ///     <see cref="ntfy.Actions.Http" />.
     /// </summary>
     [JsonProperty("actions", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    public Action.Action[]? Actions { get; set; }
+    public Action[]? Actions { get; set; }
 
     /// <summary>
     ///     A URL to send as an attachment in this message.

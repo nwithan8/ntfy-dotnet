@@ -27,7 +27,7 @@ var client = new Client("https://ntfy.sh");
 var message = new SendingMessage
         {
             Title = "This is a demo.",
-            Actions = new Action.Action[]
+            Actions = new Actions.Action[]
             {
                 new Broadcast("label")
                 {
@@ -59,7 +59,7 @@ var filter = new Filter
 var since = new Since(new DelayDuration(1, DelayUnit.Hours));
 
 // Subscribe to the "test" topic
-vvar subscription = client.Subscribe(new string[] { "test" }, since: since, filters: filter);
+var subscription = client.Subscribe(new string[] { "test" }, since: since, filters: filter);
 
 // Process a new message when it arrives
 await foreach (var message in subscription.WithCancellation(default))

@@ -13,47 +13,58 @@ public class ReceivedMessage
     /// <summary>
     ///     A list of actions included in this message.
     ///     Since actions can be of different types, this is a list of dictionary representations of the actions.
+    ///     This representation is used by API calls, and is hidden from end users.
     /// </summary>
     [JsonProperty("actions")]
-    public Dictionary<string, object>[]? Actions { get; set; }
+    private Dictionary<string, object>[]? ActionsData { get; set; }
+
+    /// <summary>
+    ///     A list of actions included in this message.
+    /// </summary>
+    [JsonIgnore]
+    public ntfy.Actions.Action[]? Actions
+    {
+        get => ntfy.Actions.Action.DataToActions(ActionsData);
+        set => ActionsData = ntfy.Actions.Action.ActionsToData(value);
+    }
 
     /// <summary>
     ///     The attachment included in this message.
     /// </summary>
     [JsonProperty("attachment")]
-    public Attachment? Attachment { get; set; }
+    public Attachment? Attachment { get; private set; }
 
     /// <summary>
     ///     The URL opened when the associated notification for this message is clicked.
     /// </summary>
     [JsonProperty("click")]
-    public Uri? Click { get; set; }
+    public Uri? Click { get; private set; }
 
     /// <summary>
     ///     Identifier for this message.
     /// </summary>
     [JsonProperty("id")]
-    public string Id { get; set; } = null!;
+    public string Id { get; private set; } = null!;
 
     /// <summary>
     ///     The body of this message.
     ///     Always present in <c>EventType.Message</c> events.
     /// </summary>
     [JsonProperty("message")]
-    public string? Message { get; set; }
+    public string? Message { get; private set; }
 
     /// <summary>
     ///     A list of tags of this message that may or not map to emojis.
     /// </summary>
     [JsonProperty("tags")]
-    public string[]? Tags { get; set; }
+    public string[]? Tags { get; private set; }
 
     /// <summary>
     ///     The title of this message.
     ///     Defaults to <c>ntfy.sh/{topic}</c>
     /// </summary>
     [JsonProperty("title")]
-    public string? Title { get; set; }
+    public string? Title { get; private set; }
 
     /// <summary>
     ///     The event type of this message.

@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace ntfy.Action;
+namespace ntfy.Actions;
 
 /// <summary>
 ///     A Broadcast action that can be included on a <see cref="ReceivedMessage" /> or <see cref="SendingMessage" />.
@@ -35,10 +35,10 @@ public class Broadcast : Action
     #endregion
 
     /// <summary>
-    ///     The type of this action, as a <see cref="ActionType" /> enum.
+    ///     The type of this action, as an <see cref="ActionType" /> enum.
     /// </summary>
     [JsonIgnore]
-    public override ActionType ActionType { get; } = ActionType.Broadcast;
+    public override ActionType Type { get; } = ActionType.Broadcast;
 
     /// <summary>
     ///     Constructor for a Broadcast action.

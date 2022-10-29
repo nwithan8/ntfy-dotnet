@@ -1,4 +1,4 @@
-using ntfy.Action;
+using ntfy.Actions;
 using Xunit.Abstractions;
 
 namespace ntfy.Tests;
@@ -24,7 +24,7 @@ public class UnitTest1
         var message = new SendingMessage
         {
             Title = "This is a demo.",
-            Actions = new Action.Action[]
+            Actions = new Actions.Action[]
             {
                 new Broadcast("label")
                 {
@@ -37,7 +37,7 @@ public class UnitTest1
 
         foreach (var action in message.Actions)
         {
-            var type = action.ActionType;
+            var type = action.Type;
         }
 
         await client.Publish("topic", message);
@@ -56,7 +56,7 @@ public class UnitTest1
                 PriorityLevel.Default,
             }
         };
-        
+
         var since = new Since(new DelayDuration(1, DelayUnit.Hours));
 
         var subscription = client.Subscribe(GetTopics(), since: since, filters: filter);
@@ -64,6 +64,7 @@ public class UnitTest1
         await foreach (var notification in subscription.WithCancellation(default))
         {
             _testOutputHelper.WriteLine(notification.ToString());
+            _testOutputHelper.WriteLine(notification.Actions?.ToString());
         }
     }
 
@@ -108,7 +109,7 @@ public class UnitTest1
         var client = GetClient();
 
         var allowed = await client.CheckAuthentication(GetTopics()[0]);
-        
+
         Assert.True(allowed);
     }
 
@@ -116,9 +117,9 @@ public class UnitTest1
     public async Task TestServerInfo()
     {
         var client = GetClient();
-        
+
         var info = await client.GetServerInfo();
-        
+
         Assert.NotNull(info);
     }
 
@@ -127,10 +128,10 @@ public class UnitTest1
     {
         var client = GetClient();
 
-        var user = new User("nate", "raspberry");
-        
+        var user = new User("demo", "demo_password");
+
         var stats = await client.GetUserStats(user);
-        
+
         Assert.NotNull(stats);
     }
 }

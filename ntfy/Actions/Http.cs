@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace ntfy.Action;
+namespace ntfy.Actions;
 
 /// <summary>
 ///     An Http action that can be included on a <see cref="ReceivedMessage" /> or <see cref="SendingMessage" />.
@@ -47,10 +47,10 @@ public class Http : Action
     #endregion
 
     /// <summary>
-    ///     The type of this action, as a <see cref="ActionType" /> enum.
+    ///     The type of this action, as an <see cref="ActionType" /> enum.
     /// </summary>
     [JsonIgnore]
-    public override ActionType ActionType { get; } = ActionType.Http;
+    public override ActionType Type { get; } = ActionType.Http;
 
     /// <summary>
     ///     The HTTP method to use when sending the request.

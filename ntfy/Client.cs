@@ -227,8 +227,9 @@ public class Client
     /// <param name="filters">Optional additional filters to use when polling.</param>
     /// <param name="user">Optional user to use when polling.</param>
     /// <param name="cancellationToken">Optional cancellation token to use to cancel the stream.</param>
+    /// <param name="ignoreKeepAlive">Ignore keepalive messages. Defaults to <c>true</c>.</param>
     /// <returns>An IAsyncEnumerable of <see cref="ReceivedMessage"/> objects.</returns>
-    public async IAsyncEnumerable<ReceivedMessage> Subscribe(IEnumerable<string> topics, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null, CancellationToken? cancellationToken = default)
+    public async IAsyncEnumerable<ReceivedMessage> Subscribe(IEnumerable<string> topics, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null, CancellationToken? cancellationToken = default, bool ignoreKeepAlive = true)
     {
         var endpoint = Constants.TopicReceive(StreamType.Json, topics, since ?? Constants.DefaultSince, getScheduledMessages, filters);
 
@@ -238,10 +239,16 @@ public class Client
 
         if (cancellationToken != null)
             await foreach (var notification in response.WithCancellation(cancellationToken.Value))
-                yield return notification;
+                if (ignoreKeepAlive && notification.Event == EventType.KeepAlive)
+                    continue;
+                else
+                    yield return notification;
         else
             await foreach (var notification in response)
-                yield return notification;
+                if (ignoreKeepAlive && notification.Event == EventType.KeepAlive)
+                    continue;
+                else
+                    yield return notification;
     }
 
     /// <summary>
@@ -256,9 +263,10 @@ public class Client
     /// <param name="filters">Optional additional filters to use when polling.</param>
     /// <param name="user">Optional user to use when polling.</param>
     /// <param name="cancellationToken">Optional cancellation token to use to cancel the stream.</param>
-    public async Task SubscribeAndProcess(IEnumerable<string> topics, Func<ReceivedMessage, Task> onNotification, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null, CancellationToken? cancellationToken = default)
+    /// <param name="ignoreKeepAlive">Ignore (do not process) keepalive messages. Defaults to <c>true</c>.</param>
+    public async Task SubscribeAndProcess(IEnumerable<string> topics, Func<ReceivedMessage, Task> onNotification, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null, CancellationToken? cancellationToken = default, bool ignoreKeepAlive = true)
     {
-        await foreach (var notification in Subscribe(topics, since, getScheduledMessages, filters, user, cancellationToken))
+        await foreach (var notification in Subscribe(topics, since, getScheduledMessages, filters, user, cancellationToken, ignoreKeepAlive))
             if (onNotification != null)
                 await onNotification(notification);
     }

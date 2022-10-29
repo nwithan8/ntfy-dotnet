@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace ntfy.Action;
+namespace ntfy.Actions;
 
 /// <summary>
 ///     A View action that can be included on a <see cref="ReceivedMessage" /> or <see cref="SendingMessage" />.
@@ -26,10 +26,10 @@ public class View : Action
     #endregion
 
     /// <summary>
-    ///     The type of this action, as a <see cref="ActionType" /> enum.
+    ///     The type of this action, as an <see cref="ActionType" /> enum.
     /// </summary>
     [JsonIgnore]
-    public override ActionType ActionType { get; } = ActionType.View;
+    public override ActionType Type { get; } = ActionType.View;
 
     /// <summary>
     ///     Constructor for a View action.
