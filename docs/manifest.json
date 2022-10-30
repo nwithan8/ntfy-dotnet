@@ -1,87 +1,87 @@
 {
   "homepages": [],
-  "source_base_path": "/Users/nharris/code/ntfy/ntfy",
+  "source_base_path": "/Users/nharris/code/personal/ntfy/ntfy",
   "xrefmap": "xrefmap.yml",
   "files": [
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ntfy.Action.Action.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ntfy.Action.Action.html",
-          "hash": "o1jqYXhO6qEugxAvCArkNrwW6jnRYHrdCfUi7H0AzI8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ntfy.Action.Broadcast.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ntfy.Action.Broadcast.html",
-          "hash": "l6PrwMdkQw5C7xaciNxEWt5bA5mPmOJ9Pwxe01Aunz0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ntfy.Action.Http.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ntfy.Action.Http.html",
-          "hash": "ry4+bP+at+bvKImTXGyrydJWQHEHJqxK0LgadZ301Z4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ntfy.Action.IAction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ntfy.Action.IAction.html",
-          "hash": "8VKiNKOey1d7OkvGJufeEw04yuvzdX1myWe2KI8qlqY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ntfy.Action.View.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ntfy.Action.View.html",
-          "hash": "w0V9ewp9EIJ2FG/IfnRYjzR02eDior9bjmXL1WHT+c0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ntfy.Action.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ntfy.Action.html",
-          "hash": "mBztRW+oa7Z3ekYW0eVb8auUWX/GSNyZPPah4hALnyk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/ntfy.ActionType.yml",
       "output": {
         ".html": {
           "relative_path": "api/ntfy.ActionType.html",
-          "hash": "Al7NI22Ei88bDMhGN7lnAwqLSRP/zD3+/oTYerqEnEk="
+          "hash": "A/ET36twnAuFAnwUlIY3oOZpja5IKgoh30X7xYHLpPU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.Action.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.Action.html",
+          "hash": "0qaQ3uIjc6azymmyTAnqcpo8rBRdBOss0HE7RwBx1F8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.Broadcast.html",
+          "hash": "z2INM3AcHc8nrh1cBrZkGjgt1ofS2qXCvn8vD+Q/keM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.Http.html",
+          "hash": "R/AwejAUSNLBo+WVvlCz8/xaUd/ztL3UTZYuT5PWXe4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.IAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.IAction.html",
+          "hash": "UG5NEks4qKzByNbyX+xbi3zKceypJOMc3xt4yLbYJ/U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.View.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.View.html",
+          "hash": "x7cN32lGSrnlnOySq2O/73z8PrlAM0UVkjoW4Z+SyxM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.html",
+          "hash": "JUCiDDxQOz3QGROMnNBcZ6uhzM/68gpe0dIufa0oqtQ="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Attachment.html",
-          "hash": "R6MoKPDc27mwTb6eKxgHTqv5S9ngmgNPj7Es2b896n8="
+          "hash": "auozhejnO0CnoYRncL5uKCov9q8sgZvpRTVEXx6SZGk="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Client.html",
-          "hash": "y9FgjhMbDLqw9zsXtOrXsG3530rkViNVKL6Ef86rniI="
+          "hash": "x2LomnEjv5kbfw/FKlC97WOH5V3I7iqpaIE+yUIkbP8="
         }
       },
       "is_incremental": false,
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Delay.html",
-          "hash": "idkd+P/zo+p+8+f70hxKLQjcO9jHtS0tMqwMDs6HjQA="
+          "hash": "L5GxjOty0bCfOk/9mY/7sghADKRq2YrN56zhhkYo8zQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.DelayDuration.html",
-          "hash": "vfFWdok0dLw/LhnVkxu+uf/YGqw0L6AtV01TeN9DZWc="
+          "hash": "dsdeP6bW23N/FCWXqGKW+gH16QVFgcAygbKkmxVyIBY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.DelayStatement.html",
-          "hash": "i5lmU89nMC4jNwm1sgYdtzudBymK2BBttnOJDMgPzaY="
+          "hash": "pA0tOclKm98B9ZckS39vWNrtUaqGJRRfHw+0r4GgGwQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.DelayTime.html",
-          "hash": "9yF4BrQK7i53qveJlFWcwnGqB2Re88fKfyBfDkkm2vk="
+          "hash": "O7JaeLLcOvPF4x4blxwirSaPBFyDRFu9ICEr9xfox1g="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.DelayUnit.html",
-          "hash": "KmeeowPKsgP4Bt9fnZy3qOHvFms9Dc1+totOZpqDFsQ="
+          "hash": "Wo1aMoBvIXAz9bPGpsWDotyYxLnxbTJboRjMJk/mG+A="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.EntityTooLargeException.html",
-          "hash": "A5VBe/jq5kd7Ed1TJeR6LLXXpllrPSTe0byhHKmHySA="
+          "hash": "DT7pVnZk2W4D8NxIrcfL2Ydq3EIA83gXgFvWiSHPaow="
         }
       },
       "is_incremental": false,
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.EventType.html",
-          "hash": "9HtET+QmXCZyNqtikm6Z+WjNGJ0UL3WZ1WBuQbctOmg="
+          "hash": "gB4Z9ZCQPi7PfnQW6w+xW7dg0YPob7Sla7VkPsZ3Gbk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.InvalidParameterException.html",
-          "hash": "c7wDUxthb6cmChv+PIA8k5EZxTHJjHf8AJq4YqxO91s="
+          "hash": "ML4SAAC9KmJbpI1g0CpWMb0uah0OU6MvUtnw4R5IMKc="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.InvalidTopicException.html",
-          "hash": "76vnvge6hjZgqXZceQaolmOqb9nRgj+ZP11dnpHL6tk="
+          "hash": "z2zgm7QditK1jPB+5ujUxDPZtuRxcAWPvbd7POGORYw="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.NftyException.html",
-          "hash": "6FxXW6TgoPYodW0MDXJNE+NJoohu8SYNsbCAQF0Mj+Y="
+          "hash": "DB/58QLeVtv9uJk7qcCU2DChpR/urA3X4bHCbJpGDqA="
         }
       },
       "is_incremental": false,
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.PriorityLevel.html",
-          "hash": "IHsd59rV49Orv37ssT4OoO023hY20p+pkxsKLUueNE4="
+          "hash": "9z9DvEiehvvHQ9LbPN12PD7+RoOXpMX7efsLOgTJrv4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.ReceivedMessage.html",
-          "hash": "iCZTPeV7tTqzLCMCNjhPlD0bEXpYuT0ed67r+Yv7ww4="
+          "hash": "N/OMRgH6c0YxP/swSj3BQz6yslTKCCJC8FtRpflNPzw="
         }
       },
       "is_incremental": false,
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.ReceptionFilters.html",
-          "hash": "ZcVxHR55P/r1u/Vq1G96nPEVCOLNmjpnkn7/eS65tf8="
+          "hash": "svvaAImEzXEP+ZsfQaEzNQXkYiLr9C2MwvFox37GWPs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.SendingMessage.html",
-          "hash": "hHF/vKlXNTFq0D/wTHLJ19zyVQxm4dGmmAPaAor2e4o="
+          "hash": "LrDwMgwRKbfkpm5n8ZgvI5F4iExaLOT5oQHYJmA/fzI="
         }
       },
       "is_incremental": false,
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.ServerInfo.html",
-          "hash": "8nUgy8qe8N2FbaYst29UqUS2PoHh6FBDdH0+bv/nybI="
+          "hash": "oZ3PHHAtF+VQqflbNWGoYljmPpj5Miy+GCM8kyWB8sI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Since.html",
-          "hash": "1udT4hIjVWFns7VLtntktqe6IxnDc8ldlbGd/0cslcs="
+          "hash": "C9s5A6QUKL+1/CUh89WAlpkC+cRs6TZnnB9vaVxl3iI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.TooManyRequestsException.html",
-          "hash": "GdwRfOSHK1khodzHH2mk1dmnGKlWAn+a/eDQ3XsraxY="
+          "hash": "aKkHgeoZ7cJF2kLGf7jrZqRcze57ab08GhbhJ1+KJOI="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.UnauthorizedException.html",
-          "hash": "MU0sKMusVFtl6JqTND1VvXlsre8Qongh6CQkJNICTFY="
+          "hash": "MQsDmDErsrzYG7nYR3A++sM4SXEsJgzQdiGRWpieiOo="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.UnexpectedException.html",
-          "hash": "rRroJwFuRs/WcYFshP9uCSYLiDWz5FE7gJ8Tz03GcMA="
+          "hash": "jhKNRG86PkcbflDqU6oI2imlD2ARjmzDfB5RT/ZrYNk="
         }
       },
       "is_incremental": false,
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.User.html",
-          "hash": "/vMv4wH58vWnxQ/Axas53jEiyuXK1tEGF6R1BTxCEkk="
+          "hash": "QWyvvWggRV7UuycXOYCg8FodvGBJkZhunpsA9cU9R6k="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.UserStats.html",
-          "hash": "DCQLKa7lUcZ5sNGrNVowwhKrDfNBb2NfgFXRG8uKVWw="
+          "hash": "fXELnorU1uXDy6t1C6II00EW9hn/NC+MmTOMq/lkwOw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.html",
-          "hash": "YSM/UCMmY9UaIHB8QPj9hqjbBqUoI76iosHja1ag3ps="
+          "hash": "3b6Qm9hZMg7/Pvmyyl/39N0y1Vw9VpicDj5YxUpDTgE="
         }
       },
       "is_incremental": false,
@@ -381,34 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Kbd7yBJb1GwrRQYjRWSI/GwFH320q51hOrqRWMFnBR8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "index.md",
-      "output": {
-        ".html": {
-          "relative_path": "index.html",
-          "hash": "mgenRSG/6JWgMyYvx3XcDTDvWlh9KVtGuMDSsxVKcFU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "toc.html",
-          "hash": "Z7E+A4C89NhrZSNZ3D1DEHX3ZrIOFpA1hFW2KO8UObc="
+          "hash": "Ue8u9FtNDG2x0XZJXvTCIFE0WjCTr8VMKZ5X7pY3BqY="
         }
       },
       "is_incremental": false,
@@ -418,25 +391,17 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 1,
-          "skipped_file_count": 0
-        },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 31,
-          "skipped_file_count": 0
+          "skipped_file_count": 19
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -449,8 +414,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

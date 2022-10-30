@@ -6,7 +6,7 @@
           "files": [
             "ntfy.csproj"
           ],
-          "src": "/Users/nharris/code/ntfy/ntfy"
+          "src": "/Users/nharris/code/personal/ntfy/ntfy"
         }
       ],
       "dest": "api",

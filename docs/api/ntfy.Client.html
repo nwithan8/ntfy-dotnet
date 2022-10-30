@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     
@@ -669,13 +669,13 @@ Get server-wide stats if no user is provided.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__.md&amp;value=---%0Auid%3A%20ntfy.Client.Subscribe(IEnumerable%7BSystem.String%7D%2Cntfy.Since%2CSystem.Boolean%2Cntfy.ReceptionFilters%2Cntfy.User%2CSystem.Nullable%7BCancellationToken%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_.md&amp;value=---%0Auid%3A%20ntfy.Client.Subscribe(IEnumerable%7BSystem.String%7D%2Cntfy.Since%2CSystem.Boolean%2Cntfy.ReceptionFilters%2Cntfy.User%2CSystem.Nullable%7BCancellationToken%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L231">View Source</a>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L232">View Source</a>
   </span>
   <a id="ntfy_Client_Subscribe_" data-uid="ntfy.Client.Subscribe*"></a>
-  <h4 id="ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__" data-uid="ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})">Subscribe(IEnumerable&lt;String&gt;, Since, Boolean, ReceptionFilters, User, Nullable&lt;CancellationToken&gt;)</h4>
+  <h4 id="ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_" data-uid="ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)">Subscribe(IEnumerable&lt;String&gt;, Since, Boolean, ReceptionFilters, User, Nullable&lt;CancellationToken&gt;, Boolean)</h4>
   <div class="markdown level1 summary"><p>Subscribe to a topic.
 Opens an asynchronous stream to the server and returns an IAsyncEnumerable of <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> objects.
 New messages will be pushed to the stream as they are received.</p>
@@ -683,7 +683,7 @@ New messages will be pushed to the stream as they are received.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async IAsyncEnumerable&lt;ReceivedMessage&gt; Subscribe(IEnumerable&lt;string&gt; topics, Since since = null, bool getScheduledMessages = false, ReceptionFilters filters = null, User user = null, CancellationToken? cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async IAsyncEnumerable&lt;ReceivedMessage&gt; Subscribe(IEnumerable&lt;string&gt; topics, Since since = null, bool getScheduledMessages = false, ReceptionFilters filters = null, User user = null, CancellationToken? cancellationToken = null, bool ignoreKeepAlive = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -731,6 +731,12 @@ New messages will be pushed to the stream as they are received.</p>
         <td><p>Optional cancellation token to use to cancel the stream.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreKeepAlive</span></td>
+        <td><p>Ignore keepalive messages. Defaults to <code>true</code>.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -751,13 +757,13 @@ New messages will be pushed to the stream as they are received.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__.md&amp;value=---%0Auid%3A%20ntfy.Client.SubscribeAndProcess(IEnumerable%7BSystem.String%7D%2CFunc%7Bntfy.ReceivedMessage%2CTask%7D%2Cntfy.Since%2CSystem.Boolean%2Cntfy.ReceptionFilters%2Cntfy.User%2CSystem.Nullable%7BCancellationToken%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_.md&amp;value=---%0Auid%3A%20ntfy.Client.SubscribeAndProcess(IEnumerable%7BSystem.String%7D%2CFunc%7Bntfy.ReceivedMessage%2CTask%7D%2Cntfy.Since%2CSystem.Boolean%2Cntfy.ReceptionFilters%2Cntfy.User%2CSystem.Nullable%7BCancellationToken%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L259">View Source</a>
+    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Client.cs/#L267">View Source</a>
   </span>
   <a id="ntfy_Client_SubscribeAndProcess_" data-uid="ntfy.Client.SubscribeAndProcess*"></a>
-  <h4 id="ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__" data-uid="ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})">SubscribeAndProcess(IEnumerable&lt;String&gt;, Func&lt;ReceivedMessage, Task&gt;, Since, Boolean, ReceptionFilters, User, Nullable&lt;CancellationToken&gt;)</h4>
+  <h4 id="ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_" data-uid="ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)">SubscribeAndProcess(IEnumerable&lt;String&gt;, Func&lt;ReceivedMessage, Task&gt;, Since, Boolean, ReceptionFilters, User, Nullable&lt;CancellationToken&gt;, Boolean)</h4>
   <div class="markdown level1 summary"><p>Subscribe to a topic.
 Opens an asynchronous stream to the server and processes each <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> object as it is
 received.</p>
@@ -765,7 +771,7 @@ received.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task SubscribeAndProcess(IEnumerable&lt;string&gt; topics, Func&lt;ReceivedMessage, Task&gt; onNotification, Since since = null, bool getScheduledMessages = false, ReceptionFilters filters = null, User user = null, CancellationToken? cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task SubscribeAndProcess(IEnumerable&lt;string&gt; topics, Func&lt;ReceivedMessage, Task&gt; onNotification, Since since = null, bool getScheduledMessages = false, ReceptionFilters filters = null, User user = null, CancellationToken? cancellationToken = null, bool ignoreKeepAlive = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -817,6 +823,12 @@ received.</p>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">CancellationToken</span>&gt;</td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>Optional cancellation token to use to cancel the stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreKeepAlive</span></td>
+        <td><p>Ignore (do not process) keepalive messages. Defaults to <code>true</code>.</p>
 </td>
       </tr>
     </tbody>
