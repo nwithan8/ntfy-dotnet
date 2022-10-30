@@ -12,7 +12,7 @@
           "hash": "A/ET36twnAuFAnwUlIY3oOZpja5IKgoh30X7xYHLpPU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Actions.Action.html",
-          "hash": "4v4bI1A8Qn/gMIR3I3xa2Ep0RmbliW768M1SD47C2xg="
+          "hash": "0qaQ3uIjc6azymmyTAnqcpo8rBRdBOss0HE7RwBx1F8="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Actions.IAction.html",
-          "hash": "uewJYjKlyMRmRj3HliCRx4bnTB5te5ToEoUQMpe/ETo="
+          "hash": "UG5NEks4qKzByNbyX+xbi3zKceypJOMc3xt4yLbYJ/U="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Actions.View.html",
-          "hash": "Y7xrrbNDnRh7pN4eC+f9f9xhaDRBYqB7UUO5N6IrFx8="
+          "hash": "x7cN32lGSrnlnOySq2O/73z8PrlAM0UVkjoW4Z+SyxM="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.Client.html",
-          "hash": "/mJGq2npk6Lp2iXxtCYwwOAKt3Aj7zMtwx5F6pYN0Lg="
+          "hash": "x2LomnEjv5kbfw/FKlC97WOH5V3I7iqpaIE+yUIkbP8="
         }
       },
       "is_incremental": false,
@@ -120,7 +120,7 @@
           "hash": "L5GxjOty0bCfOk/9mY/7sghADKRq2YrN56zhhkYo8zQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "dsdeP6bW23N/FCWXqGKW+gH16QVFgcAygbKkmxVyIBY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +144,7 @@
           "hash": "pA0tOclKm98B9ZckS39vWNrtUaqGJRRfHw+0r4GgGwQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -156,7 +156,7 @@
           "hash": "O7JaeLLcOvPF4x4blxwirSaPBFyDRFu9ICEr9xfox1g="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -168,7 +168,7 @@
           "hash": "Wo1aMoBvIXAz9bPGpsWDotyYxLnxbTJboRjMJk/mG+A="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.EntityTooLargeException.html",
-          "hash": "6H/d3lOMleFPzBz+v0VjbA9QDZDq6AcmmFx2Q2S/xPc="
+          "hash": "DT7pVnZk2W4D8NxIrcfL2Ydq3EIA83gXgFvWiSHPaow="
         }
       },
       "is_incremental": false,
@@ -192,7 +192,7 @@
           "hash": "gB4Z9ZCQPi7PfnQW6w+xW7dg0YPob7Sla7VkPsZ3Gbk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.InvalidParameterException.html",
-          "hash": "qlElK8IgjCtDbwHEYutcJIb6NkMzCgjYp9j+RjSO49Y="
+          "hash": "ML4SAAC9KmJbpI1g0CpWMb0uah0OU6MvUtnw4R5IMKc="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.InvalidTopicException.html",
-          "hash": "bok4zhtHBLiKH60zF5SBgWM1OZS7xgBAE3kOj7/77sg="
+          "hash": "z2zgm7QditK1jPB+5ujUxDPZtuRxcAWPvbd7POGORYw="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.NftyException.html",
-          "hash": "8wxis3/2MPRfHq7ZVADRrDAcn+VEXn5owrVpIMCCw+M="
+          "hash": "DB/58QLeVtv9uJk7qcCU2DChpR/urA3X4bHCbJpGDqA="
         }
       },
       "is_incremental": false,
@@ -240,7 +240,7 @@
           "hash": "9z9DvEiehvvHQ9LbPN12PD7+RoOXpMX7efsLOgTJrv4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.ReceivedMessage.html",
-          "hash": "8rkl+eL2u4DulQsoOPxSUEdnuaOKAEXH551aDKPV6ro="
+          "hash": "N/OMRgH6c0YxP/swSj3BQz6yslTKCCJC8FtRpflNPzw="
         }
       },
       "is_incremental": false,
@@ -264,7 +264,7 @@
           "hash": "svvaAImEzXEP+ZsfQaEzNQXkYiLr9C2MwvFox37GWPs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -288,7 +288,7 @@
           "hash": "oZ3PHHAtF+VQqflbNWGoYljmPpj5Miy+GCM8kyWB8sI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -300,7 +300,7 @@
           "hash": "C9s5A6QUKL+1/CUh89WAlpkC+cRs6TZnnB9vaVxl3iI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.TooManyRequestsException.html",
-          "hash": "lPFoM9VB72KdE3htu/pCdAdbSIaypKw68A60VuOUC4A="
+          "hash": "aKkHgeoZ7cJF2kLGf7jrZqRcze57ab08GhbhJ1+KJOI="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.UnauthorizedException.html",
-          "hash": "3x56xB5RmVCJKEUexw9Gmjfmwo+xO+SF5jtqQrvUC+8="
+          "hash": "MQsDmDErsrzYG7nYR3A++sM4SXEsJgzQdiGRWpieiOo="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ntfy.UnexpectedException.html",
-          "hash": "AWEoDkxp9IpEYAyngnsDYiuEdWP3HDvDLoZVNrPq9TE="
+          "hash": "jhKNRG86PkcbflDqU6oI2imlD2ARjmzDfB5RT/ZrYNk="
         }
       },
       "is_incremental": false,
@@ -348,7 +348,7 @@
           "hash": "QWyvvWggRV7UuycXOYCg8FodvGBJkZhunpsA9cU9R6k="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -360,7 +360,7 @@
           "hash": "fXELnorU1uXDy6t1C6II00EW9hn/NC+MmTOMq/lkwOw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -391,19 +391,17 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build didn't contain group .",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableGroupCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 31,
-          "skipped_file_count": 0
+          "skipped_file_count": 19
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
