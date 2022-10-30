@@ -5,14 +5,14 @@
         <id>ntfy</id>
         <title>ntfy</title>
         <description>A .NET package for interacting with a ntfy instance</description>
-        <version>0.1.0</version>
+        <version>0.2.0</version>
         <authors>Nate Harris</authors>
         <owners>nwithan8</owners>
         <projectUrl>https://github.com/nwithan8/ntfy-dotnet</projectUrl>
         <license type="expression">GPL-3.0-or-later</license>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <tags>ntfy notifications push</tags>
-        <readme>README.md</readme>
+        <readme>docs\README.md</readme>
         <releaseNotes>See Release Notes at https://github.com/nwithan8/ntfy-dotnet/releases</releaseNotes>
         <dependencies>
             <group targetFramework="netstandard2.0">
