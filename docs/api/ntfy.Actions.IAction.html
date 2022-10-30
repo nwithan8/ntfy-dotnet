@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace ntfy.Action
+    <title>Interface IAction
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace ntfy.Action
+    <meta name="title" content="Interface IAction
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     
@@ -68,38 +68,21 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ntfy.Action">
+            <article class="content wrap" id="_content" data-uid="ntfy.Actions.IAction">
   
-  <h1 id="ntfy_Action" data-uid="ntfy.Action" class="text-break">Namespace ntfy.Action
+  
+  <h1 id="ntfy_Actions_IAction" data-uid="ntfy.Actions.IAction" class="text-break">Interface IAction
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The base interface for all actions that can be included on a <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> or
+<a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="ntfy.Action.Action.html">Action</a></h4>
-      <section><p>The base class for all actions that can be included on a <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> or
-<a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a>.</p>
-</section>
-      <h4><a class="xref" href="ntfy.Action.Broadcast.html">Broadcast</a></h4>
-      <section><p>A Broadcast action that can be included on a <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> or <a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a>.
-Sends an Android broadcast intent when the action button is tapped.
-Defaults to an intent that works specifically with the official ntfy Android app.</p>
-</section>
-      <h4><a class="xref" href="ntfy.Action.Http.html">Http</a></h4>
-      <section><p>An Http action that can be included on a <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> or <a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a>.
-Sends a HTTP request when the action button is tapped.</p>
-</section>
-      <h4><a class="xref" href="ntfy.Action.View.html">View</a></h4>
-      <section><p>A View action that can be included on a <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> or <a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a>.
-Opens a website or app when the action button is tapped.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="ntfy.Action.IAction.html">IAction</a></h4>
-      <section><p>The base interface for all actions that can be included on a <a class="xref" href="ntfy.ReceivedMessage.html">ReceivedMessage</a> or
-<a class="xref" href="ntfy.SendingMessage.html">SendingMessage</a>.</p>
-</section>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ntfy.Actions.html">ntfy.Actions</a></h6>
+  <h6><strong>Assembly</strong>: ntfy.dll</h6>
+  <h5 id="ntfy_Actions_IAction_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAction</code></pre>
+  </div>
 </article>
           </div>
           
@@ -107,6 +90,12 @@ Opens a website or app when the action button is tapped.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/nwithan8/ntfy-dotnet/new/master/apiSpec/new?filename=ntfy_Actions_IAction.md&amp;value=---%0Auid%3A%20ntfy.Actions.IAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/nwithan8/ntfy-dotnet/blob/master/ntfy/Actions/Action.cs/#L93" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

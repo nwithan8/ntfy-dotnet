@@ -59,7 +59,7 @@ public class Http : Action
     [JsonIgnore]
     public HttpMethod? Method
     {
-        get => new(MethodString);
+        get => new(MethodString!);
         set => MethodString = value?.Method;
     }
 

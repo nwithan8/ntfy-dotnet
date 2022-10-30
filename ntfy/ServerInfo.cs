@@ -41,12 +41,12 @@ public class ServerInfo
             };
          */
         // remove non-JSON elements from string
-        responseJavaScript = responseJavaScript.Replace("// Generated server configuration", "");
-        responseJavaScript = responseJavaScript.Replace("var config = ", "");
-        responseJavaScript = responseJavaScript.Replace(";", "");
+        responseJavaScript = responseJavaScript!.Replace("// Generated server configuration", "");
+        responseJavaScript = responseJavaScript!.Replace("var config = ", "");
+        responseJavaScript = responseJavaScript!.Replace(";", "");
 
         // clean up JSON string
-        var json = responseJavaScript.Replace("\n", "").Replace("\r", "");
+        var json = responseJavaScript!.Replace("\n", "").Replace("\r", "");
         json = json.Replace("  appRoot", "\"appRoot\"");
         json = json.Replace("  disallowedTopics", "\"disallowedTopics\"");
         json = json.Replace(" ", "");

@@ -7,301 +7,301 @@ references:
   commentId: N:ntfy
   fullName: ntfy
   nameWithType: ntfy
-- uid: ntfy.Action
-  name: ntfy.Action
-  href: api/ntfy.Action.html
-  commentId: N:ntfy.Action
-  fullName: ntfy.Action
-  nameWithType: ntfy.Action
-- uid: ntfy.Action.Action
+- uid: ntfy.Actions
+  name: ntfy.Actions
+  href: api/ntfy.Actions.html
+  commentId: N:ntfy.Actions
+  fullName: ntfy.Actions
+  nameWithType: ntfy.Actions
+- uid: ntfy.Actions.Action
   name: Action
-  href: api/ntfy.Action.Action.html
-  commentId: T:ntfy.Action.Action
-  fullName: ntfy.Action.Action
+  href: api/ntfy.Actions.Action.html
+  commentId: T:ntfy.Actions.Action
+  fullName: ntfy.Actions.Action
   nameWithType: Action
-- uid: ntfy.Action.Action.#ctor(System.String)
+- uid: ntfy.Actions.Action.#ctor(System.String)
   name: Action(String)
-  href: api/ntfy.Action.Action.html#ntfy_Action_Action__ctor_System_String_
-  commentId: M:ntfy.Action.Action.#ctor(System.String)
-  fullName: ntfy.Action.Action.Action(System.String)
+  href: api/ntfy.Actions.Action.html#ntfy_Actions_Action__ctor_System_String_
+  commentId: M:ntfy.Actions.Action.#ctor(System.String)
+  fullName: ntfy.Actions.Action.Action(System.String)
   nameWithType: Action.Action(String)
-- uid: ntfy.Action.Action.#ctor*
+- uid: ntfy.Actions.Action.#ctor*
   name: Action
-  href: api/ntfy.Action.Action.html#ntfy_Action_Action__ctor_
-  commentId: Overload:ntfy.Action.Action.#ctor
+  href: api/ntfy.Actions.Action.html#ntfy_Actions_Action__ctor_
+  commentId: Overload:ntfy.Actions.Action.#ctor
   isSpec: "True"
-  fullName: ntfy.Action.Action.Action
+  fullName: ntfy.Actions.Action.Action
   nameWithType: Action.Action
-- uid: ntfy.Action.Action.ActionType
-  name: ActionType
-  href: api/ntfy.Action.Action.html#ntfy_Action_Action_ActionType
-  commentId: P:ntfy.Action.Action.ActionType
-  fullName: ntfy.Action.Action.ActionType
-  nameWithType: Action.ActionType
-- uid: ntfy.Action.Action.ActionType*
-  name: ActionType
-  href: api/ntfy.Action.Action.html#ntfy_Action_Action_ActionType_
-  commentId: Overload:ntfy.Action.Action.ActionType
-  isSpec: "True"
-  fullName: ntfy.Action.Action.ActionType
-  nameWithType: Action.ActionType
-- uid: ntfy.Action.Action.Label
+- uid: ntfy.Actions.Action.Label
   name: Label
-  href: api/ntfy.Action.Action.html#ntfy_Action_Action_Label
-  commentId: P:ntfy.Action.Action.Label
-  fullName: ntfy.Action.Action.Label
+  href: api/ntfy.Actions.Action.html#ntfy_Actions_Action_Label
+  commentId: P:ntfy.Actions.Action.Label
+  fullName: ntfy.Actions.Action.Label
   nameWithType: Action.Label
-- uid: ntfy.Action.Action.Label*
+- uid: ntfy.Actions.Action.Label*
   name: Label
-  href: api/ntfy.Action.Action.html#ntfy_Action_Action_Label_
-  commentId: Overload:ntfy.Action.Action.Label
+  href: api/ntfy.Actions.Action.html#ntfy_Actions_Action_Label_
+  commentId: Overload:ntfy.Actions.Action.Label
   isSpec: "True"
-  fullName: ntfy.Action.Action.Label
+  fullName: ntfy.Actions.Action.Label
   nameWithType: Action.Label
-- uid: ntfy.Action.Broadcast
+- uid: ntfy.Actions.Action.Type
+  name: Type
+  href: api/ntfy.Actions.Action.html#ntfy_Actions_Action_Type
+  commentId: P:ntfy.Actions.Action.Type
+  fullName: ntfy.Actions.Action.Type
+  nameWithType: Action.Type
+- uid: ntfy.Actions.Action.Type*
+  name: Type
+  href: api/ntfy.Actions.Action.html#ntfy_Actions_Action_Type_
+  commentId: Overload:ntfy.Actions.Action.Type
+  isSpec: "True"
+  fullName: ntfy.Actions.Action.Type
+  nameWithType: Action.Type
+- uid: ntfy.Actions.Broadcast
   name: Broadcast
-  href: api/ntfy.Action.Broadcast.html
-  commentId: T:ntfy.Action.Broadcast
-  fullName: ntfy.Action.Broadcast
+  href: api/ntfy.Actions.Broadcast.html
+  commentId: T:ntfy.Actions.Broadcast
+  fullName: ntfy.Actions.Broadcast
   nameWithType: Broadcast
-- uid: ntfy.Action.Broadcast.#ctor(System.String)
+- uid: ntfy.Actions.Broadcast.#ctor(System.String)
   name: Broadcast(String)
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast__ctor_System_String_
-  commentId: M:ntfy.Action.Broadcast.#ctor(System.String)
-  fullName: ntfy.Action.Broadcast.Broadcast(System.String)
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast__ctor_System_String_
+  commentId: M:ntfy.Actions.Broadcast.#ctor(System.String)
+  fullName: ntfy.Actions.Broadcast.Broadcast(System.String)
   nameWithType: Broadcast.Broadcast(String)
-- uid: ntfy.Action.Broadcast.#ctor*
+- uid: ntfy.Actions.Broadcast.#ctor*
   name: Broadcast
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast__ctor_
-  commentId: Overload:ntfy.Action.Broadcast.#ctor
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast__ctor_
+  commentId: Overload:ntfy.Actions.Broadcast.#ctor
   isSpec: "True"
-  fullName: ntfy.Action.Broadcast.Broadcast
+  fullName: ntfy.Actions.Broadcast.Broadcast
   nameWithType: Broadcast.Broadcast
-- uid: ntfy.Action.Broadcast.ActionType
-  name: ActionType
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_ActionType
-  commentId: P:ntfy.Action.Broadcast.ActionType
-  fullName: ntfy.Action.Broadcast.ActionType
-  nameWithType: Broadcast.ActionType
-- uid: ntfy.Action.Broadcast.ActionType*
-  name: ActionType
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_ActionType_
-  commentId: Overload:ntfy.Action.Broadcast.ActionType
-  isSpec: "True"
-  fullName: ntfy.Action.Broadcast.ActionType
-  nameWithType: Broadcast.ActionType
-- uid: ntfy.Action.Broadcast.Clear
+- uid: ntfy.Actions.Broadcast.Clear
   name: Clear
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_Clear
-  commentId: P:ntfy.Action.Broadcast.Clear
-  fullName: ntfy.Action.Broadcast.Clear
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Clear
+  commentId: P:ntfy.Actions.Broadcast.Clear
+  fullName: ntfy.Actions.Broadcast.Clear
   nameWithType: Broadcast.Clear
-- uid: ntfy.Action.Broadcast.Clear*
+- uid: ntfy.Actions.Broadcast.Clear*
   name: Clear
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_Clear_
-  commentId: Overload:ntfy.Action.Broadcast.Clear
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Clear_
+  commentId: Overload:ntfy.Actions.Broadcast.Clear
   isSpec: "True"
-  fullName: ntfy.Action.Broadcast.Clear
+  fullName: ntfy.Actions.Broadcast.Clear
   nameWithType: Broadcast.Clear
-- uid: ntfy.Action.Broadcast.Extras
+- uid: ntfy.Actions.Broadcast.Extras
   name: Extras
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_Extras
-  commentId: P:ntfy.Action.Broadcast.Extras
-  fullName: ntfy.Action.Broadcast.Extras
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Extras
+  commentId: P:ntfy.Actions.Broadcast.Extras
+  fullName: ntfy.Actions.Broadcast.Extras
   nameWithType: Broadcast.Extras
-- uid: ntfy.Action.Broadcast.Extras*
+- uid: ntfy.Actions.Broadcast.Extras*
   name: Extras
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_Extras_
-  commentId: Overload:ntfy.Action.Broadcast.Extras
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Extras_
+  commentId: Overload:ntfy.Actions.Broadcast.Extras
   isSpec: "True"
-  fullName: ntfy.Action.Broadcast.Extras
+  fullName: ntfy.Actions.Broadcast.Extras
   nameWithType: Broadcast.Extras
-- uid: ntfy.Action.Broadcast.Intent
+- uid: ntfy.Actions.Broadcast.Intent
   name: Intent
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_Intent
-  commentId: P:ntfy.Action.Broadcast.Intent
-  fullName: ntfy.Action.Broadcast.Intent
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Intent
+  commentId: P:ntfy.Actions.Broadcast.Intent
+  fullName: ntfy.Actions.Broadcast.Intent
   nameWithType: Broadcast.Intent
-- uid: ntfy.Action.Broadcast.Intent*
+- uid: ntfy.Actions.Broadcast.Intent*
   name: Intent
-  href: api/ntfy.Action.Broadcast.html#ntfy_Action_Broadcast_Intent_
-  commentId: Overload:ntfy.Action.Broadcast.Intent
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Intent_
+  commentId: Overload:ntfy.Actions.Broadcast.Intent
   isSpec: "True"
-  fullName: ntfy.Action.Broadcast.Intent
+  fullName: ntfy.Actions.Broadcast.Intent
   nameWithType: Broadcast.Intent
-- uid: ntfy.Action.Http
+- uid: ntfy.Actions.Broadcast.Type
+  name: Type
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Type
+  commentId: P:ntfy.Actions.Broadcast.Type
+  fullName: ntfy.Actions.Broadcast.Type
+  nameWithType: Broadcast.Type
+- uid: ntfy.Actions.Broadcast.Type*
+  name: Type
+  href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Type_
+  commentId: Overload:ntfy.Actions.Broadcast.Type
+  isSpec: "True"
+  fullName: ntfy.Actions.Broadcast.Type
+  nameWithType: Broadcast.Type
+- uid: ntfy.Actions.Http
   name: Http
-  href: api/ntfy.Action.Http.html
-  commentId: T:ntfy.Action.Http
-  fullName: ntfy.Action.Http
+  href: api/ntfy.Actions.Http.html
+  commentId: T:ntfy.Actions.Http
+  fullName: ntfy.Actions.Http
   nameWithType: Http
-- uid: ntfy.Action.Http.#ctor(System.String,Uri)
+- uid: ntfy.Actions.Http.#ctor(System.String,Uri)
   name: Http(String, Uri)
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http__ctor_System_String_Uri_
-  commentId: M:ntfy.Action.Http.#ctor(System.String,Uri)
-  fullName: ntfy.Action.Http.Http(System.String, Uri)
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http__ctor_System_String_Uri_
+  commentId: M:ntfy.Actions.Http.#ctor(System.String,Uri)
+  fullName: ntfy.Actions.Http.Http(System.String, Uri)
   nameWithType: Http.Http(String, Uri)
-- uid: ntfy.Action.Http.#ctor*
+- uid: ntfy.Actions.Http.#ctor*
   name: Http
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http__ctor_
-  commentId: Overload:ntfy.Action.Http.#ctor
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http__ctor_
+  commentId: Overload:ntfy.Actions.Http.#ctor
   isSpec: "True"
-  fullName: ntfy.Action.Http.Http
+  fullName: ntfy.Actions.Http.Http
   nameWithType: Http.Http
-- uid: ntfy.Action.Http.ActionType
-  name: ActionType
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_ActionType
-  commentId: P:ntfy.Action.Http.ActionType
-  fullName: ntfy.Action.Http.ActionType
-  nameWithType: Http.ActionType
-- uid: ntfy.Action.Http.ActionType*
-  name: ActionType
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_ActionType_
-  commentId: Overload:ntfy.Action.Http.ActionType
-  isSpec: "True"
-  fullName: ntfy.Action.Http.ActionType
-  nameWithType: Http.ActionType
-- uid: ntfy.Action.Http.Body
+- uid: ntfy.Actions.Http.Body
   name: Body
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Body
-  commentId: P:ntfy.Action.Http.Body
-  fullName: ntfy.Action.Http.Body
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Body
+  commentId: P:ntfy.Actions.Http.Body
+  fullName: ntfy.Actions.Http.Body
   nameWithType: Http.Body
-- uid: ntfy.Action.Http.Body*
+- uid: ntfy.Actions.Http.Body*
   name: Body
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Body_
-  commentId: Overload:ntfy.Action.Http.Body
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Body_
+  commentId: Overload:ntfy.Actions.Http.Body
   isSpec: "True"
-  fullName: ntfy.Action.Http.Body
+  fullName: ntfy.Actions.Http.Body
   nameWithType: Http.Body
-- uid: ntfy.Action.Http.Clear
+- uid: ntfy.Actions.Http.Clear
   name: Clear
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Clear
-  commentId: P:ntfy.Action.Http.Clear
-  fullName: ntfy.Action.Http.Clear
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Clear
+  commentId: P:ntfy.Actions.Http.Clear
+  fullName: ntfy.Actions.Http.Clear
   nameWithType: Http.Clear
-- uid: ntfy.Action.Http.Clear*
+- uid: ntfy.Actions.Http.Clear*
   name: Clear
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Clear_
-  commentId: Overload:ntfy.Action.Http.Clear
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Clear_
+  commentId: Overload:ntfy.Actions.Http.Clear
   isSpec: "True"
-  fullName: ntfy.Action.Http.Clear
+  fullName: ntfy.Actions.Http.Clear
   nameWithType: Http.Clear
-- uid: ntfy.Action.Http.Headers
+- uid: ntfy.Actions.Http.Headers
   name: Headers
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Headers
-  commentId: P:ntfy.Action.Http.Headers
-  fullName: ntfy.Action.Http.Headers
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Headers
+  commentId: P:ntfy.Actions.Http.Headers
+  fullName: ntfy.Actions.Http.Headers
   nameWithType: Http.Headers
-- uid: ntfy.Action.Http.Headers*
+- uid: ntfy.Actions.Http.Headers*
   name: Headers
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Headers_
-  commentId: Overload:ntfy.Action.Http.Headers
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Headers_
+  commentId: Overload:ntfy.Actions.Http.Headers
   isSpec: "True"
-  fullName: ntfy.Action.Http.Headers
+  fullName: ntfy.Actions.Http.Headers
   nameWithType: Http.Headers
-- uid: ntfy.Action.Http.Method
+- uid: ntfy.Actions.Http.Method
   name: Method
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Method
-  commentId: P:ntfy.Action.Http.Method
-  fullName: ntfy.Action.Http.Method
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Method
+  commentId: P:ntfy.Actions.Http.Method
+  fullName: ntfy.Actions.Http.Method
   nameWithType: Http.Method
-- uid: ntfy.Action.Http.Method*
+- uid: ntfy.Actions.Http.Method*
   name: Method
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Method_
-  commentId: Overload:ntfy.Action.Http.Method
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Method_
+  commentId: Overload:ntfy.Actions.Http.Method
   isSpec: "True"
-  fullName: ntfy.Action.Http.Method
+  fullName: ntfy.Actions.Http.Method
   nameWithType: Http.Method
-- uid: ntfy.Action.Http.MethodString
+- uid: ntfy.Actions.Http.MethodString
   name: MethodString
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_MethodString
-  commentId: P:ntfy.Action.Http.MethodString
-  fullName: ntfy.Action.Http.MethodString
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_MethodString
+  commentId: P:ntfy.Actions.Http.MethodString
+  fullName: ntfy.Actions.Http.MethodString
   nameWithType: Http.MethodString
-- uid: ntfy.Action.Http.MethodString*
+- uid: ntfy.Actions.Http.MethodString*
   name: MethodString
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_MethodString_
-  commentId: Overload:ntfy.Action.Http.MethodString
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_MethodString_
+  commentId: Overload:ntfy.Actions.Http.MethodString
   isSpec: "True"
-  fullName: ntfy.Action.Http.MethodString
+  fullName: ntfy.Actions.Http.MethodString
   nameWithType: Http.MethodString
-- uid: ntfy.Action.Http.Url
-  name: Url
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Url
-  commentId: P:ntfy.Action.Http.Url
-  fullName: ntfy.Action.Http.Url
-  nameWithType: Http.Url
-- uid: ntfy.Action.Http.Url*
-  name: Url
-  href: api/ntfy.Action.Http.html#ntfy_Action_Http_Url_
-  commentId: Overload:ntfy.Action.Http.Url
+- uid: ntfy.Actions.Http.Type
+  name: Type
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Type
+  commentId: P:ntfy.Actions.Http.Type
+  fullName: ntfy.Actions.Http.Type
+  nameWithType: Http.Type
+- uid: ntfy.Actions.Http.Type*
+  name: Type
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Type_
+  commentId: Overload:ntfy.Actions.Http.Type
   isSpec: "True"
-  fullName: ntfy.Action.Http.Url
+  fullName: ntfy.Actions.Http.Type
+  nameWithType: Http.Type
+- uid: ntfy.Actions.Http.Url
+  name: Url
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Url
+  commentId: P:ntfy.Actions.Http.Url
+  fullName: ntfy.Actions.Http.Url
   nameWithType: Http.Url
-- uid: ntfy.Action.IAction
+- uid: ntfy.Actions.Http.Url*
+  name: Url
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Url_
+  commentId: Overload:ntfy.Actions.Http.Url
+  isSpec: "True"
+  fullName: ntfy.Actions.Http.Url
+  nameWithType: Http.Url
+- uid: ntfy.Actions.IAction
   name: IAction
-  href: api/ntfy.Action.IAction.html
-  commentId: T:ntfy.Action.IAction
-  fullName: ntfy.Action.IAction
+  href: api/ntfy.Actions.IAction.html
+  commentId: T:ntfy.Actions.IAction
+  fullName: ntfy.Actions.IAction
   nameWithType: IAction
-- uid: ntfy.Action.View
+- uid: ntfy.Actions.View
   name: View
-  href: api/ntfy.Action.View.html
-  commentId: T:ntfy.Action.View
-  fullName: ntfy.Action.View
+  href: api/ntfy.Actions.View.html
+  commentId: T:ntfy.Actions.View
+  fullName: ntfy.Actions.View
   nameWithType: View
-- uid: ntfy.Action.View.#ctor(System.String,Uri)
+- uid: ntfy.Actions.View.#ctor(System.String,Uri)
   name: View(String, Uri)
-  href: api/ntfy.Action.View.html#ntfy_Action_View__ctor_System_String_Uri_
-  commentId: M:ntfy.Action.View.#ctor(System.String,Uri)
-  fullName: ntfy.Action.View.View(System.String, Uri)
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View__ctor_System_String_Uri_
+  commentId: M:ntfy.Actions.View.#ctor(System.String,Uri)
+  fullName: ntfy.Actions.View.View(System.String, Uri)
   nameWithType: View.View(String, Uri)
-- uid: ntfy.Action.View.#ctor*
+- uid: ntfy.Actions.View.#ctor*
   name: View
-  href: api/ntfy.Action.View.html#ntfy_Action_View__ctor_
-  commentId: Overload:ntfy.Action.View.#ctor
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View__ctor_
+  commentId: Overload:ntfy.Actions.View.#ctor
   isSpec: "True"
-  fullName: ntfy.Action.View.View
+  fullName: ntfy.Actions.View.View
   nameWithType: View.View
-- uid: ntfy.Action.View.ActionType
-  name: ActionType
-  href: api/ntfy.Action.View.html#ntfy_Action_View_ActionType
-  commentId: P:ntfy.Action.View.ActionType
-  fullName: ntfy.Action.View.ActionType
-  nameWithType: View.ActionType
-- uid: ntfy.Action.View.ActionType*
-  name: ActionType
-  href: api/ntfy.Action.View.html#ntfy_Action_View_ActionType_
-  commentId: Overload:ntfy.Action.View.ActionType
-  isSpec: "True"
-  fullName: ntfy.Action.View.ActionType
-  nameWithType: View.ActionType
-- uid: ntfy.Action.View.Clear
+- uid: ntfy.Actions.View.Clear
   name: Clear
-  href: api/ntfy.Action.View.html#ntfy_Action_View_Clear
-  commentId: P:ntfy.Action.View.Clear
-  fullName: ntfy.Action.View.Clear
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View_Clear
+  commentId: P:ntfy.Actions.View.Clear
+  fullName: ntfy.Actions.View.Clear
   nameWithType: View.Clear
-- uid: ntfy.Action.View.Clear*
+- uid: ntfy.Actions.View.Clear*
   name: Clear
-  href: api/ntfy.Action.View.html#ntfy_Action_View_Clear_
-  commentId: Overload:ntfy.Action.View.Clear
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View_Clear_
+  commentId: Overload:ntfy.Actions.View.Clear
   isSpec: "True"
-  fullName: ntfy.Action.View.Clear
+  fullName: ntfy.Actions.View.Clear
   nameWithType: View.Clear
-- uid: ntfy.Action.View.Url
+- uid: ntfy.Actions.View.Type
+  name: Type
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View_Type
+  commentId: P:ntfy.Actions.View.Type
+  fullName: ntfy.Actions.View.Type
+  nameWithType: View.Type
+- uid: ntfy.Actions.View.Type*
+  name: Type
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View_Type_
+  commentId: Overload:ntfy.Actions.View.Type
+  isSpec: "True"
+  fullName: ntfy.Actions.View.Type
+  nameWithType: View.Type
+- uid: ntfy.Actions.View.Url
   name: Url
-  href: api/ntfy.Action.View.html#ntfy_Action_View_Url
-  commentId: P:ntfy.Action.View.Url
-  fullName: ntfy.Action.View.Url
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View_Url
+  commentId: P:ntfy.Actions.View.Url
+  fullName: ntfy.Actions.View.Url
   nameWithType: View.Url
-- uid: ntfy.Action.View.Url*
+- uid: ntfy.Actions.View.Url*
   name: Url
-  href: api/ntfy.Action.View.html#ntfy_Action_View_Url_
-  commentId: Overload:ntfy.Action.View.Url
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View_Url_
+  commentId: Overload:ntfy.Actions.View.Url
   isSpec: "True"
-  fullName: ntfy.Action.View.Url
+  fullName: ntfy.Actions.View.Url
   nameWithType: View.Url
 - uid: ntfy.ActionType
   name: ActionType
@@ -553,15 +553,15 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.Publish
   nameWithType: Client.Publish
-- uid: ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})
-  name: Subscribe(IEnumerable<String>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>)
-  href: api/ntfy.Client.html#ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__
-  commentId: M:ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})
-  name.vb: Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken))
-  fullName: ntfy.Client.Subscribe(IEnumerable<System.String>, ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable<CancellationToken>)
-  fullName.vb: ntfy.Client.Subscribe(IEnumerable(Of System.String), ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable(Of CancellationToken))
-  nameWithType: Client.Subscribe(IEnumerable<String>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>)
-  nameWithType.vb: Client.Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken))
+- uid: ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
+  name: Subscribe(IEnumerable<String>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
+  href: api/ntfy.Client.html#ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_
+  commentId: M:ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
+  name.vb: Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
+  fullName: ntfy.Client.Subscribe(IEnumerable<System.String>, ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable<CancellationToken>, System.Boolean)
+  fullName.vb: ntfy.Client.Subscribe(IEnumerable(Of System.String), ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable(Of CancellationToken), System.Boolean)
+  nameWithType: Client.Subscribe(IEnumerable<String>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
+  nameWithType.vb: Client.Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
 - uid: ntfy.Client.Subscribe*
   name: Subscribe
   href: api/ntfy.Client.html#ntfy_Client_Subscribe_
@@ -569,15 +569,15 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.Subscribe
   nameWithType: Client.Subscribe
-- uid: ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})
-  name: SubscribeAndProcess(IEnumerable<String>, Func<ReceivedMessage, Task>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>)
-  href: api/ntfy.Client.html#ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__
-  commentId: M:ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken})
-  name.vb: SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken))
-  fullName: ntfy.Client.SubscribeAndProcess(IEnumerable<System.String>, Func<ntfy.ReceivedMessage, Task>, ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable<CancellationToken>)
-  fullName.vb: ntfy.Client.SubscribeAndProcess(IEnumerable(Of System.String), Func(Of ntfy.ReceivedMessage, Task), ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable(Of CancellationToken))
-  nameWithType: Client.SubscribeAndProcess(IEnumerable<String>, Func<ReceivedMessage, Task>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>)
-  nameWithType.vb: Client.SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken))
+- uid: ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
+  name: SubscribeAndProcess(IEnumerable<String>, Func<ReceivedMessage, Task>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
+  href: api/ntfy.Client.html#ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_
+  commentId: M:ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
+  name.vb: SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
+  fullName: ntfy.Client.SubscribeAndProcess(IEnumerable<System.String>, Func<ntfy.ReceivedMessage, Task>, ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable<CancellationToken>, System.Boolean)
+  fullName.vb: ntfy.Client.SubscribeAndProcess(IEnumerable(Of System.String), Func(Of ntfy.ReceivedMessage, Task), ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable(Of CancellationToken), System.Boolean)
+  nameWithType: Client.SubscribeAndProcess(IEnumerable<String>, Func<ReceivedMessage, Task>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
+  nameWithType.vb: Client.SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
 - uid: ntfy.Client.SubscribeAndProcess*
   name: SubscribeAndProcess
   href: api/ntfy.Client.html#ntfy_Client_SubscribeAndProcess_
