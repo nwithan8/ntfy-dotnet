@@ -99,8 +99,6 @@ See the [documentation](https://ntfy-dotnet.nateharr.is/api/ntfy.html) for more 
 
 ### Supported Frameworks
 
-- .NET Standard 2.0
-- .NET Standard 2.1
 - .NET Core 3.1
 - .NET 5.0
 - .NET 6.0
