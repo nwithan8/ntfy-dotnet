@@ -1425,3 +1425,48 @@ references:
   isSpec: "True"
   fullName: ntfy.UserStats.VisitorAttachmentBytesUsed
   nameWithType: UserStats.VisitorAttachmentBytesUsed
+- uid: ntfy.Utilities
+  name: Utilities
+  href: api/ntfy.Utilities.html
+  commentId: T:ntfy.Utilities
+  fullName: ntfy.Utilities
+  nameWithType: Utilities
+- uid: ntfy.Utilities.GenerateRandomPassphrase(System.Int32)
+  name: GenerateRandomPassphrase(Int32)
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassphrase_System_Int32_
+  commentId: M:ntfy.Utilities.GenerateRandomPassphrase(System.Int32)
+  fullName: ntfy.Utilities.GenerateRandomPassphrase(System.Int32)
+  nameWithType: Utilities.GenerateRandomPassphrase(Int32)
+- uid: ntfy.Utilities.GenerateRandomPassphrase*
+  name: GenerateRandomPassphrase
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassphrase_
+  commentId: Overload:ntfy.Utilities.GenerateRandomPassphrase
+  isSpec: "True"
+  fullName: ntfy.Utilities.GenerateRandomPassphrase
+  nameWithType: Utilities.GenerateRandomPassphrase
+- uid: ntfy.Utilities.GenerateRandomPassword(System.Int32,System.Boolean)
+  name: GenerateRandomPassword(Int32, Boolean)
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassword_System_Int32_System_Boolean_
+  commentId: M:ntfy.Utilities.GenerateRandomPassword(System.Int32,System.Boolean)
+  fullName: ntfy.Utilities.GenerateRandomPassword(System.Int32, System.Boolean)
+  nameWithType: Utilities.GenerateRandomPassword(Int32, Boolean)
+- uid: ntfy.Utilities.GenerateRandomPassword*
+  name: GenerateRandomPassword
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassword_
+  commentId: Overload:ntfy.Utilities.GenerateRandomPassword
+  isSpec: "True"
+  fullName: ntfy.Utilities.GenerateRandomPassword
+  nameWithType: Utilities.GenerateRandomPassword
+- uid: ntfy.Utilities.GenerateRandomTopic(System.Boolean)
+  name: GenerateRandomTopic(Boolean)
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomTopic_System_Boolean_
+  commentId: M:ntfy.Utilities.GenerateRandomTopic(System.Boolean)
+  fullName: ntfy.Utilities.GenerateRandomTopic(System.Boolean)
+  nameWithType: Utilities.GenerateRandomTopic(Boolean)
+- uid: ntfy.Utilities.GenerateRandomTopic*
+  name: GenerateRandomTopic
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomTopic_
+  commentId: Overload:ntfy.Utilities.GenerateRandomTopic
+  isSpec: "True"
+  fullName: ntfy.Utilities.GenerateRandomTopic
+  nameWithType: Utilities.GenerateRandomTopic

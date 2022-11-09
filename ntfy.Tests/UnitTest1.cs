@@ -134,4 +134,60 @@ public class UnitTest1
 
         Assert.NotNull(stats);
     }
+
+    [Fact]
+    public void TestRandomPassphrase()
+    {
+        var phrase = Utilities.GenerateRandomPassphrase();
+
+        Assert.NotNull(phrase);
+        Assert.True(phrase.Length >= 16);
+        Assert.True(phrase.Length <= 64);
+    }
+
+    [Fact]
+    public void TestRandomPassphraseWithLength()
+    {
+        var phrase = Utilities.GenerateRandomPassphrase(32);
+
+        Assert.NotNull(phrase);
+        Assert.True(phrase.Length >= 32);
+        Assert.True(phrase.Length <= 64);
+    }
+
+    [Fact]
+    public void TestRandomPassword()
+    {
+        var password = Utilities.GenerateRandomPassword();
+
+        Assert.NotNull(password);
+        Assert.True(password.Length == 16);
+    }
+    
+    [Fact]
+    public void TestRandomPasswordWithLength()
+    {
+        var password = Utilities.GenerateRandomPassword(32);
+
+        Assert.NotNull(password);
+        Assert.True(password.Length == 32);
+    }
+    
+    [Fact]
+    public void TestRandomTopic()
+    {
+        var topic = Utilities.GenerateRandomTopic();
+
+        Assert.NotNull(topic);
+        Assert.True(topic.Length >= 16);
+    }
+    
+    [Fact]
+    public void TestRandomTopicWithWords()
+    {
+        var topic = Utilities.GenerateRandomTopic(true);
+
+        Assert.NotNull(topic);
+        Assert.True(topic.Length >= 32);
+    }
 }

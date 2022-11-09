@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;netstandard2.1;netstandard2.0</TargetFrameworks>
+        <TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
         <LangVersion>10</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -59,7 +59,12 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
+        <PackageReference Include="N8.NetTools.Crypto" Version="0.2.1" />
         <PackageReference Include="N8.NetTools.HTTP" Version="0.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj" />
     </ItemGroup>
 
 </Project>
