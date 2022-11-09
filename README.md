@@ -102,3 +102,4 @@ See the [documentation](https://ntfy-dotnet.nateharr.is/api/ntfy.html) for more 
 - .NET Core 3.1
 - .NET 5.0
 - .NET 6.0
+- .NET 7.0
