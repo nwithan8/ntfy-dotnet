@@ -181,6 +181,61 @@
         "resolved": "108.0.2",
         "contentHash": "zI1lzI+Jjzl6bcicyUYfLIGmmOAdJRkYepMnSPzrxd1o9RxztPaR/blUOmY8BpXdN3I+XlK9dtwCYRGCxvaODw=="
       }
+    },
+    "net7.0": {
+      "Microsoft.Bcl.AsyncInterfaces": {
+        "type": "Direct",
+        "requested": "[6.0.0, )",
+        "resolved": "6.0.0",
+        "contentHash": "UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg=="
+      },
+      "N8.NetTools.Crypto": {
+        "type": "Direct",
+        "requested": "[0.2.1, )",
+        "resolved": "0.2.1",
+        "contentHash": "L05U2orj72nOoFhBPIM5xEi94jIDPWWLt/HdWIUeOiEXen+a7pkzDRhs625b5pjvmOnqpgBVLYRXOF1dN0i9Ag==",
+        "dependencies": {
+          "BCrypt.Net-Next": "[4.0.3, 5.0.0)",
+          "CrypticWizard.RandomWordGenerator": "0.9.5",
+          "N8.NetTools": "[0.3.0, 1.0.0)"
+        }
+      },
+      "N8.NetTools.HTTP": {
+        "type": "Direct",
+        "requested": "[0.2.0, )",
+        "resolved": "0.2.0",
+        "contentHash": "WvSRmbNYkOS8lGj6c3u607+roZbk7o8XXmlRXFL4YZNEWaFWUmYZ/OfaHBeXdGTUI1A/CpOqQe6ceRoMl16ocQ==",
+        "dependencies": {
+          "N8.NetTools": "[0.3.0, 1.0.0)",
+          "Newtonsoft.Json": "[13.0.1, 14.0.0)",
+          "RestSharp": "[108.0.2, 109.0.0)"
+        }
+      },
+      "BCrypt.Net-Next": {
+        "type": "Transitive",
+        "resolved": "4.0.3",
+        "contentHash": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA=="
+      },
+      "CrypticWizard.RandomWordGenerator": {
+        "type": "Transitive",
+        "resolved": "0.9.5",
+        "contentHash": "3JXTo0kZn7bsbKzhJ+9HGxK8JmXmOT0PhvvQWFy9UsOS7YICI5QSjFKt+RSL8GbMQYQH4bmzAZLG8OFPZnQheg=="
+      },
+      "N8.NetTools": {
+        "type": "Transitive",
+        "resolved": "0.3.0",
+        "contentHash": "/uRElXZj63b92pUU2tEdV/cZlR8Y6gJSUbCAev9uXi20ZBxZWthVUHJDTvbU4BA3NXjlPadXl7NissGajUvoLQ=="
+      },
+      "Newtonsoft.Json": {
+        "type": "Transitive",
+        "resolved": "13.0.1",
+        "contentHash": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A=="
+      },
+      "RestSharp": {
+        "type": "Transitive",
+        "resolved": "108.0.2",
+        "contentHash": "zI1lzI+Jjzl6bcicyUYfLIGmmOAdJRkYepMnSPzrxd1o9RxztPaR/blUOmY8BpXdN3I+XlK9dtwCYRGCxvaODw=="
+      }
     }
   }
 }
