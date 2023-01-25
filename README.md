@@ -90,7 +90,7 @@ bool allowed = await client.CheckAuthentication("test", user);
 
 ### Documentation
 
-See the [documentation](https://ntfy-dotnet.nateharr.is/api/ntfy.html) for more information.
+See the [documentation](https://www.nateharr.is/ntfy-dotnet/api/ntfy.html) for more information.
 
 ### Dependencies
 
