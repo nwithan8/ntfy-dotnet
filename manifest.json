@@ -1,0 +1,512 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/ntfy-dotnet/ntfy-dotnet/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "f+DlANaRDpQRtKj7VdRUKkbavs2QLK2oo3jG3y3PWII="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ActionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ActionType.html",
+          "hash": "zjkZbjTjucUqql3Pck/1KJMq47ACkxL2H7ZiyXqs+vk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.Action.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.Action.html",
+          "hash": "fd9odgey5ZrgVXDzKGXaQw6rp91IKqDZQ0ZSy2ebOzM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.Broadcast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.Broadcast.html",
+          "hash": "fOLDc+0sUTRvJSSrDk5x/Xlw3PGHWkfaIzSWK7R4UZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.Http.html",
+          "hash": "aVMOGSYclFRiu+KienaiyR8vxrOtaqSI3nllRg+iXKU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.IAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.IAction.html",
+          "hash": "NAzjyqoo1IeKjGGvpIrpYUVwqReY+dU4ermBKiOG8+U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.View.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.View.html",
+          "hash": "pPjtg4oI/91GlxDuCWpuE7GRRrYFJpLlaxQ2MWgaqIw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Actions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Actions.html",
+          "hash": "lORkNQpjY3qVOLARxRzpEvzldr1EDZ9QEjTDIrXMw/0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Attachment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Attachment.html",
+          "hash": "MVbthGHWNLAqXi6e7ZfO8YmzYxyScsbAYZxQgJpVU0A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Client.html",
+          "hash": "2XJJaDsQBE3gGNcw0RFxxQO+DgGD3WDiC/mNP3pegzM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Delay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Delay.html",
+          "hash": "qxFxbSW2a3UG06B1/7xBBpKk0UNEX/9qLR0AJ6h054w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayDuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayDuration.html",
+          "hash": "zTLGQyW1hcoVErwZ174g6Mh2pyksLC7QhbGp5Vdh6YE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayStatement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayStatement.html",
+          "hash": "FNzjxrLL2zQR8HK05Hyy9mNVk5z9Enx9HtTAUVCf7FA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayTime.html",
+          "hash": "QDM5JBac/X6vfN+NARA4utDlYB1UpA0dbouD2kqK9Eg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.DelayUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.DelayUnit.html",
+          "hash": "HYY1SnpDBgDW/ruX8Lcaqh82iOtinha9Lo/ZQdqJFBU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.EntityTooLargeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.EntityTooLargeException.html",
+          "hash": "5EP4FGOthjXe4vOtKdf2m3WAVoZ5ksF/n650xYGD3aM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.EventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.EventType.html",
+          "hash": "WYeQpA44ZYAcT6zzTc9crnM4RnE3jYJ6sVB6DhRV86c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.InvalidParameterException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.InvalidParameterException.html",
+          "hash": "peEFiaJzERx/CQrUwKrJxqQSqtiCpItFsoVFXmW8Ry4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.InvalidTopicException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.InvalidTopicException.html",
+          "hash": "9SPr1kzxXKyfBfhrmRX5ZmaH68PFbvc43ZYJXDg0prA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.NftyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.NftyException.html",
+          "hash": "pjHzdLV12rOPkqtnKVNcXkL4xXEVzPWs3pOi2tholdQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.PriorityLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.PriorityLevel.html",
+          "hash": "1meJ0FY8siK7kZtLHlCCpHbQiLSeXLmYHOB6zTCIxwI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ReceivedMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ReceivedMessage.html",
+          "hash": "gb0YLSfKi7rOkndqEEqMkkSNsJ+BqE6fGOd5jgWz/E8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ReceptionFilters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ReceptionFilters.html",
+          "hash": "ImfdwnO3JDCq0fOYXYGPb4GQyqU1gqMff8xseU7g7J4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.SendingMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.SendingMessage.html",
+          "hash": "zVc8kKtS+uI5mS4bjxoiMXZVCj9VMmIlRUdQCROhGGg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.ServerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.ServerInfo.html",
+          "hash": "k48cYvmZL6f+a6nf6ww8/H0cVDXRPgcyqJZ4O/iodVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Since.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Since.html",
+          "hash": "LfjNB9WDLtRVZ3YK9G3wyoCcfc3279BucT9Ld/AU++4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.TooManyRequestsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.TooManyRequestsException.html",
+          "hash": "kYqeI33hoOAJemQ6tHhedTPKz6EmHCn1hCDaz2YeKCs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.UnauthorizedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.UnauthorizedException.html",
+          "hash": "q0/DAj0hVlyCgXY68caPgkBNlEe9Ss+FsmqOyTPxjIY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.UnexpectedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.UnexpectedException.html",
+          "hash": "s8cTVNMoSuAB0fZ7F0IH8jgy0n5v2NZvgyL3dAYKiFo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.User.html",
+          "hash": "ByxebRfmP/SbyVvk4GO9V59TnywkwI9s01BWiCVPjVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.UserStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.UserStats.html",
+          "hash": "nYwx+Qee1BkY49BjBvire2tHBKcAGp1CN05bj/PqJ/U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.Utilities.html",
+          "hash": "eHcz4G0gKbCH2SrF1WjQ9ldjo86znmh1G/n2c6MvLwE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ntfy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ntfy.html",
+          "hash": "sVL3+p2SRNWSAdJI/EMGGJ9cyn//2Bp4vZMR3QHjs5U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "ka3eHwU4qWLqBOX2gvfEbj6oxa0/cbyM+wpjs9jGHHI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "1SMEQp8TToo5AcY92F/ESnOFqC01rR3R3wH80D19ziI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "+FPCLcvmNhVb9VLasYr6Tnep0PZtIA6V/UOJ0u+1RmE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "tLqcFRO64VN2SHvX4BWDvCcy+C6k2ISULde/6lReZ80="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "aVe9U1RxWP3P5E5X/x2rL8jCuFlqix3bHKxtkjZ3zxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 32,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
