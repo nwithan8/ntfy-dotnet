@@ -1,0 +1,45 @@
+name: Build & Publish NuGet Package
+
+on:
+  release:
+    types: [ created ]
+    secrets:
+      NUGET_KEY:
+        required: true
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        description: Version number
+        required: true
+
+jobs:
+
+  publish:
+
+    runs-on: windows-latest  # For a list of available runner types, refer to
+                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+
+    env:
+      Version: ${{ github.event.inputs.version || github.ref_name }}
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install .NET SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.x.x
+        
+    - name: Install NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Restore NuGet Packages
+      run: make restore
+      
+    - name: Build the NuGet Package
+      run: make prep-release version=${{ env.Version }}
+
+    - name: Publish to NuGet
+      run: nuget push output\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_KEY}}
+
