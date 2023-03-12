@@ -1,7 +1,7 @@
 using NetTools.HTTP;
 using Newtonsoft.Json;
 
-namespace ntfy;
+namespace ntfy.Responses;
 
 /// <summary>
 ///     Information about the ntfy server.
@@ -9,17 +9,47 @@ namespace ntfy;
 public class ServerInfo
 {
     #region JSON Properties
+    
+    /// <summary>
+    ///     The server's base URL.
+    /// </summary>
+    [JsonProperty("base_url")]
+    public string? BaseUrl { get; internal set; }
 
     /// <summary>
     ///     The server's root path.
     /// </summary>
-    [JsonProperty("appRoot")]
+    [JsonProperty("app_root")]
     public string? AppRoot { get; internal set; }
+    
+    /// <summary>
+    ///     Whether the server allows login.
+    /// </summary>
+    [JsonProperty("enable_login")]
+    public bool LoginEnabled { get; internal set; }
+    
+    /// <summary>
+    ///     Whether the server allows signup.
+    /// </summary>
+    [JsonProperty("enable_signup")]
+    public bool SignupEnabled { get; internal set; }
+    
+    /// <summary>
+    ///     Whether the server allows payments.
+    /// </summary>
+    [JsonProperty("enable_payments")]
+    public bool PaymentsEnabled { get; internal set; }
+    
+    /// <summary>
+    ///     Whether the server allows topic reservations.
+    /// </summary>
+    [JsonProperty("enable_reservations")]
+    public bool TopicReservationsEnabled { get; internal set; }
 
     /// <summary>
     ///     A list of disallowed topics on the server.
     /// </summary>
-    [JsonProperty("disallowedTopics")]
+    [JsonProperty("disallowed_topics")]
     public string[]? DisallowedTopics { get; internal set; }
 
     #endregion
@@ -55,40 +85,4 @@ public class ServerInfo
         var serverInfo = JsonSerialization.ConvertJsonToObject<ServerInfo>(json);
         return serverInfo;
     }
-}
-
-/// <summary>
-///     Information about a ntfy user.
-/// </summary>
-public class UserStats
-{
-    #region JSON Properties
-
-    /// <summary>
-    ///     The maximum file size, in bytes, allowed for message attachments.
-    ///     This is user-agnostic, and is the same for all users.
-    /// </summary>
-    [JsonProperty("attachmentFileSizeLimit")]
-    public long AttachmentFileSizeLimit { get; internal set; }
-
-    /// <summary>
-    ///     The remaining bytes of storage space available for attachments for this user.
-    /// </summary>
-    [JsonProperty("visitorAttachmentBytesRemaining")]
-    public long VisitorAttachmentBytesRemaining { get; internal set; }
-
-    /// <summary>
-    ///     The total bytes of storage space available for attachments for this user.
-    ///     This is user-agnostic, and is the same for all users.
-    /// </summary>
-    [JsonProperty("visitorAttachmentBytesTotal")]
-    public long VisitorAttachmentBytesTotal { get; internal set; }
-
-    /// <summary>
-    ///     The remaining bytes of storage space available for attachments for this user.
-    /// </summary>
-    [JsonProperty("visitorAttachmentBytesUsed")]
-    public long VisitorAttachmentBytesUsed { get; internal set; }
-
-    #endregion
 }

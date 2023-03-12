@@ -2,6 +2,35 @@ using NetTools;
 
 namespace ntfy;
 
+public class Permission : ValueEnum
+{
+    /// <summary>
+    ///     Enum representation of a read/write permission.
+    /// </summary>
+    public static readonly Permission ReadWrite = new(0, "rw");
+    /// <summary>
+    ///     Enum representation of a read-only permission.
+    /// </summary>
+    public static readonly Permission ReadOnly = new(1, "ro");
+    /// <summary>
+    ///     Enum representation of a write-only permission.
+    /// </summary>
+    public static readonly Permission WriteOnly = new(2, "wo");
+    /// <summary>
+    ///     Enum representation of a deny-all permission.
+    /// </summary>
+    public static readonly Permission DenyAll = new(3, "none");
+
+    /// <summary>
+    ///     Constructor for the Permission enum.
+    /// </summary>
+    /// <param name="id">Internal enum ID.</param>
+    /// <param name="value">String representation of the permission type.</param>
+    private Permission(int id, string value) : base(id, value)
+    {
+    }
+}
+
 /// <summary>
 ///     An enum representation of an event type.
 /// </summary>

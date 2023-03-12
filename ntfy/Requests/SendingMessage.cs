@@ -2,9 +2,10 @@ using NetTools;
 using NetTools.HTTP;
 using Newtonsoft.Json;
 using ntfy.Actions;
+using ntfy.Filters;
 using Action = ntfy.Actions.Action;
 
-namespace ntfy;
+namespace ntfy.Requests;
 
 /// <summary>
 ///     A message sent to the server.

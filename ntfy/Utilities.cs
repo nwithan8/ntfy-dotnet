@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace ntfy;
 
 /// <summary>
@@ -6,33 +8,38 @@ namespace ntfy;
 public static class Utilities
 {
     /// <summary>
-    ///     Generate a random password.
-    /// </summary>
-    /// <param name="length">Length of the password. Default: 16 characters.</param>
-    /// <param name="allowSpecialCharacters">Whether to allow special characters in the password. Default: true.</param>
-    /// <returns>A random password of a specific length.</returns>
-    public static string GenerateRandomPassword(int length = 16, bool allowSpecialCharacters = true)
-    {
-        return NetTools.Crypto.Passwords.GenerateRandomPassword(length, allowSpecialCharacters);
-    }
-
-    /// <summary>
-    ///     Generate a random passphrase (human-readable words).
-    /// </summary>
-    /// <param name="minLength">Minimum length of the passphrase. Default: 16 characters.</param>
-    /// <returns>A random passphrase of a specific length.</returns>
-    public static string GenerateRandomPassphrase(int minLength = 16)
-    {
-        return NetTools.Crypto.Passwords.GenerateRandomPassphrase(minLength, 64);
-    }
-
-    /// <summary>
     ///     Generate a random topic name.
     /// </summary>
     /// <param name="useWords">Whether the topic should be human-readable words. Default: false.</param>
     /// <returns>A random topic name.</returns>
     public static string GenerateRandomTopic(bool useWords = false)
     {
-        return useWords ? GenerateRandomPassphrase(32) : GenerateRandomPassword(32, false);
+        // In line with how the web does it (https://github.com/binwiederhier/ntfy/blob/e0d6a0b974ad2210af128a03ed6288291c19179f/web/src/components/SubscribeDialog.js#L21)
+        return useWords ? NetTools.Crypto.Passwords.GenerateRandomPassphrase(16, 64) : NetTools.Crypto.Passwords.GenerateRandomPassword(16, false);
     }
+    
+    /*
+    public static async Task<EphemeralUser> GenerateTemporaryUser(Client client)
+    {
+        var username = NetTools.Crypto.Passwords.GenerateRandomPassword(16, false);
+        var password = NetTools.Crypto.Passwords.GenerateRandomPassword(16, false);
+        
+        var user = await client.SignUp(username, password);
+        
+        return new EphemeralUser(client, user.Username!, user.Password!);
+    }
+    */
+
+    internal static string BasicAuthHeaderValue(string username, string password)
+    {
+        var encoded = Base64Encode($"{username}:{password}");
+        return $"Basic {encoded}"; 
+    }
+
+    internal static string TokenAuthHeaderValue(string authToken)
+    {
+        return $"Bearer {authToken}";
+    }
+    
+    internal static string Base64Encode(string plainText) => Convert.ToBase64String(Encoding.UTF8.GetBytes(plainText));
 }

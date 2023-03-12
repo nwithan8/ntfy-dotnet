@@ -1,4 +1,4 @@
-namespace ntfy;
+namespace ntfy.Filters;
 
 /// <summary>
 ///     A filter for received messages, filtering by the message's age.

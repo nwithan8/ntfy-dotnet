@@ -1,5 +1,9 @@
-﻿using NetTools;
+﻿using System.Net;
+using NetTools;
 using NetTools.HTTP;
+using ntfy.Filters;
+using ntfy.Requests;
+using ntfy.Responses;
 using RestSharp;
 
 namespace ntfy;
@@ -42,7 +46,9 @@ public class Client
 
         var client = GetClient(15, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
-        var response = await client.ExecuteAsync(new RestRequest(endpoint));
+        var request = new RestRequest(endpoint, Method.Get);
+        
+        var response = await client.ExecuteAsync(request);
 
         // If no user is provided, checking the ability to anonymously interact with a topic.
         var allowed = false;
@@ -62,68 +68,121 @@ public class Client
     /// <summary>
     ///     Get the total storage allowance for attachments, in bytes.
     /// </summary>
-    /// <returns>The max amount of bytes of attachments any user can upload to the server.</returns>
-    public async Task<long> GetAttachmentAllowance()
+    /// <param name="user">Optional specific user to check the allowance for.</param>
+    /// <returns>The max amount of bytes of attachments the user can upload to the server.</returns>
+    public async Task<long> GetAttachmentAllowance(User? user = null)
     {
-        // it's the same for everyone, so user
+        var limits = await GetUserLimits(user);
 
-        var stats = await GetUserStats();
-
-        return stats?.VisitorAttachmentBytesTotal ?? 0;
+        return limits.AttachmentTotalSize ?? 0;
     }
-
-    /// <summary>
-    ///     Get the remaining storage allowance for attachments for a specific user, in bytes.
-    /// </summary>
-    /// <param name="user">User to check the allowance for.</param>
-    /// <returns>The remaining amount of bytes of attachments the specific user can upload to the server.</returns>
-    public async Task<long> GetAttachmentAllowanceRemaining(User user)
-    {
-        var stats = await GetUserStats(user);
-
-        return stats?.VisitorAttachmentBytesRemaining ?? 0;
-    }
-
-    /// <summary>
-    ///     Get the user storage allowance for attachments for a specific user, in bytes.
-    /// </summary>
-    /// <param name="user">User to check the allowance for.</param>
-    /// <returns>The amount of bytes of attachments the specific user has previously uploaded to the server.</returns>
-    public async Task<long> GetAttachmentAllowanceUsed(User user)
-    {
-        var stats = await GetUserStats(user);
-
-        return stats?.VisitorAttachmentBytesUsed ?? 0;
-    }
-
+    
     /// <summary>
     ///     Get the maximum allowed file size for an attachment, in bytes.
     /// </summary>
+    /// <param name="user">Optional specific user to check the allowance for.</param>
     /// <returns>The maximum allowed file size for an attachment, in bytes.</returns>
-    public async Task<long> GetAttachmentSizeByteLimit()
+    public async Task<long> GetAttachmentSizeByteLimit(User? user = null)
     {
-        // it's the same for everyone, so user doesn't matter
+        var limits = await GetUserLimits(user);
+        
+        return limits.AttachmentFileSize ?? 0;
+    }
 
-        var stats = await GetUserStats();
+    /// <summary>
+    ///     Get the remaining storage allowance for attachments, in bytes.
+    /// </summary>
+    /// <param name="user">Optional specific user to check the allowance for.</param>
+    /// <returns>The remaining amount of bytes of attachments the specific user can upload to the server.</returns>
+    public async Task<long> GetAttachmentAllowanceRemaining(User? user = null)
+    {
+        var stats = await GetUserStats(user);
 
-        return stats?.AttachmentFileSizeLimit ?? 0;
+        return stats.AttachmentTotalSizeRemaining ?? 0;
+    }
+
+    /// <summary>
+    ///     Get the user storage allowance for attachments, in bytes.
+    /// </summary>
+    /// <param name="user">Optional specific user to check the allowance for.</param>
+    /// <returns>The amount of bytes of attachments the specific user has previously uploaded to the server.</returns>
+    public async Task<long> GetAttachmentAllowanceUsed(User? user = null)
+    {
+        var stats = await GetUserStats(user);
+
+        return stats.AttachmentTotalSize ?? 0;
+    }
+
+    /// <summary>
+    ///     Check if the provided attachment size can be uploaded by the provided user.
+    /// </summary>
+    /// <param name="user">User attempting to upload an attachment.</param>
+    /// <param name="size">Size of the attempted attachment.</param>
+    /// <returns><c>true</c> if the provided user can upload the attachment, <c>false</c> otherwise.</returns>
+    public async Task<bool> IsAttachmentOfSizeAllowed(User user, long size)
+    {
+        var userInfo = await GetUserInfo(user);
+        
+        var maxFileSize = userInfo.Limits.AttachmentFileSize ?? 0;
+        
+        var allowanceRemaining = userInfo.Stats.AttachmentTotalSizeRemaining ?? 0;
+
+        // File size is less than the max file size and the user has enough allowance remaining
+        return size <= maxFileSize && size <= allowanceRemaining;
     }
 
     /// <summary>
     ///     Get information about the server.
     /// </summary>
     /// <returns>Information about the server.</returns>
-    public async Task<ServerInfo?> GetServerInfo()
+    public async Task<ServerInfo> GetServerInfo()
     {
-        const string endpoint = Constants.ServerInfoEndpoint;
+        const string endpoint = Constants.Endpoints.ServerInfo;
 
         var client = GetClient(15); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
-        var request = new RestRequest(endpoint);
+        var request = new RestRequest(endpoint, Method.Get);
 
         var response = await client.ExecuteAsync(request);
 
         return ServerInfo.FromResponse(response.Content);
+    }
+
+    /// <summary>
+    ///     Get health information about the server.
+    /// </summary>
+    /// <returns>Health information about the server.</returns>
+    public async Task<ServerHealth> GetServerHealthInfo()
+    {
+        const string endpoint = Constants.Endpoints.ServerHealth;
+
+        var client = GetClient(15); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+
+        var request = new RestRequest(endpoint, Method.Get);
+
+        var response = await client.ExecuteAsync<ServerHealth>(request);
+
+        return response.Data;
+    }
+    
+
+    /// <summary>
+    ///     Get information about the provided user.
+    ///     Get server-wide information if no user is provided.
+    /// </summary>
+    /// <param name="user">Optional user to get information for.</param>
+    /// <returns>Information about the specific user, or server-wide information if no user is provided.</returns>
+    public async Task<UserInfo> GetUserInfo(User? user = null)
+    {
+        const string endpoint = Constants.Endpoints.UserAccount;
+
+        var client = GetClient(15, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+
+        var request = new RestRequest(endpoint, Method.Get);
+
+        var response = await client.ExecuteAsync<UserInfo>(request);
+
+        return response.Data;
     }
 
     /// <summary>
@@ -132,30 +191,160 @@ public class Client
     /// </summary>
     /// <param name="user">Optional user to get stats for.</param>
     /// <returns>Stats about the specific user, or server-wide stats if no user is provided.</returns>
-    public async Task<UserStats?> GetUserStats(User? user = null)
+    public async Task<UserStats> GetUserStats(User? user = null)
     {
-        const string endpoint = Constants.UserStatsEndpoint;
+        var userInfo = await GetUserInfo(user);
+        
+        return userInfo.Stats;
+    }
+    
+    /// <summary>
+    ///     Get limits about the provided user.
+    ///     Get server-wide limits if no user is provided.
+    /// </summary>
+    /// <param name="user">Optional user to get limits for.</param>
+    /// <returns>Limits about the specific user, or server-wide limits if no user is provided.</returns>
+    public async Task<UserLimits> GetUserLimits(User? user = null)
+    {
+        var userInfo = await GetUserInfo(user);
+        
+        return userInfo.Limits;
+    }
 
-        var client = GetClient(15, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+    public async Task<User> SignUp(string username, string password)
+    {
+        const string endpoint = Constants.Endpoints.UserAccount;
+        
+        var client = GetClient(15);
+        
+        var request = new RestRequest(endpoint, Method.Post);
+        
+        var signUpRequest = new UserSignup(username, password);
+        var data = signUpRequest.ToData();
+        request.AddBody(data);
 
-        var request = new RestRequest(endpoint);
+        var response = await client.ExecuteAsync(request);
+        
+        var @switch = new SwitchCase
+        {
+            { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
+            { HttpStatusCode.BadRequest, () => throw new FeatureNotEnabledException("Signups") },
+            // Can't get 401 or 403 because we're never including a user
+            { HttpStatusCode.Conflict, () => throw new UserAlreadyExistsException(username) },
+            { HttpStatusCode.TooManyRequests, () => throw new TooManyRequestsException() },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+        };
+        @switch.MatchFirst(response.StatusCode);
 
-        var response = await client.ExecuteAsync<UserStats>(request);
+        // If we got here, the request was successful
+        return new User(username, password);
+    }
+
+    public async Task<bool> ChangeUserPassword(User user, string oldPassword, string newPassword)
+    {
+        const string endpoint = Constants.Endpoints.UserAccountPassword;
+        
+        var client = GetClient(15, user);
+        
+        var request = new RestRequest(endpoint, Method.Post);
+        
+        var passwordChangeRequest = new UserChangePassword(oldPassword, newPassword);
+        var data = passwordChangeRequest.ToData();
+        request.AddBody(data);
+        
+        var response = await client.ExecuteAsync(request);
+        
+        var @switch = new SwitchCase
+        {
+            { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
+            // Can't get 401 or 403 because we're never not including a user
+            { HttpStatusCode.BadRequest, () => throw new InvalidCredentialsException() },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+        };
+        @switch.MatchFirst(response.StatusCode);
+
+        // If we got here, the request was successful
+        return true;
+    }
+
+    public async Task<UserTokenDetails> GenerateUserToken(User user)
+    {
+        const string endpoint = Constants.Endpoints.UserAccountToken;
+        
+        var client = GetClient(15, user);
+        
+        var request = new RestRequest(endpoint, Method.Post);
+        
+        var response = await client.ExecuteAsync<UserTokenDetails>(request);
 
         return response.Data;
     }
 
-    /// <summary>
-    ///     Check if the provided attachment size is within the provided user's attachment allowance.
-    /// </summary>
-    /// <param name="user">User attempting to upload an attachment.</param>
-    /// <param name="size">Size of the attempted attachment.</param>
-    /// <returns><c>true</c> if the provided user can upload the attachment, <c>false</c> otherwise.</returns>
-    public async Task<bool> IsAttachmentOfSizeAllowed(User user, long size)
+    public async Task<bool> ExtendUserToken(User user)
     {
-        var stats = await GetUserStats(user);
+        const string endpoint = Constants.Endpoints.UserAccountToken;
+        
+        var client = GetClient(15, user);
+        
+        var request = new RestRequest(endpoint, Method.Patch);
+        
+        var response = await client.ExecuteAsync(request);
+        
+        var @switch = new SwitchCase
+        {
+            { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
+            // Can't get 401 or 403 because we're never not including a user
+            { HttpStatusCode.BadRequest, () => throw new InvalidCredentialsException() },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+        };
+        
+        @switch.MatchFirst(response.StatusCode);
+        
+        // If we got here, the request was successful
+        return true;
+    }
 
-        return stats?.VisitorAttachmentBytesRemaining >= size;
+    public async Task<bool> DeleteUserToken(string token)
+    {
+        const string endpoint = Constants.Endpoints.UserAccountToken;
+
+        // Request requires the bearer token to be deleted to be used as the auth method
+        var user = new User(token);
+        
+        var client = GetClient(15, user);
+        
+        var request = new RestRequest(endpoint, Method.Delete);
+        
+        var response = await client.ExecuteAsync(request);
+        
+        var @switch = new SwitchCase
+        {
+            { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
+            { HttpStatusCode.Unauthorized, () => throw new InvalidCredentialsException() },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+        };
+        
+        @switch.MatchFirst(response.StatusCode);
+        
+        // If we got here, the request was successful
+        return true;
+    }
+
+    public async Task<bool> ReserveTopic(User user, string topic, Permission permissionForOthers)
+    {
+        const string endpoint = Constants.Endpoints.UserAccountReservations;
+        
+        var client = GetClient(15, user);
+        
+        var request = new RestRequest(endpoint, Method.Post);
+        
+        var reservationRequest = new TopicReservation(topic, permissionForOthers);
+        var data = reservationRequest.ToData();
+        request.AddBody(data);
+
+        var response = await client.ExecuteAsync<ApiSuccess>(request);
+
+        return response.Data.Success;
     }
 
     /// <summary>
@@ -200,18 +389,19 @@ public class Client
         var request = new RestRequest("/", Method.Post);
 
         // Topic will instead be included in the JSON data.
-        request.AddBody(message.ToData(topic));
+        var data = message.ToData(topic);
+        request.AddBody(data);
 
         var response = await client.ExecuteAsync(request);
 
         var @switch = new SwitchCase
         {
-            { 200, () => { } }, // Do nothing if the request was successful
-            { 401, () => throw new UnauthorizedException(user) },
-            { 403, () => throw new UnauthorizedException(user) },
-            { 413, () => throw new EntityTooLargeException() },
-            { 429, () => throw new TooManyRequestsException() },
-            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") }
+            { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
+            { HttpStatusCode.Unauthorized, () => throw new UnauthorizedException(user) },
+            { HttpStatusCode.Forbidden, () => throw new UnauthorizedException(user) },
+            { HttpStatusCode.RequestEntityTooLarge, () => throw new EntityTooLargeException() },
+            { HttpStatusCode.TooManyRequests, () => throw new TooManyRequestsException() },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
         };
         @switch.MatchFirst(response.StatusCode);
     }
@@ -277,18 +467,20 @@ public class Client
     /// <param name="timeout">Maximum timeout for requests made by the client.</param>
     /// <param name="user">Optional user to include authentication for.</param>
     /// <returns>A <see cref="RestSharp.RestClient" /> object.</returns>
-    private RestClient GetClient(int timeout, User? user = null)
+    private RestClient GetClient(int timeout = 15, User? user = null)
     {
+        // 15 second timeout: https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+        
         var clientOptions = new RestClientOptions
         {
             BaseUrl = new Uri(_serverUrl),
             UserAgent = UserAgent,
-            MaxTimeout = timeout * 1000 // turn seconds into milliseconds
+            MaxTimeout = timeout * 1000, // turn seconds into milliseconds
         };
 
         var client = new RestClient(clientOptions);
 
-        if (user != null) client.Authenticator = user.AuthHeader;
+        if (user != null) client.AddDefaultHeader("Authorization", user.AuthHeaderValue);
 
         client.UseSerializer(() => new RestSharpSerializer());
 

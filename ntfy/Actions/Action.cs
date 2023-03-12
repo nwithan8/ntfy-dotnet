@@ -1,5 +1,7 @@
 using NetTools;
 using Newtonsoft.Json;
+using ntfy.Requests;
+using ntfy.Responses;
 
 namespace ntfy.Actions;
 

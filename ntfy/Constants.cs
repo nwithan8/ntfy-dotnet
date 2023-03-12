@@ -1,4 +1,6 @@
+using System.Net;
 using NetTools;
+using ntfy.Filters;
 
 namespace ntfy;
 
@@ -12,15 +14,7 @@ internal static class Constants
     /// </summary>
     internal const string DefaultServer = "https://ntfy.sh";
 
-    /// <summary>
-    ///     Endpoint for the ntfy server information.
-    /// </summary>
-    internal const string ServerInfoEndpoint = "config.js";
-
-    /// <summary>
-    ///     Endpoint for user stats information.
-    /// </summary>
-    internal const string UserStatsEndpoint = "user/stats";
+    
 
     /// <summary>
     ///     Regex pattern for a valid topic.
@@ -131,4 +125,72 @@ internal static class Constants
     {
         return RegularExpressions.Matches(topic, ValidTopicRegex);
     }
+
+    internal static class Endpoints
+    {
+        /// <summary>
+        ///     Endpoint for the ntfy server information.
+        /// </summary>
+        internal const string ServerInfo = "config.js";
+
+        /// <summary>
+        ///     Endpoint for server health information.
+        /// </summary>
+        internal const string ServerHealth = "v1/health";
+        
+        /// <summary>
+        ///     Endpoint for server tiers information.
+        /// </summary>
+        internal const string Tiers = "v1/tiers";
+        
+        /// <summary>
+        ///     Endpoint for user account information.
+        /// </summary>
+        internal const string UserAccount = "v1/account";
+        
+        /// <summary>
+        ///     Endpoint for user account token information.
+        /// </summary>
+        internal const string UserAccountToken = "v1/account/token";
+        
+        /// <summary>
+        ///     Endpoint for user account password information.
+        /// </summary>
+        internal const string UserAccountPassword = "v1/account/password";
+        
+        /// <summary>
+        ///     Endpoint for user account settings information.
+        /// </summary>
+        internal const string UserAccountSettings = "v1/account/settings";
+        
+        /// <summary>
+        ///     Endpoint for user account subscription information.
+        /// </summary>
+        internal const string UserAccountSubscription = "v1/account/subscription";
+        
+        /// <summary>
+        ///     Endpoint for user account reservations information.
+        /// </summary>
+        internal const string UserAccountReservations = "v1/account/reservation";
+        
+        /// <summary>
+        ///     Endpoint for user account billing portal.
+        /// </summary>
+        internal const string UserAccountBillingPortal = "v1/account/billing/portal";
+        
+        /// <summary>
+        ///     Endpoint for user account billing webhook information.
+        /// </summary>
+        internal const string UserAccountBillingWebhook = "v1/account/billing/webhook";
+        
+        /// <summary>
+        ///     Endpoint for user account billing subscription information.
+        /// </summary>
+        internal const string UserAccountBillingSubscription = "v1/account/billing/subscription";
+
+        /// <summary>
+        ///     Endpoint for user account billing subscription success.
+        /// </summary>
+        internal static string UserAccountBillingSubscriptionSuccess(string checkoutSessionId) => $"v1/account/billing/subscription/success/{checkoutSessionId}";
+    } 
 }

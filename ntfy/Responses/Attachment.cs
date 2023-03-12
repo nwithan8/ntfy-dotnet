@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace ntfy;
+namespace ntfy.Responses;
 
 /// <summary>
 ///     An Attachment that can be included on a <see cref="ReceivedMessage" />.

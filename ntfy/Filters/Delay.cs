@@ -1,6 +1,6 @@
 using Enum = NetTools.Enum;
 
-namespace ntfy;
+namespace ntfy.Filters;
 
 /// <summary>
 ///     An enum representation of the available units for a delay.

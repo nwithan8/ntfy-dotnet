@@ -32,6 +32,19 @@ public class UnauthorizedException : NftyException
 }
 
 /// <summary>
+///     Exception thrown when invalid credentials are provided.
+/// </summary>
+public class InvalidCredentialsException : NftyException
+{
+    /// <summary>
+    ///     Constructs a new exception.
+    /// </summary>
+    internal InvalidCredentialsException() : base($"Invalid credentials provided.")
+    {
+    }
+}
+
+/// <summary>
 ///     Exception thrown when a payload is too large.
 /// </summary>
 public class EntityTooLargeException : NftyException
@@ -53,6 +66,20 @@ public class TooManyRequestsException : NftyException
     ///     Constructs a new exception.
     /// </summary>
     internal TooManyRequestsException() : base("Too many requests.")
+    {
+    }
+}
+
+/// <summary>
+///     Exception thrown when a user already exists.
+/// </summary>
+public class UserAlreadyExistsException: NftyException
+{
+    /// <summary>
+    ///     Constructs a new exception.
+    /// </summary>
+    /// <param name="username">Username that already exists.</param>
+    internal UserAlreadyExistsException(string username) : base($"User {username} already exists.")
     {
     }
 }
@@ -95,6 +122,20 @@ public class InvalidParameterException : NftyException
     /// </summary>
     /// <param name="parameterName">Name of the invalid parameter.</param>
     internal InvalidParameterException(string parameterName) : base($"Invalid parameter: {parameterName}.")
+    {
+    }
+}
+
+/// <summary>
+///     Exception thrown when a feature is not enabled on the server.
+/// </summary>
+public class FeatureNotEnabledException : NftyException
+{
+    /// <summary>
+    ///     Constructs a new exception.
+    /// </summary>
+    /// <param name="featureName">Name of the disabled feature.</param>
+    internal FeatureNotEnabledException(string featureName) : base($"{featureName} not enabled on the server.")
     {
     }
 }

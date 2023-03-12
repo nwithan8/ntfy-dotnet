@@ -1,7 +1,7 @@
 using NetTools;
 using Newtonsoft.Json;
 
-namespace ntfy;
+namespace ntfy.Responses;
 
 /// <summary>
 ///     A message received from the server.

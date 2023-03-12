@@ -1,4 +1,4 @@
-namespace ntfy;
+namespace ntfy.Filters;
 
 // ReSharper disable once ClassNeverInstantiated.Global
 /// <summary>
