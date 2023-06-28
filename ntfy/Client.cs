@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using Microsoft.AspNetCore.StaticFiles;
 using NetTools;
 using NetTools.HTTP;
 using ntfy.Filters;
@@ -47,7 +48,7 @@ public class Client
         var client = GetClient(15, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
         var request = new RestRequest(endpoint, Method.Get);
-        
+
         var response = await client.ExecuteAsync(request);
 
         // If no user is provided, checking the ability to anonymously interact with a topic.
@@ -76,7 +77,7 @@ public class Client
 
         return limits.AttachmentTotalSize ?? 0;
     }
-    
+
     /// <summary>
     ///     Get the maximum allowed file size for an attachment, in bytes.
     /// </summary>
@@ -85,7 +86,7 @@ public class Client
     public async Task<long> GetAttachmentSizeByteLimit(User? user = null)
     {
         var limits = await GetUserLimits(user);
-        
+
         return limits.AttachmentFileSize ?? 0;
     }
 
@@ -122,9 +123,9 @@ public class Client
     public async Task<bool> IsAttachmentOfSizeAllowed(User user, long size)
     {
         var userInfo = await GetUserInfo(user);
-        
+
         var maxFileSize = userInfo.Limits.AttachmentFileSize ?? 0;
-        
+
         var allowanceRemaining = userInfo.Stats.AttachmentTotalSizeRemaining ?? 0;
 
         // File size is less than the max file size and the user has enough allowance remaining
@@ -164,7 +165,7 @@ public class Client
 
         return response.Data;
     }
-    
+
 
     /// <summary>
     ///     Get information about the provided user.
@@ -194,10 +195,10 @@ public class Client
     public async Task<UserStats> GetUserStats(User? user = null)
     {
         var userInfo = await GetUserInfo(user);
-        
+
         return userInfo.Stats;
     }
-    
+
     /// <summary>
     ///     Get limits about the provided user.
     ///     Get server-wide limits if no user is provided.
@@ -207,24 +208,24 @@ public class Client
     public async Task<UserLimits> GetUserLimits(User? user = null)
     {
         var userInfo = await GetUserInfo(user);
-        
+
         return userInfo.Limits;
     }
 
     public async Task<User> SignUp(string username, string password)
     {
         const string endpoint = Constants.Endpoints.UserAccount;
-        
+
         var client = GetClient(15);
-        
+
         var request = new RestRequest(endpoint, Method.Post);
-        
+
         var signUpRequest = new UserSignup(username, password);
         var data = signUpRequest.ToData();
         request.AddBody(data);
 
         var response = await client.ExecuteAsync(request);
-        
+
         var @switch = new SwitchCase
         {
             { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
@@ -243,17 +244,17 @@ public class Client
     public async Task<bool> ChangeUserPassword(User user, string oldPassword, string newPassword)
     {
         const string endpoint = Constants.Endpoints.UserAccountPassword;
-        
+
         var client = GetClient(15, user);
-        
+
         var request = new RestRequest(endpoint, Method.Post);
-        
+
         var passwordChangeRequest = new UserChangePassword(oldPassword, newPassword);
         var data = passwordChangeRequest.ToData();
         request.AddBody(data);
-        
+
         var response = await client.ExecuteAsync(request);
-        
+
         var @switch = new SwitchCase
         {
             { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
@@ -270,11 +271,11 @@ public class Client
     public async Task<UserTokenDetails> GenerateUserToken(User user)
     {
         const string endpoint = Constants.Endpoints.UserAccountToken;
-        
+
         var client = GetClient(15, user);
-        
+
         var request = new RestRequest(endpoint, Method.Post);
-        
+
         var response = await client.ExecuteAsync<UserTokenDetails>(request);
 
         return response.Data;
@@ -283,13 +284,13 @@ public class Client
     public async Task<bool> ExtendUserToken(User user)
     {
         const string endpoint = Constants.Endpoints.UserAccountToken;
-        
+
         var client = GetClient(15, user);
-        
+
         var request = new RestRequest(endpoint, Method.Patch);
-        
+
         var response = await client.ExecuteAsync(request);
-        
+
         var @switch = new SwitchCase
         {
             { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
@@ -297,9 +298,9 @@ public class Client
             { HttpStatusCode.BadRequest, () => throw new InvalidCredentialsException() },
             { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
         };
-        
+
         @switch.MatchFirst(response.StatusCode);
-        
+
         // If we got here, the request was successful
         return true;
     }
@@ -310,22 +311,22 @@ public class Client
 
         // Request requires the bearer token to be deleted to be used as the auth method
         var user = new User(token);
-        
+
         var client = GetClient(15, user);
-        
+
         var request = new RestRequest(endpoint, Method.Delete);
-        
+
         var response = await client.ExecuteAsync(request);
-        
+
         var @switch = new SwitchCase
         {
             { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
             { HttpStatusCode.Unauthorized, () => throw new InvalidCredentialsException() },
             { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
         };
-        
+
         @switch.MatchFirst(response.StatusCode);
-        
+
         // If we got here, the request was successful
         return true;
     }
@@ -333,11 +334,11 @@ public class Client
     public async Task<bool> ReserveTopic(User user, string topic, Permission permissionForOthers)
     {
         const string endpoint = Constants.Endpoints.UserAccountReservations;
-        
+
         var client = GetClient(15, user);
-        
+
         var request = new RestRequest(endpoint, Method.Post);
-        
+
         var reservationRequest = new TopicReservation(topic, permissionForOthers);
         var data = reservationRequest.ToData();
         request.AddBody(data);
@@ -391,6 +392,7 @@ public class Client
         // Topic will instead be included in the JSON data.
         var data = message.ToData(topic);
         request.AddBody(data);
+
 
         var response = await client.ExecuteAsync(request);
 
@@ -470,7 +472,7 @@ public class Client
     private RestClient GetClient(int timeout = 15, User? user = null)
     {
         // 15 second timeout: https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
-        
+
         var clientOptions = new RestClientOptions
         {
             BaseUrl = new Uri(_serverUrl),

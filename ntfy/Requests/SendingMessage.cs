@@ -27,7 +27,7 @@ public class SendingMessage
     ///     This is an alternative to sending the file itself to the server via <see cref="Filename" />.
     /// </summary>
     [JsonProperty("attach", Required = Required.AllowNull, NullValueHandling = NullValueHandling.Ignore)]
-    public Uri[]? Attach { get; set; }
+    public Uri? Attach { get; set; }
 
     /// <summary>
     ///     The URL to open when the associated notification for this message is clicked.
