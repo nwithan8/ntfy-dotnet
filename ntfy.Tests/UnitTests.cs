@@ -313,4 +313,17 @@ public class UnitTests
         Assert.True(topic.Length >= 16);
         Assert.True(topic.Length <= 64);
     }
+
+
+    [Theory]
+    [InlineData(true, "", "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4")]
+    [InlineData(true, "", "https://benisnous.com/wp-content/uploads/2021/01/NginX-Proxy-Manager-is-a-free-open-source-GUI-for.jpg")]
+    public async Task TestPublishSendingMessageWithUrlAttachements(bool useWords, string email, string urlAttachements)
+    {
+        var topic = GetTopics()[0];
+        var client = GetPrivateClient();
+        var user = GetPrivateUser();
+        var message = Utilities.GenerateRandomSendingMessagee(useWords, email, urlAttachements);
+        await client.Publish(topic, message, user);
+    }
 }

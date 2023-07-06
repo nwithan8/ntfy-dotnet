@@ -58,6 +58,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
         <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="6.0.0" />
         <PackageReference Include="N8.NetTools.Crypto" Version="0.2.1" />
         <PackageReference Include="N8.NetTools.HTTP" Version="0.2.0" />
