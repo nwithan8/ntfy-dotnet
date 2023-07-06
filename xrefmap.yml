@@ -20,18 +20,24 @@ references:
   fullName: ntfy.Actions.Action
   nameWithType: Action
 - uid: ntfy.Actions.Action.#ctor(System.String)
-  name: Action(String)
+  name: Action(string)
   href: api/ntfy.Actions.Action.html#ntfy_Actions_Action__ctor_System_String_
   commentId: M:ntfy.Actions.Action.#ctor(System.String)
-  fullName: ntfy.Actions.Action.Action(System.String)
-  nameWithType: Action.Action(String)
+  name.vb: New(String)
+  fullName: ntfy.Actions.Action.Action(string)
+  fullName.vb: ntfy.Actions.Action.New(String)
+  nameWithType: Action.Action(string)
+  nameWithType.vb: Action.New(String)
 - uid: ntfy.Actions.Action.#ctor*
   name: Action
   href: api/ntfy.Actions.Action.html#ntfy_Actions_Action__ctor_
   commentId: Overload:ntfy.Actions.Action.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: ntfy.Actions.Action.Action
+  fullName.vb: ntfy.Actions.Action.New
   nameWithType: Action.Action
+  nameWithType.vb: Action.New
 - uid: ntfy.Actions.Action.Label
   name: Label
   href: api/ntfy.Actions.Action.html#ntfy_Actions_Action_Label
@@ -65,18 +71,24 @@ references:
   fullName: ntfy.Actions.Broadcast
   nameWithType: Broadcast
 - uid: ntfy.Actions.Broadcast.#ctor(System.String)
-  name: Broadcast(String)
+  name: Broadcast(string)
   href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast__ctor_System_String_
   commentId: M:ntfy.Actions.Broadcast.#ctor(System.String)
-  fullName: ntfy.Actions.Broadcast.Broadcast(System.String)
-  nameWithType: Broadcast.Broadcast(String)
+  name.vb: New(String)
+  fullName: ntfy.Actions.Broadcast.Broadcast(string)
+  fullName.vb: ntfy.Actions.Broadcast.New(String)
+  nameWithType: Broadcast.Broadcast(string)
+  nameWithType.vb: Broadcast.New(String)
 - uid: ntfy.Actions.Broadcast.#ctor*
   name: Broadcast
   href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast__ctor_
   commentId: Overload:ntfy.Actions.Broadcast.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: ntfy.Actions.Broadcast.Broadcast
+  fullName.vb: ntfy.Actions.Broadcast.New
   nameWithType: Broadcast.Broadcast
+  nameWithType.vb: Broadcast.New
 - uid: ntfy.Actions.Broadcast.Clear
   name: Clear
   href: api/ntfy.Actions.Broadcast.html#ntfy_Actions_Broadcast_Clear
@@ -135,19 +147,25 @@ references:
   commentId: T:ntfy.Actions.Http
   fullName: ntfy.Actions.Http
   nameWithType: Http
-- uid: ntfy.Actions.Http.#ctor(System.String,Uri)
-  name: Http(String, Uri)
-  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http__ctor_System_String_Uri_
-  commentId: M:ntfy.Actions.Http.#ctor(System.String,Uri)
-  fullName: ntfy.Actions.Http.Http(System.String, Uri)
-  nameWithType: Http.Http(String, Uri)
+- uid: ntfy.Actions.Http.#ctor(System.String,System.Uri)
+  name: Http(string, Uri)
+  href: api/ntfy.Actions.Http.html#ntfy_Actions_Http__ctor_System_String_System_Uri_
+  commentId: M:ntfy.Actions.Http.#ctor(System.String,System.Uri)
+  name.vb: New(String, Uri)
+  fullName: ntfy.Actions.Http.Http(string, System.Uri)
+  fullName.vb: ntfy.Actions.Http.New(String, System.Uri)
+  nameWithType: Http.Http(string, Uri)
+  nameWithType.vb: Http.New(String, Uri)
 - uid: ntfy.Actions.Http.#ctor*
   name: Http
   href: api/ntfy.Actions.Http.html#ntfy_Actions_Http__ctor_
   commentId: Overload:ntfy.Actions.Http.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: ntfy.Actions.Http.Http
+  fullName.vb: ntfy.Actions.Http.New
   nameWithType: Http.Http
+  nameWithType.vb: Http.New
 - uid: ntfy.Actions.Http.Body
   name: Body
   href: api/ntfy.Actions.Http.html#ntfy_Actions_Http_Body
@@ -251,19 +269,25 @@ references:
   commentId: T:ntfy.Actions.View
   fullName: ntfy.Actions.View
   nameWithType: View
-- uid: ntfy.Actions.View.#ctor(System.String,Uri)
-  name: View(String, Uri)
-  href: api/ntfy.Actions.View.html#ntfy_Actions_View__ctor_System_String_Uri_
-  commentId: M:ntfy.Actions.View.#ctor(System.String,Uri)
-  fullName: ntfy.Actions.View.View(System.String, Uri)
-  nameWithType: View.View(String, Uri)
+- uid: ntfy.Actions.View.#ctor(System.String,System.Uri)
+  name: View(string, Uri)
+  href: api/ntfy.Actions.View.html#ntfy_Actions_View__ctor_System_String_System_Uri_
+  commentId: M:ntfy.Actions.View.#ctor(System.String,System.Uri)
+  name.vb: New(String, Uri)
+  fullName: ntfy.Actions.View.View(string, System.Uri)
+  fullName.vb: ntfy.Actions.View.New(String, System.Uri)
+  nameWithType: View.View(string, Uri)
+  nameWithType.vb: View.New(String, Uri)
 - uid: ntfy.Actions.View.#ctor*
   name: View
   href: api/ntfy.Actions.View.html#ntfy_Actions_View__ctor_
   commentId: Overload:ntfy.Actions.View.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: ntfy.Actions.View.View
+  fullName.vb: ntfy.Actions.View.New
   nameWithType: View.View
+  nameWithType.vb: View.New
 - uid: ntfy.Actions.View.Clear
   name: Clear
   href: api/ntfy.Actions.View.html#ntfy_Actions_View_Clear
@@ -327,105 +351,56 @@ references:
   commentId: F:ntfy.ActionType.View
   fullName: ntfy.ActionType.View
   nameWithType: ActionType.View
-- uid: ntfy.Attachment
-  name: Attachment
-  href: api/ntfy.Attachment.html
-  commentId: T:ntfy.Attachment
-  fullName: ntfy.Attachment
-  nameWithType: Attachment
-- uid: ntfy.Attachment.Expires
-  name: Expires
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Expires
-  commentId: P:ntfy.Attachment.Expires
-  fullName: ntfy.Attachment.Expires
-  nameWithType: Attachment.Expires
-- uid: ntfy.Attachment.Expires*
-  name: Expires
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Expires_
-  commentId: Overload:ntfy.Attachment.Expires
-  isSpec: "True"
-  fullName: ntfy.Attachment.Expires
-  nameWithType: Attachment.Expires
-- uid: ntfy.Attachment.Name
-  name: Name
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Name
-  commentId: P:ntfy.Attachment.Name
-  fullName: ntfy.Attachment.Name
-  nameWithType: Attachment.Name
-- uid: ntfy.Attachment.Name*
-  name: Name
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Name_
-  commentId: Overload:ntfy.Attachment.Name
-  isSpec: "True"
-  fullName: ntfy.Attachment.Name
-  nameWithType: Attachment.Name
-- uid: ntfy.Attachment.Size
-  name: Size
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Size
-  commentId: P:ntfy.Attachment.Size
-  fullName: ntfy.Attachment.Size
-  nameWithType: Attachment.Size
-- uid: ntfy.Attachment.Size*
-  name: Size
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Size_
-  commentId: Overload:ntfy.Attachment.Size
-  isSpec: "True"
-  fullName: ntfy.Attachment.Size
-  nameWithType: Attachment.Size
-- uid: ntfy.Attachment.Type
-  name: Type
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Type
-  commentId: P:ntfy.Attachment.Type
-  fullName: ntfy.Attachment.Type
-  nameWithType: Attachment.Type
-- uid: ntfy.Attachment.Type*
-  name: Type
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Type_
-  commentId: Overload:ntfy.Attachment.Type
-  isSpec: "True"
-  fullName: ntfy.Attachment.Type
-  nameWithType: Attachment.Type
-- uid: ntfy.Attachment.Url
-  name: Url
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Url
-  commentId: P:ntfy.Attachment.Url
-  fullName: ntfy.Attachment.Url
-  nameWithType: Attachment.Url
-- uid: ntfy.Attachment.Url*
-  name: Url
-  href: api/ntfy.Attachment.html#ntfy_Attachment_Url_
-  commentId: Overload:ntfy.Attachment.Url
-  isSpec: "True"
-  fullName: ntfy.Attachment.Url
-  nameWithType: Attachment.Url
 - uid: ntfy.Client
   name: Client
   href: api/ntfy.Client.html
   commentId: T:ntfy.Client
   fullName: ntfy.Client
   nameWithType: Client
-- uid: ntfy.Client.#ctor(System.Nullable{System.String})
-  name: Client(Nullable<String>)
-  href: api/ntfy.Client.html#ntfy_Client__ctor_System_Nullable_System_String__
-  commentId: M:ntfy.Client.#ctor(System.Nullable{System.String})
-  name.vb: Client(Nullable(Of String))
-  fullName: ntfy.Client.Client(System.Nullable<System.String>)
-  fullName.vb: ntfy.Client.Client(System.Nullable(Of System.String))
-  nameWithType: Client.Client(Nullable<String>)
-  nameWithType.vb: Client.Client(Nullable(Of String))
+- uid: ntfy.Client.#ctor(System.String)
+  name: Client(string?)
+  href: api/ntfy.Client.html#ntfy_Client__ctor_System_String_
+  commentId: M:ntfy.Client.#ctor(System.String)
+  name.vb: New(String)
+  fullName: ntfy.Client.Client(string?)
+  fullName.vb: ntfy.Client.New(String)
+  nameWithType: Client.Client(string?)
+  nameWithType.vb: Client.New(String)
 - uid: ntfy.Client.#ctor*
   name: Client
   href: api/ntfy.Client.html#ntfy_Client__ctor_
   commentId: Overload:ntfy.Client.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: ntfy.Client.Client
+  fullName.vb: ntfy.Client.New
   nameWithType: Client.Client
+  nameWithType.vb: Client.New
+- uid: ntfy.Client.ChangeUserPassword(ntfy.User,System.String,System.String)
+  name: ChangeUserPassword(User, string, string)
+  href: api/ntfy.Client.html#ntfy_Client_ChangeUserPassword_ntfy_User_System_String_System_String_
+  commentId: M:ntfy.Client.ChangeUserPassword(ntfy.User,System.String,System.String)
+  name.vb: ChangeUserPassword(User, String, String)
+  fullName: ntfy.Client.ChangeUserPassword(ntfy.User, string, string)
+  fullName.vb: ntfy.Client.ChangeUserPassword(ntfy.User, String, String)
+  nameWithType: Client.ChangeUserPassword(User, string, string)
+  nameWithType.vb: Client.ChangeUserPassword(User, String, String)
+- uid: ntfy.Client.ChangeUserPassword*
+  name: ChangeUserPassword
+  href: api/ntfy.Client.html#ntfy_Client_ChangeUserPassword_
+  commentId: Overload:ntfy.Client.ChangeUserPassword
+  isSpec: "True"
+  fullName: ntfy.Client.ChangeUserPassword
+  nameWithType: Client.ChangeUserPassword
 - uid: ntfy.Client.CheckAuthentication(System.String,ntfy.User)
-  name: CheckAuthentication(String, User)
+  name: CheckAuthentication(string, User?)
   href: api/ntfy.Client.html#ntfy_Client_CheckAuthentication_System_String_ntfy_User_
   commentId: M:ntfy.Client.CheckAuthentication(System.String,ntfy.User)
-  fullName: ntfy.Client.CheckAuthentication(System.String, ntfy.User)
-  nameWithType: Client.CheckAuthentication(String, User)
+  name.vb: CheckAuthentication(String, User)
+  fullName: ntfy.Client.CheckAuthentication(string, ntfy.User?)
+  fullName.vb: ntfy.Client.CheckAuthentication(String, ntfy.User)
+  nameWithType: Client.CheckAuthentication(string, User?)
+  nameWithType.vb: Client.CheckAuthentication(String, User)
 - uid: ntfy.Client.CheckAuthentication*
   name: CheckAuthentication
   href: api/ntfy.Client.html#ntfy_Client_CheckAuthentication_
@@ -433,12 +408,57 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.CheckAuthentication
   nameWithType: Client.CheckAuthentication
-- uid: ntfy.Client.GetAttachmentAllowance
-  name: GetAttachmentAllowance()
-  href: api/ntfy.Client.html#ntfy_Client_GetAttachmentAllowance
-  commentId: M:ntfy.Client.GetAttachmentAllowance
-  fullName: ntfy.Client.GetAttachmentAllowance()
-  nameWithType: Client.GetAttachmentAllowance()
+- uid: ntfy.Client.DeleteUserToken(System.String)
+  name: DeleteUserToken(string)
+  href: api/ntfy.Client.html#ntfy_Client_DeleteUserToken_System_String_
+  commentId: M:ntfy.Client.DeleteUserToken(System.String)
+  name.vb: DeleteUserToken(String)
+  fullName: ntfy.Client.DeleteUserToken(string)
+  fullName.vb: ntfy.Client.DeleteUserToken(String)
+  nameWithType: Client.DeleteUserToken(string)
+  nameWithType.vb: Client.DeleteUserToken(String)
+- uid: ntfy.Client.DeleteUserToken*
+  name: DeleteUserToken
+  href: api/ntfy.Client.html#ntfy_Client_DeleteUserToken_
+  commentId: Overload:ntfy.Client.DeleteUserToken
+  isSpec: "True"
+  fullName: ntfy.Client.DeleteUserToken
+  nameWithType: Client.DeleteUserToken
+- uid: ntfy.Client.ExtendUserToken(ntfy.User)
+  name: ExtendUserToken(User)
+  href: api/ntfy.Client.html#ntfy_Client_ExtendUserToken_ntfy_User_
+  commentId: M:ntfy.Client.ExtendUserToken(ntfy.User)
+  fullName: ntfy.Client.ExtendUserToken(ntfy.User)
+  nameWithType: Client.ExtendUserToken(User)
+- uid: ntfy.Client.ExtendUserToken*
+  name: ExtendUserToken
+  href: api/ntfy.Client.html#ntfy_Client_ExtendUserToken_
+  commentId: Overload:ntfy.Client.ExtendUserToken
+  isSpec: "True"
+  fullName: ntfy.Client.ExtendUserToken
+  nameWithType: Client.ExtendUserToken
+- uid: ntfy.Client.GenerateUserToken(ntfy.User)
+  name: GenerateUserToken(User)
+  href: api/ntfy.Client.html#ntfy_Client_GenerateUserToken_ntfy_User_
+  commentId: M:ntfy.Client.GenerateUserToken(ntfy.User)
+  fullName: ntfy.Client.GenerateUserToken(ntfy.User)
+  nameWithType: Client.GenerateUserToken(User)
+- uid: ntfy.Client.GenerateUserToken*
+  name: GenerateUserToken
+  href: api/ntfy.Client.html#ntfy_Client_GenerateUserToken_
+  commentId: Overload:ntfy.Client.GenerateUserToken
+  isSpec: "True"
+  fullName: ntfy.Client.GenerateUserToken
+  nameWithType: Client.GenerateUserToken
+- uid: ntfy.Client.GetAttachmentAllowance(ntfy.User)
+  name: GetAttachmentAllowance(User?)
+  href: api/ntfy.Client.html#ntfy_Client_GetAttachmentAllowance_ntfy_User_
+  commentId: M:ntfy.Client.GetAttachmentAllowance(ntfy.User)
+  name.vb: GetAttachmentAllowance(User)
+  fullName: ntfy.Client.GetAttachmentAllowance(ntfy.User?)
+  fullName.vb: ntfy.Client.GetAttachmentAllowance(ntfy.User)
+  nameWithType: Client.GetAttachmentAllowance(User?)
+  nameWithType.vb: Client.GetAttachmentAllowance(User)
 - uid: ntfy.Client.GetAttachmentAllowance*
   name: GetAttachmentAllowance
   href: api/ntfy.Client.html#ntfy_Client_GetAttachmentAllowance_
@@ -447,11 +467,14 @@ references:
   fullName: ntfy.Client.GetAttachmentAllowance
   nameWithType: Client.GetAttachmentAllowance
 - uid: ntfy.Client.GetAttachmentAllowanceRemaining(ntfy.User)
-  name: GetAttachmentAllowanceRemaining(User)
+  name: GetAttachmentAllowanceRemaining(User?)
   href: api/ntfy.Client.html#ntfy_Client_GetAttachmentAllowanceRemaining_ntfy_User_
   commentId: M:ntfy.Client.GetAttachmentAllowanceRemaining(ntfy.User)
-  fullName: ntfy.Client.GetAttachmentAllowanceRemaining(ntfy.User)
-  nameWithType: Client.GetAttachmentAllowanceRemaining(User)
+  name.vb: GetAttachmentAllowanceRemaining(User)
+  fullName: ntfy.Client.GetAttachmentAllowanceRemaining(ntfy.User?)
+  fullName.vb: ntfy.Client.GetAttachmentAllowanceRemaining(ntfy.User)
+  nameWithType: Client.GetAttachmentAllowanceRemaining(User?)
+  nameWithType.vb: Client.GetAttachmentAllowanceRemaining(User)
 - uid: ntfy.Client.GetAttachmentAllowanceRemaining*
   name: GetAttachmentAllowanceRemaining
   href: api/ntfy.Client.html#ntfy_Client_GetAttachmentAllowanceRemaining_
@@ -460,11 +483,14 @@ references:
   fullName: ntfy.Client.GetAttachmentAllowanceRemaining
   nameWithType: Client.GetAttachmentAllowanceRemaining
 - uid: ntfy.Client.GetAttachmentAllowanceUsed(ntfy.User)
-  name: GetAttachmentAllowanceUsed(User)
+  name: GetAttachmentAllowanceUsed(User?)
   href: api/ntfy.Client.html#ntfy_Client_GetAttachmentAllowanceUsed_ntfy_User_
   commentId: M:ntfy.Client.GetAttachmentAllowanceUsed(ntfy.User)
-  fullName: ntfy.Client.GetAttachmentAllowanceUsed(ntfy.User)
-  nameWithType: Client.GetAttachmentAllowanceUsed(User)
+  name.vb: GetAttachmentAllowanceUsed(User)
+  fullName: ntfy.Client.GetAttachmentAllowanceUsed(ntfy.User?)
+  fullName.vb: ntfy.Client.GetAttachmentAllowanceUsed(ntfy.User)
+  nameWithType: Client.GetAttachmentAllowanceUsed(User?)
+  nameWithType.vb: Client.GetAttachmentAllowanceUsed(User)
 - uid: ntfy.Client.GetAttachmentAllowanceUsed*
   name: GetAttachmentAllowanceUsed
   href: api/ntfy.Client.html#ntfy_Client_GetAttachmentAllowanceUsed_
@@ -472,12 +498,15 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.GetAttachmentAllowanceUsed
   nameWithType: Client.GetAttachmentAllowanceUsed
-- uid: ntfy.Client.GetAttachmentSizeByteLimit
-  name: GetAttachmentSizeByteLimit()
-  href: api/ntfy.Client.html#ntfy_Client_GetAttachmentSizeByteLimit
-  commentId: M:ntfy.Client.GetAttachmentSizeByteLimit
-  fullName: ntfy.Client.GetAttachmentSizeByteLimit()
-  nameWithType: Client.GetAttachmentSizeByteLimit()
+- uid: ntfy.Client.GetAttachmentSizeByteLimit(ntfy.User)
+  name: GetAttachmentSizeByteLimit(User?)
+  href: api/ntfy.Client.html#ntfy_Client_GetAttachmentSizeByteLimit_ntfy_User_
+  commentId: M:ntfy.Client.GetAttachmentSizeByteLimit(ntfy.User)
+  name.vb: GetAttachmentSizeByteLimit(User)
+  fullName: ntfy.Client.GetAttachmentSizeByteLimit(ntfy.User?)
+  fullName.vb: ntfy.Client.GetAttachmentSizeByteLimit(ntfy.User)
+  nameWithType: Client.GetAttachmentSizeByteLimit(User?)
+  nameWithType.vb: Client.GetAttachmentSizeByteLimit(User)
 - uid: ntfy.Client.GetAttachmentSizeByteLimit*
   name: GetAttachmentSizeByteLimit
   href: api/ntfy.Client.html#ntfy_Client_GetAttachmentSizeByteLimit_
@@ -485,6 +514,19 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.GetAttachmentSizeByteLimit
   nameWithType: Client.GetAttachmentSizeByteLimit
+- uid: ntfy.Client.GetServerHealthInfo
+  name: GetServerHealthInfo()
+  href: api/ntfy.Client.html#ntfy_Client_GetServerHealthInfo
+  commentId: M:ntfy.Client.GetServerHealthInfo
+  fullName: ntfy.Client.GetServerHealthInfo()
+  nameWithType: Client.GetServerHealthInfo()
+- uid: ntfy.Client.GetServerHealthInfo*
+  name: GetServerHealthInfo
+  href: api/ntfy.Client.html#ntfy_Client_GetServerHealthInfo_
+  commentId: Overload:ntfy.Client.GetServerHealthInfo
+  isSpec: "True"
+  fullName: ntfy.Client.GetServerHealthInfo
+  nameWithType: Client.GetServerHealthInfo
 - uid: ntfy.Client.GetServerInfo
   name: GetServerInfo()
   href: api/ntfy.Client.html#ntfy_Client_GetServerInfo
@@ -498,12 +540,47 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.GetServerInfo
   nameWithType: Client.GetServerInfo
+- uid: ntfy.Client.GetUserInfo(ntfy.User)
+  name: GetUserInfo(User?)
+  href: api/ntfy.Client.html#ntfy_Client_GetUserInfo_ntfy_User_
+  commentId: M:ntfy.Client.GetUserInfo(ntfy.User)
+  name.vb: GetUserInfo(User)
+  fullName: ntfy.Client.GetUserInfo(ntfy.User?)
+  fullName.vb: ntfy.Client.GetUserInfo(ntfy.User)
+  nameWithType: Client.GetUserInfo(User?)
+  nameWithType.vb: Client.GetUserInfo(User)
+- uid: ntfy.Client.GetUserInfo*
+  name: GetUserInfo
+  href: api/ntfy.Client.html#ntfy_Client_GetUserInfo_
+  commentId: Overload:ntfy.Client.GetUserInfo
+  isSpec: "True"
+  fullName: ntfy.Client.GetUserInfo
+  nameWithType: Client.GetUserInfo
+- uid: ntfy.Client.GetUserLimits(ntfy.User)
+  name: GetUserLimits(User?)
+  href: api/ntfy.Client.html#ntfy_Client_GetUserLimits_ntfy_User_
+  commentId: M:ntfy.Client.GetUserLimits(ntfy.User)
+  name.vb: GetUserLimits(User)
+  fullName: ntfy.Client.GetUserLimits(ntfy.User?)
+  fullName.vb: ntfy.Client.GetUserLimits(ntfy.User)
+  nameWithType: Client.GetUserLimits(User?)
+  nameWithType.vb: Client.GetUserLimits(User)
+- uid: ntfy.Client.GetUserLimits*
+  name: GetUserLimits
+  href: api/ntfy.Client.html#ntfy_Client_GetUserLimits_
+  commentId: Overload:ntfy.Client.GetUserLimits
+  isSpec: "True"
+  fullName: ntfy.Client.GetUserLimits
+  nameWithType: Client.GetUserLimits
 - uid: ntfy.Client.GetUserStats(ntfy.User)
-  name: GetUserStats(User)
+  name: GetUserStats(User?)
   href: api/ntfy.Client.html#ntfy_Client_GetUserStats_ntfy_User_
   commentId: M:ntfy.Client.GetUserStats(ntfy.User)
-  fullName: ntfy.Client.GetUserStats(ntfy.User)
-  nameWithType: Client.GetUserStats(User)
+  name.vb: GetUserStats(User)
+  fullName: ntfy.Client.GetUserStats(ntfy.User?)
+  fullName.vb: ntfy.Client.GetUserStats(ntfy.User)
+  nameWithType: Client.GetUserStats(User?)
+  nameWithType.vb: Client.GetUserStats(User)
 - uid: ntfy.Client.GetUserStats*
   name: GetUserStats
   href: api/ntfy.Client.html#ntfy_Client_GetUserStats_
@@ -512,11 +589,14 @@ references:
   fullName: ntfy.Client.GetUserStats
   nameWithType: Client.GetUserStats
 - uid: ntfy.Client.IsAttachmentOfSizeAllowed(ntfy.User,System.Int64)
-  name: IsAttachmentOfSizeAllowed(User, Int64)
+  name: IsAttachmentOfSizeAllowed(User, long)
   href: api/ntfy.Client.html#ntfy_Client_IsAttachmentOfSizeAllowed_ntfy_User_System_Int64_
   commentId: M:ntfy.Client.IsAttachmentOfSizeAllowed(ntfy.User,System.Int64)
-  fullName: ntfy.Client.IsAttachmentOfSizeAllowed(ntfy.User, System.Int64)
-  nameWithType: Client.IsAttachmentOfSizeAllowed(User, Int64)
+  name.vb: IsAttachmentOfSizeAllowed(User, Long)
+  fullName: ntfy.Client.IsAttachmentOfSizeAllowed(ntfy.User, long)
+  fullName.vb: ntfy.Client.IsAttachmentOfSizeAllowed(ntfy.User, Long)
+  nameWithType: Client.IsAttachmentOfSizeAllowed(User, long)
+  nameWithType.vb: Client.IsAttachmentOfSizeAllowed(User, Long)
 - uid: ntfy.Client.IsAttachmentOfSizeAllowed*
   name: IsAttachmentOfSizeAllowed
   href: api/ntfy.Client.html#ntfy_Client_IsAttachmentOfSizeAllowed_
@@ -524,14 +604,14 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.IsAttachmentOfSizeAllowed
   nameWithType: Client.IsAttachmentOfSizeAllowed
-- uid: ntfy.Client.Poll(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User)
-  name: Poll(IEnumerable<String>, Since, Boolean, ReceptionFilters, User)
-  href: api/ntfy.Client.html#ntfy_Client_Poll_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_
-  commentId: M:ntfy.Client.Poll(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User)
+- uid: ntfy.Client.Poll(System.Collections.Generic.IEnumerable{System.String},ntfy.Filters.Since,System.Boolean,ntfy.Filters.ReceptionFilters,ntfy.User)
+  name: Poll(IEnumerable<string>, Since?, bool, ReceptionFilters?, User?)
+  href: api/ntfy.Client.html#ntfy_Client_Poll_System_Collections_Generic_IEnumerable_System_String__ntfy_Filters_Since_System_Boolean_ntfy_Filters_ReceptionFilters_ntfy_User_
+  commentId: M:ntfy.Client.Poll(System.Collections.Generic.IEnumerable{System.String},ntfy.Filters.Since,System.Boolean,ntfy.Filters.ReceptionFilters,ntfy.User)
   name.vb: Poll(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User)
-  fullName: ntfy.Client.Poll(IEnumerable<System.String>, ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User)
-  fullName.vb: ntfy.Client.Poll(IEnumerable(Of System.String), ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User)
-  nameWithType: Client.Poll(IEnumerable<String>, Since, Boolean, ReceptionFilters, User)
+  fullName: ntfy.Client.Poll(System.Collections.Generic.IEnumerable<string>, ntfy.Filters.Since?, bool, ntfy.Filters.ReceptionFilters?, ntfy.User?)
+  fullName.vb: ntfy.Client.Poll(System.Collections.Generic.IEnumerable(Of String), ntfy.Filters.Since, Boolean, ntfy.Filters.ReceptionFilters, ntfy.User)
+  nameWithType: Client.Poll(IEnumerable<string>, Since?, bool, ReceptionFilters?, User?)
   nameWithType.vb: Client.Poll(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User)
 - uid: ntfy.Client.Poll*
   name: Poll
@@ -540,12 +620,15 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.Poll
   nameWithType: Client.Poll
-- uid: ntfy.Client.Publish(System.String,ntfy.SendingMessage,ntfy.User)
-  name: Publish(String, SendingMessage, User)
-  href: api/ntfy.Client.html#ntfy_Client_Publish_System_String_ntfy_SendingMessage_ntfy_User_
-  commentId: M:ntfy.Client.Publish(System.String,ntfy.SendingMessage,ntfy.User)
-  fullName: ntfy.Client.Publish(System.String, ntfy.SendingMessage, ntfy.User)
-  nameWithType: Client.Publish(String, SendingMessage, User)
+- uid: ntfy.Client.Publish(System.String,ntfy.Requests.SendingMessage,ntfy.User)
+  name: Publish(string, SendingMessage, User?)
+  href: api/ntfy.Client.html#ntfy_Client_Publish_System_String_ntfy_Requests_SendingMessage_ntfy_User_
+  commentId: M:ntfy.Client.Publish(System.String,ntfy.Requests.SendingMessage,ntfy.User)
+  name.vb: Publish(String, SendingMessage, User)
+  fullName: ntfy.Client.Publish(string, ntfy.Requests.SendingMessage, ntfy.User?)
+  fullName.vb: ntfy.Client.Publish(String, ntfy.Requests.SendingMessage, ntfy.User)
+  nameWithType: Client.Publish(string, SendingMessage, User?)
+  nameWithType.vb: Client.Publish(String, SendingMessage, User)
 - uid: ntfy.Client.Publish*
   name: Publish
   href: api/ntfy.Client.html#ntfy_Client_Publish_
@@ -553,15 +636,47 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.Publish
   nameWithType: Client.Publish
-- uid: ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
-  name: Subscribe(IEnumerable<String>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
-  href: api/ntfy.Client.html#ntfy_Client_Subscribe_IEnumerable_System_String__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_
-  commentId: M:ntfy.Client.Subscribe(IEnumerable{System.String},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
-  name.vb: Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
-  fullName: ntfy.Client.Subscribe(IEnumerable<System.String>, ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable<CancellationToken>, System.Boolean)
-  fullName.vb: ntfy.Client.Subscribe(IEnumerable(Of System.String), ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable(Of CancellationToken), System.Boolean)
-  nameWithType: Client.Subscribe(IEnumerable<String>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
-  nameWithType.vb: Client.Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
+- uid: ntfy.Client.ReserveTopic(ntfy.User,System.String,ntfy.Permission)
+  name: ReserveTopic(User, string, Permission)
+  href: api/ntfy.Client.html#ntfy_Client_ReserveTopic_ntfy_User_System_String_ntfy_Permission_
+  commentId: M:ntfy.Client.ReserveTopic(ntfy.User,System.String,ntfy.Permission)
+  name.vb: ReserveTopic(User, String, Permission)
+  fullName: ntfy.Client.ReserveTopic(ntfy.User, string, ntfy.Permission)
+  fullName.vb: ntfy.Client.ReserveTopic(ntfy.User, String, ntfy.Permission)
+  nameWithType: Client.ReserveTopic(User, string, Permission)
+  nameWithType.vb: Client.ReserveTopic(User, String, Permission)
+- uid: ntfy.Client.ReserveTopic*
+  name: ReserveTopic
+  href: api/ntfy.Client.html#ntfy_Client_ReserveTopic_
+  commentId: Overload:ntfy.Client.ReserveTopic
+  isSpec: "True"
+  fullName: ntfy.Client.ReserveTopic
+  nameWithType: Client.ReserveTopic
+- uid: ntfy.Client.SignUp(System.String,System.String)
+  name: SignUp(string, string)
+  href: api/ntfy.Client.html#ntfy_Client_SignUp_System_String_System_String_
+  commentId: M:ntfy.Client.SignUp(System.String,System.String)
+  name.vb: SignUp(String, String)
+  fullName: ntfy.Client.SignUp(string, string)
+  fullName.vb: ntfy.Client.SignUp(String, String)
+  nameWithType: Client.SignUp(string, string)
+  nameWithType.vb: Client.SignUp(String, String)
+- uid: ntfy.Client.SignUp*
+  name: SignUp
+  href: api/ntfy.Client.html#ntfy_Client_SignUp_
+  commentId: Overload:ntfy.Client.SignUp
+  isSpec: "True"
+  fullName: ntfy.Client.SignUp
+  nameWithType: Client.SignUp
+- uid: ntfy.Client.Subscribe(System.Collections.Generic.IEnumerable{System.String},ntfy.Filters.Since,System.Boolean,ntfy.Filters.ReceptionFilters,ntfy.User,System.Nullable{System.Threading.CancellationToken},System.Boolean)
+  name: Subscribe(IEnumerable<string>, Since?, bool, ReceptionFilters?, User?, CancellationToken?, bool)
+  href: api/ntfy.Client.html#ntfy_Client_Subscribe_System_Collections_Generic_IEnumerable_System_String__ntfy_Filters_Since_System_Boolean_ntfy_Filters_ReceptionFilters_ntfy_User_System_Nullable_System_Threading_CancellationToken__System_Boolean_
+  commentId: M:ntfy.Client.Subscribe(System.Collections.Generic.IEnumerable{System.String},ntfy.Filters.Since,System.Boolean,ntfy.Filters.ReceptionFilters,ntfy.User,System.Nullable{System.Threading.CancellationToken},System.Boolean)
+  name.vb: Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, CancellationToken?, Boolean)
+  fullName: ntfy.Client.Subscribe(System.Collections.Generic.IEnumerable<string>, ntfy.Filters.Since?, bool, ntfy.Filters.ReceptionFilters?, ntfy.User?, System.Threading.CancellationToken?, bool)
+  fullName.vb: ntfy.Client.Subscribe(System.Collections.Generic.IEnumerable(Of String), ntfy.Filters.Since, Boolean, ntfy.Filters.ReceptionFilters, ntfy.User, System.Threading.CancellationToken?, Boolean)
+  nameWithType: Client.Subscribe(IEnumerable<string>, Since?, bool, ReceptionFilters?, User?, CancellationToken?, bool)
+  nameWithType.vb: Client.Subscribe(IEnumerable(Of String), Since, Boolean, ReceptionFilters, User, CancellationToken?, Boolean)
 - uid: ntfy.Client.Subscribe*
   name: Subscribe
   href: api/ntfy.Client.html#ntfy_Client_Subscribe_
@@ -569,15 +684,15 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.Subscribe
   nameWithType: Client.Subscribe
-- uid: ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
-  name: SubscribeAndProcess(IEnumerable<String>, Func<ReceivedMessage, Task>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
-  href: api/ntfy.Client.html#ntfy_Client_SubscribeAndProcess_IEnumerable_System_String__Func_ntfy_ReceivedMessage_Task__ntfy_Since_System_Boolean_ntfy_ReceptionFilters_ntfy_User_System_Nullable_CancellationToken__System_Boolean_
-  commentId: M:ntfy.Client.SubscribeAndProcess(IEnumerable{System.String},Func{ntfy.ReceivedMessage,Task},ntfy.Since,System.Boolean,ntfy.ReceptionFilters,ntfy.User,System.Nullable{CancellationToken},System.Boolean)
-  name.vb: SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
-  fullName: ntfy.Client.SubscribeAndProcess(IEnumerable<System.String>, Func<ntfy.ReceivedMessage, Task>, ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable<CancellationToken>, System.Boolean)
-  fullName.vb: ntfy.Client.SubscribeAndProcess(IEnumerable(Of System.String), Func(Of ntfy.ReceivedMessage, Task), ntfy.Since, System.Boolean, ntfy.ReceptionFilters, ntfy.User, System.Nullable(Of CancellationToken), System.Boolean)
-  nameWithType: Client.SubscribeAndProcess(IEnumerable<String>, Func<ReceivedMessage, Task>, Since, Boolean, ReceptionFilters, User, Nullable<CancellationToken>, Boolean)
-  nameWithType.vb: Client.SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, Nullable(Of CancellationToken), Boolean)
+- uid: ntfy.Client.SubscribeAndProcess(System.Collections.Generic.IEnumerable{System.String},System.Func{ntfy.Responses.ReceivedMessage,System.Threading.Tasks.Task},ntfy.Filters.Since,System.Boolean,ntfy.Filters.ReceptionFilters,ntfy.User,System.Nullable{System.Threading.CancellationToken},System.Boolean)
+  name: SubscribeAndProcess(IEnumerable<string>, Func<ReceivedMessage, Task>, Since?, bool, ReceptionFilters?, User?, CancellationToken?, bool)
+  href: api/ntfy.Client.html#ntfy_Client_SubscribeAndProcess_System_Collections_Generic_IEnumerable_System_String__System_Func_ntfy_Responses_ReceivedMessage_System_Threading_Tasks_Task__ntfy_Filters_Since_System_Boolean_ntfy_Filters_ReceptionFilters_ntfy_User_System_Nullable_System_Threading_CancellationToken__System_Boolean_
+  commentId: M:ntfy.Client.SubscribeAndProcess(System.Collections.Generic.IEnumerable{System.String},System.Func{ntfy.Responses.ReceivedMessage,System.Threading.Tasks.Task},ntfy.Filters.Since,System.Boolean,ntfy.Filters.ReceptionFilters,ntfy.User,System.Nullable{System.Threading.CancellationToken},System.Boolean)
+  name.vb: SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, CancellationToken?, Boolean)
+  fullName: ntfy.Client.SubscribeAndProcess(System.Collections.Generic.IEnumerable<string>, System.Func<ntfy.Responses.ReceivedMessage, System.Threading.Tasks.Task>, ntfy.Filters.Since?, bool, ntfy.Filters.ReceptionFilters?, ntfy.User?, System.Threading.CancellationToken?, bool)
+  fullName.vb: ntfy.Client.SubscribeAndProcess(System.Collections.Generic.IEnumerable(Of String), System.Func(Of ntfy.Responses.ReceivedMessage, System.Threading.Tasks.Task), ntfy.Filters.Since, Boolean, ntfy.Filters.ReceptionFilters, ntfy.User, System.Threading.CancellationToken?, Boolean)
+  nameWithType: Client.SubscribeAndProcess(IEnumerable<string>, Func<ReceivedMessage, Task>, Since?, bool, ReceptionFilters?, User?, CancellationToken?, bool)
+  nameWithType.vb: Client.SubscribeAndProcess(IEnumerable(Of String), Func(Of ReceivedMessage, Task), Since, Boolean, ReceptionFilters, User, CancellationToken?, Boolean)
 - uid: ntfy.Client.SubscribeAndProcess*
   name: SubscribeAndProcess
   href: api/ntfy.Client.html#ntfy_Client_SubscribeAndProcess_
@@ -585,118 +700,72 @@ references:
   isSpec: "True"
   fullName: ntfy.Client.SubscribeAndProcess
   nameWithType: Client.SubscribeAndProcess
-- uid: ntfy.Delay
-  name: Delay
-  href: api/ntfy.Delay.html
-  commentId: T:ntfy.Delay
-  fullName: ntfy.Delay
-  nameWithType: Delay
-- uid: ntfy.Delay.#ctor(System.String)
-  name: Delay(String)
-  href: api/ntfy.Delay.html#ntfy_Delay__ctor_System_String_
-  commentId: M:ntfy.Delay.#ctor(System.String)
-  fullName: ntfy.Delay.Delay(System.String)
-  nameWithType: Delay.Delay(String)
-- uid: ntfy.Delay.#ctor*
-  name: Delay
-  href: api/ntfy.Delay.html#ntfy_Delay__ctor_
-  commentId: Overload:ntfy.Delay.#ctor
-  isSpec: "True"
-  fullName: ntfy.Delay.Delay
-  nameWithType: Delay.Delay
-- uid: ntfy.DelayDuration
-  name: DelayDuration
-  href: api/ntfy.DelayDuration.html
-  commentId: T:ntfy.DelayDuration
-  fullName: ntfy.DelayDuration
-  nameWithType: DelayDuration
-- uid: ntfy.DelayDuration.#ctor(System.Int32,ntfy.DelayUnit)
-  name: DelayDuration(Int32, DelayUnit)
-  href: api/ntfy.DelayDuration.html#ntfy_DelayDuration__ctor_System_Int32_ntfy_DelayUnit_
-  commentId: M:ntfy.DelayDuration.#ctor(System.Int32,ntfy.DelayUnit)
-  fullName: ntfy.DelayDuration.DelayDuration(System.Int32, ntfy.DelayUnit)
-  nameWithType: DelayDuration.DelayDuration(Int32, DelayUnit)
-- uid: ntfy.DelayDuration.#ctor*
-  name: DelayDuration
-  href: api/ntfy.DelayDuration.html#ntfy_DelayDuration__ctor_
-  commentId: Overload:ntfy.DelayDuration.#ctor
-  isSpec: "True"
-  fullName: ntfy.DelayDuration.DelayDuration
-  nameWithType: DelayDuration.DelayDuration
-- uid: ntfy.DelayStatement
-  name: DelayStatement
-  href: api/ntfy.DelayStatement.html
-  commentId: T:ntfy.DelayStatement
-  fullName: ntfy.DelayStatement
-  nameWithType: DelayStatement
-- uid: ntfy.DelayStatement.#ctor(System.String)
-  name: DelayStatement(String)
-  href: api/ntfy.DelayStatement.html#ntfy_DelayStatement__ctor_System_String_
-  commentId: M:ntfy.DelayStatement.#ctor(System.String)
-  fullName: ntfy.DelayStatement.DelayStatement(System.String)
-  nameWithType: DelayStatement.DelayStatement(String)
-- uid: ntfy.DelayStatement.#ctor*
-  name: DelayStatement
-  href: api/ntfy.DelayStatement.html#ntfy_DelayStatement__ctor_
-  commentId: Overload:ntfy.DelayStatement.#ctor
-  isSpec: "True"
-  fullName: ntfy.DelayStatement.DelayStatement
-  nameWithType: DelayStatement.DelayStatement
-- uid: ntfy.DelayTime
-  name: DelayTime
-  href: api/ntfy.DelayTime.html
-  commentId: T:ntfy.DelayTime
-  fullName: ntfy.DelayTime
-  nameWithType: DelayTime
-- uid: ntfy.DelayTime.#ctor(System.Int32)
-  name: DelayTime(Int32)
-  href: api/ntfy.DelayTime.html#ntfy_DelayTime__ctor_System_Int32_
-  commentId: M:ntfy.DelayTime.#ctor(System.Int32)
-  fullName: ntfy.DelayTime.DelayTime(System.Int32)
-  nameWithType: DelayTime.DelayTime(Int32)
-- uid: ntfy.DelayTime.#ctor*
-  name: DelayTime
-  href: api/ntfy.DelayTime.html#ntfy_DelayTime__ctor_
-  commentId: Overload:ntfy.DelayTime.#ctor
-  isSpec: "True"
-  fullName: ntfy.DelayTime.DelayTime
-  nameWithType: DelayTime.DelayTime
-- uid: ntfy.DelayUnit
-  name: DelayUnit
-  href: api/ntfy.DelayUnit.html
-  commentId: T:ntfy.DelayUnit
-  fullName: ntfy.DelayUnit
-  nameWithType: DelayUnit
-- uid: ntfy.DelayUnit.Days
-  name: Days
-  href: api/ntfy.DelayUnit.html#ntfy_DelayUnit_Days
-  commentId: F:ntfy.DelayUnit.Days
-  fullName: ntfy.DelayUnit.Days
-  nameWithType: DelayUnit.Days
-- uid: ntfy.DelayUnit.Hours
-  name: Hours
-  href: api/ntfy.DelayUnit.html#ntfy_DelayUnit_Hours
-  commentId: F:ntfy.DelayUnit.Hours
-  fullName: ntfy.DelayUnit.Hours
-  nameWithType: DelayUnit.Hours
-- uid: ntfy.DelayUnit.Minutes
-  name: Minutes
-  href: api/ntfy.DelayUnit.html#ntfy_DelayUnit_Minutes
-  commentId: F:ntfy.DelayUnit.Minutes
-  fullName: ntfy.DelayUnit.Minutes
-  nameWithType: DelayUnit.Minutes
-- uid: ntfy.DelayUnit.Seconds
-  name: Seconds
-  href: api/ntfy.DelayUnit.html#ntfy_DelayUnit_Seconds
-  commentId: F:ntfy.DelayUnit.Seconds
-  fullName: ntfy.DelayUnit.Seconds
-  nameWithType: DelayUnit.Seconds
 - uid: ntfy.EntityTooLargeException
   name: EntityTooLargeException
   href: api/ntfy.EntityTooLargeException.html
   commentId: T:ntfy.EntityTooLargeException
   fullName: ntfy.EntityTooLargeException
   nameWithType: EntityTooLargeException
+- uid: ntfy.EphemeralUser
+  name: EphemeralUser
+  href: api/ntfy.EphemeralUser.html
+  commentId: T:ntfy.EphemeralUser
+  fullName: ntfy.EphemeralUser
+  nameWithType: EphemeralUser
+- uid: ntfy.EphemeralUser.#ctor(ntfy.Client,System.String,System.String)
+  name: EphemeralUser(Client, string, string)
+  href: api/ntfy.EphemeralUser.html#ntfy_EphemeralUser__ctor_ntfy_Client_System_String_System_String_
+  commentId: M:ntfy.EphemeralUser.#ctor(ntfy.Client,System.String,System.String)
+  name.vb: New(Client, String, String)
+  fullName: ntfy.EphemeralUser.EphemeralUser(ntfy.Client, string, string)
+  fullName.vb: ntfy.EphemeralUser.New(ntfy.Client, String, String)
+  nameWithType: EphemeralUser.EphemeralUser(Client, string, string)
+  nameWithType.vb: EphemeralUser.New(Client, String, String)
+- uid: ntfy.EphemeralUser.#ctor(ntfy.Client,System.String)
+  name: EphemeralUser(Client, string)
+  href: api/ntfy.EphemeralUser.html#ntfy_EphemeralUser__ctor_ntfy_Client_System_String_
+  commentId: M:ntfy.EphemeralUser.#ctor(ntfy.Client,System.String)
+  name.vb: New(Client, String)
+  fullName: ntfy.EphemeralUser.EphemeralUser(ntfy.Client, string)
+  fullName.vb: ntfy.EphemeralUser.New(ntfy.Client, String)
+  nameWithType: EphemeralUser.EphemeralUser(Client, string)
+  nameWithType.vb: EphemeralUser.New(Client, String)
+- uid: ntfy.EphemeralUser.#ctor*
+  name: EphemeralUser
+  href: api/ntfy.EphemeralUser.html#ntfy_EphemeralUser__ctor_
+  commentId: Overload:ntfy.EphemeralUser.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ntfy.EphemeralUser.EphemeralUser
+  fullName.vb: ntfy.EphemeralUser.New
+  nameWithType: EphemeralUser.EphemeralUser
+  nameWithType.vb: EphemeralUser.New
+- uid: ntfy.EphemeralUser.Client
+  name: Client
+  href: api/ntfy.EphemeralUser.html#ntfy_EphemeralUser_Client
+  commentId: P:ntfy.EphemeralUser.Client
+  fullName: ntfy.EphemeralUser.Client
+  nameWithType: EphemeralUser.Client
+- uid: ntfy.EphemeralUser.Client*
+  name: Client
+  href: api/ntfy.EphemeralUser.html#ntfy_EphemeralUser_Client_
+  commentId: Overload:ntfy.EphemeralUser.Client
+  isSpec: "True"
+  fullName: ntfy.EphemeralUser.Client
+  nameWithType: EphemeralUser.Client
+- uid: ntfy.EphemeralUser.Delete
+  name: Delete()
+  href: api/ntfy.EphemeralUser.html#ntfy_EphemeralUser_Delete
+  commentId: M:ntfy.EphemeralUser.Delete
+  fullName: ntfy.EphemeralUser.Delete()
+  nameWithType: EphemeralUser.Delete()
+- uid: ntfy.EphemeralUser.Delete*
+  name: Delete
+  href: api/ntfy.EphemeralUser.html#ntfy_EphemeralUser_Delete_
+  commentId: Overload:ntfy.EphemeralUser.Delete
+  isSpec: "True"
+  fullName: ntfy.EphemeralUser.Delete
+  nameWithType: EphemeralUser.Delete
 - uid: ntfy.EventType
   name: EventType
   href: api/ntfy.EventType.html
@@ -727,6 +796,320 @@ references:
   commentId: F:ntfy.EventType.PollRequest
   fullName: ntfy.EventType.PollRequest
   nameWithType: EventType.PollRequest
+- uid: ntfy.FeatureNotEnabledException
+  name: FeatureNotEnabledException
+  href: api/ntfy.FeatureNotEnabledException.html
+  commentId: T:ntfy.FeatureNotEnabledException
+  fullName: ntfy.FeatureNotEnabledException
+  nameWithType: FeatureNotEnabledException
+- uid: ntfy.Filters
+  name: ntfy.Filters
+  href: api/ntfy.Filters.html
+  commentId: N:ntfy.Filters
+  fullName: ntfy.Filters
+  nameWithType: ntfy.Filters
+- uid: ntfy.Filters.Delay
+  name: Delay
+  href: api/ntfy.Filters.Delay.html
+  commentId: T:ntfy.Filters.Delay
+  fullName: ntfy.Filters.Delay
+  nameWithType: Delay
+- uid: ntfy.Filters.Delay.#ctor(System.String)
+  name: Delay(string)
+  href: api/ntfy.Filters.Delay.html#ntfy_Filters_Delay__ctor_System_String_
+  commentId: M:ntfy.Filters.Delay.#ctor(System.String)
+  name.vb: New(String)
+  fullName: ntfy.Filters.Delay.Delay(string)
+  fullName.vb: ntfy.Filters.Delay.New(String)
+  nameWithType: Delay.Delay(string)
+  nameWithType.vb: Delay.New(String)
+- uid: ntfy.Filters.Delay.#ctor*
+  name: Delay
+  href: api/ntfy.Filters.Delay.html#ntfy_Filters_Delay__ctor_
+  commentId: Overload:ntfy.Filters.Delay.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ntfy.Filters.Delay.Delay
+  fullName.vb: ntfy.Filters.Delay.New
+  nameWithType: Delay.Delay
+  nameWithType.vb: Delay.New
+- uid: ntfy.Filters.DelayDuration
+  name: DelayDuration
+  href: api/ntfy.Filters.DelayDuration.html
+  commentId: T:ntfy.Filters.DelayDuration
+  fullName: ntfy.Filters.DelayDuration
+  nameWithType: DelayDuration
+- uid: ntfy.Filters.DelayDuration.#ctor(System.Int32,ntfy.Filters.DelayUnit)
+  name: DelayDuration(int, DelayUnit)
+  href: api/ntfy.Filters.DelayDuration.html#ntfy_Filters_DelayDuration__ctor_System_Int32_ntfy_Filters_DelayUnit_
+  commentId: M:ntfy.Filters.DelayDuration.#ctor(System.Int32,ntfy.Filters.DelayUnit)
+  name.vb: New(Integer, DelayUnit)
+  fullName: ntfy.Filters.DelayDuration.DelayDuration(int, ntfy.Filters.DelayUnit)
+  fullName.vb: ntfy.Filters.DelayDuration.New(Integer, ntfy.Filters.DelayUnit)
+  nameWithType: DelayDuration.DelayDuration(int, DelayUnit)
+  nameWithType.vb: DelayDuration.New(Integer, DelayUnit)
+- uid: ntfy.Filters.DelayDuration.#ctor*
+  name: DelayDuration
+  href: api/ntfy.Filters.DelayDuration.html#ntfy_Filters_DelayDuration__ctor_
+  commentId: Overload:ntfy.Filters.DelayDuration.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ntfy.Filters.DelayDuration.DelayDuration
+  fullName.vb: ntfy.Filters.DelayDuration.New
+  nameWithType: DelayDuration.DelayDuration
+  nameWithType.vb: DelayDuration.New
+- uid: ntfy.Filters.DelayStatement
+  name: DelayStatement
+  href: api/ntfy.Filters.DelayStatement.html
+  commentId: T:ntfy.Filters.DelayStatement
+  fullName: ntfy.Filters.DelayStatement
+  nameWithType: DelayStatement
+- uid: ntfy.Filters.DelayStatement.#ctor(System.String)
+  name: DelayStatement(string)
+  href: api/ntfy.Filters.DelayStatement.html#ntfy_Filters_DelayStatement__ctor_System_String_
+  commentId: M:ntfy.Filters.DelayStatement.#ctor(System.String)
+  name.vb: New(String)
+  fullName: ntfy.Filters.DelayStatement.DelayStatement(string)
+  fullName.vb: ntfy.Filters.DelayStatement.New(String)
+  nameWithType: DelayStatement.DelayStatement(string)
+  nameWithType.vb: DelayStatement.New(String)
+- uid: ntfy.Filters.DelayStatement.#ctor*
+  name: DelayStatement
+  href: api/ntfy.Filters.DelayStatement.html#ntfy_Filters_DelayStatement__ctor_
+  commentId: Overload:ntfy.Filters.DelayStatement.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ntfy.Filters.DelayStatement.DelayStatement
+  fullName.vb: ntfy.Filters.DelayStatement.New
+  nameWithType: DelayStatement.DelayStatement
+  nameWithType.vb: DelayStatement.New
+- uid: ntfy.Filters.DelayTime
+  name: DelayTime
+  href: api/ntfy.Filters.DelayTime.html
+  commentId: T:ntfy.Filters.DelayTime
+  fullName: ntfy.Filters.DelayTime
+  nameWithType: DelayTime
+- uid: ntfy.Filters.DelayTime.#ctor(System.Int32)
+  name: DelayTime(int)
+  href: api/ntfy.Filters.DelayTime.html#ntfy_Filters_DelayTime__ctor_System_Int32_
+  commentId: M:ntfy.Filters.DelayTime.#ctor(System.Int32)
+  name.vb: New(Integer)
+  fullName: ntfy.Filters.DelayTime.DelayTime(int)
+  fullName.vb: ntfy.Filters.DelayTime.New(Integer)
+  nameWithType: DelayTime.DelayTime(int)
+  nameWithType.vb: DelayTime.New(Integer)
+- uid: ntfy.Filters.DelayTime.#ctor*
+  name: DelayTime
+  href: api/ntfy.Filters.DelayTime.html#ntfy_Filters_DelayTime__ctor_
+  commentId: Overload:ntfy.Filters.DelayTime.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ntfy.Filters.DelayTime.DelayTime
+  fullName.vb: ntfy.Filters.DelayTime.New
+  nameWithType: DelayTime.DelayTime
+  nameWithType.vb: DelayTime.New
+- uid: ntfy.Filters.DelayUnit
+  name: DelayUnit
+  href: api/ntfy.Filters.DelayUnit.html
+  commentId: T:ntfy.Filters.DelayUnit
+  fullName: ntfy.Filters.DelayUnit
+  nameWithType: DelayUnit
+- uid: ntfy.Filters.DelayUnit.Days
+  name: Days
+  href: api/ntfy.Filters.DelayUnit.html#ntfy_Filters_DelayUnit_Days
+  commentId: F:ntfy.Filters.DelayUnit.Days
+  fullName: ntfy.Filters.DelayUnit.Days
+  nameWithType: DelayUnit.Days
+- uid: ntfy.Filters.DelayUnit.Hours
+  name: Hours
+  href: api/ntfy.Filters.DelayUnit.html#ntfy_Filters_DelayUnit_Hours
+  commentId: F:ntfy.Filters.DelayUnit.Hours
+  fullName: ntfy.Filters.DelayUnit.Hours
+  nameWithType: DelayUnit.Hours
+- uid: ntfy.Filters.DelayUnit.Minutes
+  name: Minutes
+  href: api/ntfy.Filters.DelayUnit.html#ntfy_Filters_DelayUnit_Minutes
+  commentId: F:ntfy.Filters.DelayUnit.Minutes
+  fullName: ntfy.Filters.DelayUnit.Minutes
+  nameWithType: DelayUnit.Minutes
+- uid: ntfy.Filters.DelayUnit.Seconds
+  name: Seconds
+  href: api/ntfy.Filters.DelayUnit.html#ntfy_Filters_DelayUnit_Seconds
+  commentId: F:ntfy.Filters.DelayUnit.Seconds
+  fullName: ntfy.Filters.DelayUnit.Seconds
+  nameWithType: DelayUnit.Seconds
+- uid: ntfy.Filters.ReceptionFilters
+  name: ReceptionFilters
+  href: api/ntfy.Filters.ReceptionFilters.html
+  commentId: T:ntfy.Filters.ReceptionFilters
+  fullName: ntfy.Filters.ReceptionFilters
+  nameWithType: ReceptionFilters
+- uid: ntfy.Filters.ReceptionFilters.Id
+  name: Id
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Id
+  commentId: P:ntfy.Filters.ReceptionFilters.Id
+  fullName: ntfy.Filters.ReceptionFilters.Id
+  nameWithType: ReceptionFilters.Id
+- uid: ntfy.Filters.ReceptionFilters.Id*
+  name: Id
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Id_
+  commentId: Overload:ntfy.Filters.ReceptionFilters.Id
+  isSpec: "True"
+  fullName: ntfy.Filters.ReceptionFilters.Id
+  nameWithType: ReceptionFilters.Id
+- uid: ntfy.Filters.ReceptionFilters.Message
+  name: Message
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Message
+  commentId: P:ntfy.Filters.ReceptionFilters.Message
+  fullName: ntfy.Filters.ReceptionFilters.Message
+  nameWithType: ReceptionFilters.Message
+- uid: ntfy.Filters.ReceptionFilters.Message*
+  name: Message
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Message_
+  commentId: Overload:ntfy.Filters.ReceptionFilters.Message
+  isSpec: "True"
+  fullName: ntfy.Filters.ReceptionFilters.Message
+  nameWithType: ReceptionFilters.Message
+- uid: ntfy.Filters.ReceptionFilters.Priorities
+  name: Priorities
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Priorities
+  commentId: P:ntfy.Filters.ReceptionFilters.Priorities
+  fullName: ntfy.Filters.ReceptionFilters.Priorities
+  nameWithType: ReceptionFilters.Priorities
+- uid: ntfy.Filters.ReceptionFilters.Priorities*
+  name: Priorities
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Priorities_
+  commentId: Overload:ntfy.Filters.ReceptionFilters.Priorities
+  isSpec: "True"
+  fullName: ntfy.Filters.ReceptionFilters.Priorities
+  nameWithType: ReceptionFilters.Priorities
+- uid: ntfy.Filters.ReceptionFilters.Tags
+  name: Tags
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Tags
+  commentId: P:ntfy.Filters.ReceptionFilters.Tags
+  fullName: ntfy.Filters.ReceptionFilters.Tags
+  nameWithType: ReceptionFilters.Tags
+- uid: ntfy.Filters.ReceptionFilters.Tags*
+  name: Tags
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Tags_
+  commentId: Overload:ntfy.Filters.ReceptionFilters.Tags
+  isSpec: "True"
+  fullName: ntfy.Filters.ReceptionFilters.Tags
+  nameWithType: ReceptionFilters.Tags
+- uid: ntfy.Filters.ReceptionFilters.Title
+  name: Title
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Title
+  commentId: P:ntfy.Filters.ReceptionFilters.Title
+  fullName: ntfy.Filters.ReceptionFilters.Title
+  nameWithType: ReceptionFilters.Title
+- uid: ntfy.Filters.ReceptionFilters.Title*
+  name: Title
+  href: api/ntfy.Filters.ReceptionFilters.html#ntfy_Filters_ReceptionFilters_Title_
+  commentId: Overload:ntfy.Filters.ReceptionFilters.Title
+  isSpec: "True"
+  fullName: ntfy.Filters.ReceptionFilters.Title
+  nameWithType: ReceptionFilters.Title
+- uid: ntfy.Filters.Since
+  name: Since
+  href: api/ntfy.Filters.Since.html
+  commentId: T:ntfy.Filters.Since
+  fullName: ntfy.Filters.Since
+  nameWithType: Since
+- uid: ntfy.Filters.Since.#ctor(ntfy.Filters.DelayDuration)
+  name: Since(DelayDuration)
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since__ctor_ntfy_Filters_DelayDuration_
+  commentId: M:ntfy.Filters.Since.#ctor(ntfy.Filters.DelayDuration)
+  name.vb: New(DelayDuration)
+  fullName: ntfy.Filters.Since.Since(ntfy.Filters.DelayDuration)
+  fullName.vb: ntfy.Filters.Since.New(ntfy.Filters.DelayDuration)
+  nameWithType: Since.Since(DelayDuration)
+  nameWithType.vb: Since.New(DelayDuration)
+- uid: ntfy.Filters.Since.#ctor(ntfy.Filters.DelayTime)
+  name: Since(DelayTime)
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since__ctor_ntfy_Filters_DelayTime_
+  commentId: M:ntfy.Filters.Since.#ctor(ntfy.Filters.DelayTime)
+  name.vb: New(DelayTime)
+  fullName: ntfy.Filters.Since.Since(ntfy.Filters.DelayTime)
+  fullName.vb: ntfy.Filters.Since.New(ntfy.Filters.DelayTime)
+  nameWithType: Since.Since(DelayTime)
+  nameWithType.vb: Since.New(DelayTime)
+- uid: ntfy.Filters.Since.#ctor(System.String)
+  name: Since(string)
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since__ctor_System_String_
+  commentId: M:ntfy.Filters.Since.#ctor(System.String)
+  name.vb: New(String)
+  fullName: ntfy.Filters.Since.Since(string)
+  fullName.vb: ntfy.Filters.Since.New(String)
+  nameWithType: Since.Since(string)
+  nameWithType.vb: Since.New(String)
+- uid: ntfy.Filters.Since.#ctor*
+  name: Since
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since__ctor_
+  commentId: Overload:ntfy.Filters.Since.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ntfy.Filters.Since.Since
+  fullName.vb: ntfy.Filters.Since.New
+  nameWithType: Since.Since
+  nameWithType.vb: Since.New
+- uid: ntfy.Filters.Since.All
+  name: All
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since_All
+  commentId: F:ntfy.Filters.Since.All
+  fullName: ntfy.Filters.Since.All
+  nameWithType: Since.All
+- uid: ntfy.Filters.Since.op_Implicit(ntfy.Filters.DelayDuration)~ntfy.Filters.Since
+  name: implicit operator Since(DelayDuration)
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since_op_Implicit_ntfy_Filters_DelayDuration__ntfy_Filters_Since
+  commentId: M:ntfy.Filters.Since.op_Implicit(ntfy.Filters.DelayDuration)~ntfy.Filters.Since
+  name.vb: CType(DelayDuration)
+  fullName: ntfy.Filters.Since.implicit operator ntfy.Filters.Since(ntfy.Filters.DelayDuration)
+  fullName.vb: ntfy.Filters.Since.CType(ntfy.Filters.DelayDuration)
+  nameWithType: Since.implicit operator Since(DelayDuration)
+  nameWithType.vb: Since.CType(DelayDuration)
+- uid: ntfy.Filters.Since.op_Implicit(ntfy.Filters.DelayTime)~ntfy.Filters.Since
+  name: implicit operator Since(DelayTime)
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since_op_Implicit_ntfy_Filters_DelayTime__ntfy_Filters_Since
+  commentId: M:ntfy.Filters.Since.op_Implicit(ntfy.Filters.DelayTime)~ntfy.Filters.Since
+  name.vb: CType(DelayTime)
+  fullName: ntfy.Filters.Since.implicit operator ntfy.Filters.Since(ntfy.Filters.DelayTime)
+  fullName.vb: ntfy.Filters.Since.CType(ntfy.Filters.DelayTime)
+  nameWithType: Since.implicit operator Since(DelayTime)
+  nameWithType.vb: Since.CType(DelayTime)
+- uid: ntfy.Filters.Since.op_Implicit(System.Int32)~ntfy.Filters.Since
+  name: implicit operator Since(int)
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since_op_Implicit_System_Int32__ntfy_Filters_Since
+  commentId: M:ntfy.Filters.Since.op_Implicit(System.Int32)~ntfy.Filters.Since
+  name.vb: CType(Integer)
+  fullName: ntfy.Filters.Since.implicit operator ntfy.Filters.Since(int)
+  fullName.vb: ntfy.Filters.Since.CType(Integer)
+  nameWithType: Since.implicit operator Since(int)
+  nameWithType.vb: Since.CType(Integer)
+- uid: ntfy.Filters.Since.op_Implicit(System.String)~ntfy.Filters.Since
+  name: implicit operator Since(string)
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since_op_Implicit_System_String__ntfy_Filters_Since
+  commentId: M:ntfy.Filters.Since.op_Implicit(System.String)~ntfy.Filters.Since
+  name.vb: CType(String)
+  fullName: ntfy.Filters.Since.implicit operator ntfy.Filters.Since(string)
+  fullName.vb: ntfy.Filters.Since.CType(String)
+  nameWithType: Since.implicit operator Since(string)
+  nameWithType.vb: Since.CType(String)
+- uid: ntfy.Filters.Since.op_Implicit*
+  name: implicit operator
+  href: api/ntfy.Filters.Since.html#ntfy_Filters_Since_op_Implicit_
+  commentId: Overload:ntfy.Filters.Since.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: ntfy.Filters.Since.implicit operator
+  fullName.vb: ntfy.Filters.Since.CType
+  nameWithType: Since.implicit operator
+  nameWithType.vb: Since.CType
+- uid: ntfy.InvalidCredentialsException
+  name: InvalidCredentialsException
+  href: api/ntfy.InvalidCredentialsException.html
+  commentId: T:ntfy.InvalidCredentialsException
+  fullName: ntfy.InvalidCredentialsException
+  nameWithType: InvalidCredentialsException
 - uid: ntfy.InvalidParameterException
   name: InvalidParameterException
   href: api/ntfy.InvalidParameterException.html
@@ -746,18 +1129,54 @@ references:
   fullName: ntfy.NftyException
   nameWithType: NftyException
 - uid: ntfy.NftyException.#ctor(System.String)
-  name: NftyException(String)
+  name: NftyException(string)
   href: api/ntfy.NftyException.html#ntfy_NftyException__ctor_System_String_
   commentId: M:ntfy.NftyException.#ctor(System.String)
-  fullName: ntfy.NftyException.NftyException(System.String)
-  nameWithType: NftyException.NftyException(String)
+  name.vb: New(String)
+  fullName: ntfy.NftyException.NftyException(string)
+  fullName.vb: ntfy.NftyException.New(String)
+  nameWithType: NftyException.NftyException(string)
+  nameWithType.vb: NftyException.New(String)
 - uid: ntfy.NftyException.#ctor*
   name: NftyException
   href: api/ntfy.NftyException.html#ntfy_NftyException__ctor_
   commentId: Overload:ntfy.NftyException.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: ntfy.NftyException.NftyException
+  fullName.vb: ntfy.NftyException.New
   nameWithType: NftyException.NftyException
+  nameWithType.vb: NftyException.New
+- uid: ntfy.Permission
+  name: Permission
+  href: api/ntfy.Permission.html
+  commentId: T:ntfy.Permission
+  fullName: ntfy.Permission
+  nameWithType: Permission
+- uid: ntfy.Permission.DenyAll
+  name: DenyAll
+  href: api/ntfy.Permission.html#ntfy_Permission_DenyAll
+  commentId: F:ntfy.Permission.DenyAll
+  fullName: ntfy.Permission.DenyAll
+  nameWithType: Permission.DenyAll
+- uid: ntfy.Permission.ReadOnly
+  name: ReadOnly
+  href: api/ntfy.Permission.html#ntfy_Permission_ReadOnly
+  commentId: F:ntfy.Permission.ReadOnly
+  fullName: ntfy.Permission.ReadOnly
+  nameWithType: Permission.ReadOnly
+- uid: ntfy.Permission.ReadWrite
+  name: ReadWrite
+  href: api/ntfy.Permission.html#ntfy_Permission_ReadWrite
+  commentId: F:ntfy.Permission.ReadWrite
+  fullName: ntfy.Permission.ReadWrite
+  nameWithType: Permission.ReadWrite
+- uid: ntfy.Permission.WriteOnly
+  name: WriteOnly
+  href: api/ntfy.Permission.html#ntfy_Permission_WriteOnly
+  commentId: F:ntfy.Permission.WriteOnly
+  fullName: ntfy.Permission.WriteOnly
+  nameWithType: Permission.WriteOnly
 - uid: ntfy.PriorityLevel
   name: PriorityLevel
   href: api/ntfy.PriorityLevel.html
@@ -794,529 +1213,923 @@ references:
   commentId: F:ntfy.PriorityLevel.Min
   fullName: ntfy.PriorityLevel.Min
   nameWithType: PriorityLevel.Min
-- uid: ntfy.ReceivedMessage
-  name: ReceivedMessage
-  href: api/ntfy.ReceivedMessage.html
-  commentId: T:ntfy.ReceivedMessage
-  fullName: ntfy.ReceivedMessage
-  nameWithType: ReceivedMessage
-- uid: ntfy.ReceivedMessage.Actions
-  name: Actions
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Actions
-  commentId: P:ntfy.ReceivedMessage.Actions
-  fullName: ntfy.ReceivedMessage.Actions
-  nameWithType: ReceivedMessage.Actions
-- uid: ntfy.ReceivedMessage.Actions*
-  name: Actions
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Actions_
-  commentId: Overload:ntfy.ReceivedMessage.Actions
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Actions
-  nameWithType: ReceivedMessage.Actions
-- uid: ntfy.ReceivedMessage.Attachment
-  name: Attachment
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Attachment
-  commentId: P:ntfy.ReceivedMessage.Attachment
-  fullName: ntfy.ReceivedMessage.Attachment
-  nameWithType: ReceivedMessage.Attachment
-- uid: ntfy.ReceivedMessage.Attachment*
-  name: Attachment
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Attachment_
-  commentId: Overload:ntfy.ReceivedMessage.Attachment
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Attachment
-  nameWithType: ReceivedMessage.Attachment
-- uid: ntfy.ReceivedMessage.Click
-  name: Click
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Click
-  commentId: P:ntfy.ReceivedMessage.Click
-  fullName: ntfy.ReceivedMessage.Click
-  nameWithType: ReceivedMessage.Click
-- uid: ntfy.ReceivedMessage.Click*
-  name: Click
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Click_
-  commentId: Overload:ntfy.ReceivedMessage.Click
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Click
-  nameWithType: ReceivedMessage.Click
-- uid: ntfy.ReceivedMessage.Event
-  name: Event
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Event
-  commentId: P:ntfy.ReceivedMessage.Event
-  fullName: ntfy.ReceivedMessage.Event
-  nameWithType: ReceivedMessage.Event
-- uid: ntfy.ReceivedMessage.Event*
-  name: Event
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Event_
-  commentId: Overload:ntfy.ReceivedMessage.Event
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Event
-  nameWithType: ReceivedMessage.Event
-- uid: ntfy.ReceivedMessage.Id
-  name: Id
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Id
-  commentId: P:ntfy.ReceivedMessage.Id
-  fullName: ntfy.ReceivedMessage.Id
-  nameWithType: ReceivedMessage.Id
-- uid: ntfy.ReceivedMessage.Id*
-  name: Id
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Id_
-  commentId: Overload:ntfy.ReceivedMessage.Id
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Id
-  nameWithType: ReceivedMessage.Id
-- uid: ntfy.ReceivedMessage.Message
-  name: Message
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Message
-  commentId: P:ntfy.ReceivedMessage.Message
-  fullName: ntfy.ReceivedMessage.Message
-  nameWithType: ReceivedMessage.Message
-- uid: ntfy.ReceivedMessage.Message*
-  name: Message
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Message_
-  commentId: Overload:ntfy.ReceivedMessage.Message
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Message
-  nameWithType: ReceivedMessage.Message
-- uid: ntfy.ReceivedMessage.Priority
-  name: Priority
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Priority
-  commentId: P:ntfy.ReceivedMessage.Priority
-  fullName: ntfy.ReceivedMessage.Priority
-  nameWithType: ReceivedMessage.Priority
-- uid: ntfy.ReceivedMessage.Priority*
-  name: Priority
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Priority_
-  commentId: Overload:ntfy.ReceivedMessage.Priority
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Priority
-  nameWithType: ReceivedMessage.Priority
-- uid: ntfy.ReceivedMessage.Tags
-  name: Tags
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Tags
-  commentId: P:ntfy.ReceivedMessage.Tags
-  fullName: ntfy.ReceivedMessage.Tags
-  nameWithType: ReceivedMessage.Tags
-- uid: ntfy.ReceivedMessage.Tags*
-  name: Tags
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Tags_
-  commentId: Overload:ntfy.ReceivedMessage.Tags
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Tags
-  nameWithType: ReceivedMessage.Tags
-- uid: ntfy.ReceivedMessage.Time
-  name: Time
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Time
-  commentId: P:ntfy.ReceivedMessage.Time
-  fullName: ntfy.ReceivedMessage.Time
-  nameWithType: ReceivedMessage.Time
-- uid: ntfy.ReceivedMessage.Time*
-  name: Time
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Time_
-  commentId: Overload:ntfy.ReceivedMessage.Time
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Time
-  nameWithType: ReceivedMessage.Time
-- uid: ntfy.ReceivedMessage.Title
-  name: Title
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Title
-  commentId: P:ntfy.ReceivedMessage.Title
-  fullName: ntfy.ReceivedMessage.Title
-  nameWithType: ReceivedMessage.Title
-- uid: ntfy.ReceivedMessage.Title*
-  name: Title
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Title_
-  commentId: Overload:ntfy.ReceivedMessage.Title
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Title
-  nameWithType: ReceivedMessage.Title
-- uid: ntfy.ReceivedMessage.Topic
-  name: Topic
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Topic
-  commentId: P:ntfy.ReceivedMessage.Topic
-  fullName: ntfy.ReceivedMessage.Topic
-  nameWithType: ReceivedMessage.Topic
-- uid: ntfy.ReceivedMessage.Topic*
-  name: Topic
-  href: api/ntfy.ReceivedMessage.html#ntfy_ReceivedMessage_Topic_
-  commentId: Overload:ntfy.ReceivedMessage.Topic
-  isSpec: "True"
-  fullName: ntfy.ReceivedMessage.Topic
-  nameWithType: ReceivedMessage.Topic
-- uid: ntfy.ReceptionFilters
-  name: ReceptionFilters
-  href: api/ntfy.ReceptionFilters.html
-  commentId: T:ntfy.ReceptionFilters
-  fullName: ntfy.ReceptionFilters
-  nameWithType: ReceptionFilters
-- uid: ntfy.ReceptionFilters.Id
-  name: Id
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Id
-  commentId: P:ntfy.ReceptionFilters.Id
-  fullName: ntfy.ReceptionFilters.Id
-  nameWithType: ReceptionFilters.Id
-- uid: ntfy.ReceptionFilters.Id*
-  name: Id
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Id_
-  commentId: Overload:ntfy.ReceptionFilters.Id
-  isSpec: "True"
-  fullName: ntfy.ReceptionFilters.Id
-  nameWithType: ReceptionFilters.Id
-- uid: ntfy.ReceptionFilters.Message
-  name: Message
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Message
-  commentId: P:ntfy.ReceptionFilters.Message
-  fullName: ntfy.ReceptionFilters.Message
-  nameWithType: ReceptionFilters.Message
-- uid: ntfy.ReceptionFilters.Message*
-  name: Message
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Message_
-  commentId: Overload:ntfy.ReceptionFilters.Message
-  isSpec: "True"
-  fullName: ntfy.ReceptionFilters.Message
-  nameWithType: ReceptionFilters.Message
-- uid: ntfy.ReceptionFilters.Priorities
-  name: Priorities
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Priorities
-  commentId: P:ntfy.ReceptionFilters.Priorities
-  fullName: ntfy.ReceptionFilters.Priorities
-  nameWithType: ReceptionFilters.Priorities
-- uid: ntfy.ReceptionFilters.Priorities*
-  name: Priorities
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Priorities_
-  commentId: Overload:ntfy.ReceptionFilters.Priorities
-  isSpec: "True"
-  fullName: ntfy.ReceptionFilters.Priorities
-  nameWithType: ReceptionFilters.Priorities
-- uid: ntfy.ReceptionFilters.Tags
-  name: Tags
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Tags
-  commentId: P:ntfy.ReceptionFilters.Tags
-  fullName: ntfy.ReceptionFilters.Tags
-  nameWithType: ReceptionFilters.Tags
-- uid: ntfy.ReceptionFilters.Tags*
-  name: Tags
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Tags_
-  commentId: Overload:ntfy.ReceptionFilters.Tags
-  isSpec: "True"
-  fullName: ntfy.ReceptionFilters.Tags
-  nameWithType: ReceptionFilters.Tags
-- uid: ntfy.ReceptionFilters.Title
-  name: Title
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Title
-  commentId: P:ntfy.ReceptionFilters.Title
-  fullName: ntfy.ReceptionFilters.Title
-  nameWithType: ReceptionFilters.Title
-- uid: ntfy.ReceptionFilters.Title*
-  name: Title
-  href: api/ntfy.ReceptionFilters.html#ntfy_ReceptionFilters_Title_
-  commentId: Overload:ntfy.ReceptionFilters.Title
-  isSpec: "True"
-  fullName: ntfy.ReceptionFilters.Title
-  nameWithType: ReceptionFilters.Title
-- uid: ntfy.SendingMessage
+- uid: ntfy.Requests
+  name: ntfy.Requests
+  href: api/ntfy.Requests.html
+  commentId: N:ntfy.Requests
+  fullName: ntfy.Requests
+  nameWithType: ntfy.Requests
+- uid: ntfy.Requests.SendingMessage
   name: SendingMessage
-  href: api/ntfy.SendingMessage.html
-  commentId: T:ntfy.SendingMessage
-  fullName: ntfy.SendingMessage
+  href: api/ntfy.Requests.SendingMessage.html
+  commentId: T:ntfy.Requests.SendingMessage
+  fullName: ntfy.Requests.SendingMessage
   nameWithType: SendingMessage
-- uid: ntfy.SendingMessage.Actions
+- uid: ntfy.Requests.SendingMessage.Actions
   name: Actions
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Actions
-  commentId: P:ntfy.SendingMessage.Actions
-  fullName: ntfy.SendingMessage.Actions
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Actions
+  commentId: P:ntfy.Requests.SendingMessage.Actions
+  fullName: ntfy.Requests.SendingMessage.Actions
   nameWithType: SendingMessage.Actions
-- uid: ntfy.SendingMessage.Actions*
+- uid: ntfy.Requests.SendingMessage.Actions*
   name: Actions
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Actions_
-  commentId: Overload:ntfy.SendingMessage.Actions
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Actions_
+  commentId: Overload:ntfy.Requests.SendingMessage.Actions
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Actions
+  fullName: ntfy.Requests.SendingMessage.Actions
   nameWithType: SendingMessage.Actions
-- uid: ntfy.SendingMessage.Attach
+- uid: ntfy.Requests.SendingMessage.Attach
   name: Attach
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Attach
-  commentId: P:ntfy.SendingMessage.Attach
-  fullName: ntfy.SendingMessage.Attach
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Attach
+  commentId: P:ntfy.Requests.SendingMessage.Attach
+  fullName: ntfy.Requests.SendingMessage.Attach
   nameWithType: SendingMessage.Attach
-- uid: ntfy.SendingMessage.Attach*
+- uid: ntfy.Requests.SendingMessage.Attach*
   name: Attach
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Attach_
-  commentId: Overload:ntfy.SendingMessage.Attach
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Attach_
+  commentId: Overload:ntfy.Requests.SendingMessage.Attach
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Attach
+  fullName: ntfy.Requests.SendingMessage.Attach
   nameWithType: SendingMessage.Attach
-- uid: ntfy.SendingMessage.Cache
+- uid: ntfy.Requests.SendingMessage.Cache
   name: Cache
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Cache
-  commentId: P:ntfy.SendingMessage.Cache
-  fullName: ntfy.SendingMessage.Cache
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Cache
+  commentId: P:ntfy.Requests.SendingMessage.Cache
+  fullName: ntfy.Requests.SendingMessage.Cache
   nameWithType: SendingMessage.Cache
-- uid: ntfy.SendingMessage.Cache*
+- uid: ntfy.Requests.SendingMessage.Cache*
   name: Cache
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Cache_
-  commentId: Overload:ntfy.SendingMessage.Cache
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Cache_
+  commentId: Overload:ntfy.Requests.SendingMessage.Cache
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Cache
+  fullName: ntfy.Requests.SendingMessage.Cache
   nameWithType: SendingMessage.Cache
-- uid: ntfy.SendingMessage.Click
+- uid: ntfy.Requests.SendingMessage.Click
   name: Click
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Click
-  commentId: P:ntfy.SendingMessage.Click
-  fullName: ntfy.SendingMessage.Click
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Click
+  commentId: P:ntfy.Requests.SendingMessage.Click
+  fullName: ntfy.Requests.SendingMessage.Click
   nameWithType: SendingMessage.Click
-- uid: ntfy.SendingMessage.Click*
+- uid: ntfy.Requests.SendingMessage.Click*
   name: Click
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Click_
-  commentId: Overload:ntfy.SendingMessage.Click
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Click_
+  commentId: Overload:ntfy.Requests.SendingMessage.Click
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Click
+  fullName: ntfy.Requests.SendingMessage.Click
   nameWithType: SendingMessage.Click
-- uid: ntfy.SendingMessage.Delay
+- uid: ntfy.Requests.SendingMessage.Delay
   name: Delay
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Delay
-  commentId: P:ntfy.SendingMessage.Delay
-  fullName: ntfy.SendingMessage.Delay
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Delay
+  commentId: P:ntfy.Requests.SendingMessage.Delay
+  fullName: ntfy.Requests.SendingMessage.Delay
   nameWithType: SendingMessage.Delay
-- uid: ntfy.SendingMessage.Delay*
+- uid: ntfy.Requests.SendingMessage.Delay*
   name: Delay
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Delay_
-  commentId: Overload:ntfy.SendingMessage.Delay
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Delay_
+  commentId: Overload:ntfy.Requests.SendingMessage.Delay
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Delay
+  fullName: ntfy.Requests.SendingMessage.Delay
   nameWithType: SendingMessage.Delay
-- uid: ntfy.SendingMessage.Email
+- uid: ntfy.Requests.SendingMessage.Email
   name: Email
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Email
-  commentId: P:ntfy.SendingMessage.Email
-  fullName: ntfy.SendingMessage.Email
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Email
+  commentId: P:ntfy.Requests.SendingMessage.Email
+  fullName: ntfy.Requests.SendingMessage.Email
   nameWithType: SendingMessage.Email
-- uid: ntfy.SendingMessage.Email*
+- uid: ntfy.Requests.SendingMessage.Email*
   name: Email
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Email_
-  commentId: Overload:ntfy.SendingMessage.Email
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Email_
+  commentId: Overload:ntfy.Requests.SendingMessage.Email
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Email
+  fullName: ntfy.Requests.SendingMessage.Email
   nameWithType: SendingMessage.Email
-- uid: ntfy.SendingMessage.Filename
+- uid: ntfy.Requests.SendingMessage.Filename
   name: Filename
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Filename
-  commentId: P:ntfy.SendingMessage.Filename
-  fullName: ntfy.SendingMessage.Filename
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Filename
+  commentId: P:ntfy.Requests.SendingMessage.Filename
+  fullName: ntfy.Requests.SendingMessage.Filename
   nameWithType: SendingMessage.Filename
-- uid: ntfy.SendingMessage.Filename*
+- uid: ntfy.Requests.SendingMessage.Filename*
   name: Filename
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Filename_
-  commentId: Overload:ntfy.SendingMessage.Filename
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Filename_
+  commentId: Overload:ntfy.Requests.SendingMessage.Filename
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Filename
+  fullName: ntfy.Requests.SendingMessage.Filename
   nameWithType: SendingMessage.Filename
-- uid: ntfy.SendingMessage.Firebase
+- uid: ntfy.Requests.SendingMessage.Firebase
   name: Firebase
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Firebase
-  commentId: P:ntfy.SendingMessage.Firebase
-  fullName: ntfy.SendingMessage.Firebase
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Firebase
+  commentId: P:ntfy.Requests.SendingMessage.Firebase
+  fullName: ntfy.Requests.SendingMessage.Firebase
   nameWithType: SendingMessage.Firebase
-- uid: ntfy.SendingMessage.Firebase*
+- uid: ntfy.Requests.SendingMessage.Firebase*
   name: Firebase
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Firebase_
-  commentId: Overload:ntfy.SendingMessage.Firebase
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Firebase_
+  commentId: Overload:ntfy.Requests.SendingMessage.Firebase
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Firebase
+  fullName: ntfy.Requests.SendingMessage.Firebase
   nameWithType: SendingMessage.Firebase
-- uid: ntfy.SendingMessage.Icon
+- uid: ntfy.Requests.SendingMessage.Icon
   name: Icon
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Icon
-  commentId: P:ntfy.SendingMessage.Icon
-  fullName: ntfy.SendingMessage.Icon
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Icon
+  commentId: P:ntfy.Requests.SendingMessage.Icon
+  fullName: ntfy.Requests.SendingMessage.Icon
   nameWithType: SendingMessage.Icon
-- uid: ntfy.SendingMessage.Icon*
+- uid: ntfy.Requests.SendingMessage.Icon*
   name: Icon
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Icon_
-  commentId: Overload:ntfy.SendingMessage.Icon
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Icon_
+  commentId: Overload:ntfy.Requests.SendingMessage.Icon
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Icon
+  fullName: ntfy.Requests.SendingMessage.Icon
   nameWithType: SendingMessage.Icon
-- uid: ntfy.SendingMessage.Message
+- uid: ntfy.Requests.SendingMessage.Message
   name: Message
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Message
-  commentId: P:ntfy.SendingMessage.Message
-  fullName: ntfy.SendingMessage.Message
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Message
+  commentId: P:ntfy.Requests.SendingMessage.Message
+  fullName: ntfy.Requests.SendingMessage.Message
   nameWithType: SendingMessage.Message
-- uid: ntfy.SendingMessage.Message*
+- uid: ntfy.Requests.SendingMessage.Message*
   name: Message
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Message_
-  commentId: Overload:ntfy.SendingMessage.Message
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Message_
+  commentId: Overload:ntfy.Requests.SendingMessage.Message
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Message
+  fullName: ntfy.Requests.SendingMessage.Message
   nameWithType: SendingMessage.Message
-- uid: ntfy.SendingMessage.Priority
+- uid: ntfy.Requests.SendingMessage.Priority
   name: Priority
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Priority
-  commentId: P:ntfy.SendingMessage.Priority
-  fullName: ntfy.SendingMessage.Priority
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Priority
+  commentId: P:ntfy.Requests.SendingMessage.Priority
+  fullName: ntfy.Requests.SendingMessage.Priority
   nameWithType: SendingMessage.Priority
-- uid: ntfy.SendingMessage.Priority*
+- uid: ntfy.Requests.SendingMessage.Priority*
   name: Priority
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Priority_
-  commentId: Overload:ntfy.SendingMessage.Priority
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Priority_
+  commentId: Overload:ntfy.Requests.SendingMessage.Priority
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Priority
+  fullName: ntfy.Requests.SendingMessage.Priority
   nameWithType: SendingMessage.Priority
-- uid: ntfy.SendingMessage.Tags
+- uid: ntfy.Requests.SendingMessage.Tags
   name: Tags
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Tags
-  commentId: P:ntfy.SendingMessage.Tags
-  fullName: ntfy.SendingMessage.Tags
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Tags
+  commentId: P:ntfy.Requests.SendingMessage.Tags
+  fullName: ntfy.Requests.SendingMessage.Tags
   nameWithType: SendingMessage.Tags
-- uid: ntfy.SendingMessage.Tags*
+- uid: ntfy.Requests.SendingMessage.Tags*
   name: Tags
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Tags_
-  commentId: Overload:ntfy.SendingMessage.Tags
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Tags_
+  commentId: Overload:ntfy.Requests.SendingMessage.Tags
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Tags
+  fullName: ntfy.Requests.SendingMessage.Tags
   nameWithType: SendingMessage.Tags
-- uid: ntfy.SendingMessage.Title
+- uid: ntfy.Requests.SendingMessage.Title
   name: Title
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Title
-  commentId: P:ntfy.SendingMessage.Title
-  fullName: ntfy.SendingMessage.Title
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Title
+  commentId: P:ntfy.Requests.SendingMessage.Title
+  fullName: ntfy.Requests.SendingMessage.Title
   nameWithType: SendingMessage.Title
-- uid: ntfy.SendingMessage.Title*
+- uid: ntfy.Requests.SendingMessage.Title*
   name: Title
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_Title_
-  commentId: Overload:ntfy.SendingMessage.Title
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_Title_
+  commentId: Overload:ntfy.Requests.SendingMessage.Title
   isSpec: "True"
-  fullName: ntfy.SendingMessage.Title
+  fullName: ntfy.Requests.SendingMessage.Title
   nameWithType: SendingMessage.Title
-- uid: ntfy.SendingMessage.UnifiedPush
+- uid: ntfy.Requests.SendingMessage.UnifiedPush
   name: UnifiedPush
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_UnifiedPush
-  commentId: P:ntfy.SendingMessage.UnifiedPush
-  fullName: ntfy.SendingMessage.UnifiedPush
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_UnifiedPush
+  commentId: P:ntfy.Requests.SendingMessage.UnifiedPush
+  fullName: ntfy.Requests.SendingMessage.UnifiedPush
   nameWithType: SendingMessage.UnifiedPush
-- uid: ntfy.SendingMessage.UnifiedPush*
+- uid: ntfy.Requests.SendingMessage.UnifiedPush*
   name: UnifiedPush
-  href: api/ntfy.SendingMessage.html#ntfy_SendingMessage_UnifiedPush_
-  commentId: Overload:ntfy.SendingMessage.UnifiedPush
+  href: api/ntfy.Requests.SendingMessage.html#ntfy_Requests_SendingMessage_UnifiedPush_
+  commentId: Overload:ntfy.Requests.SendingMessage.UnifiedPush
   isSpec: "True"
-  fullName: ntfy.SendingMessage.UnifiedPush
+  fullName: ntfy.Requests.SendingMessage.UnifiedPush
   nameWithType: SendingMessage.UnifiedPush
-- uid: ntfy.ServerInfo
+- uid: ntfy.Responses
+  name: ntfy.Responses
+  href: api/ntfy.Responses.html
+  commentId: N:ntfy.Responses
+  fullName: ntfy.Responses
+  nameWithType: ntfy.Responses
+- uid: ntfy.Responses.ApiSuccess
+  name: ApiSuccess
+  href: api/ntfy.Responses.ApiSuccess.html
+  commentId: T:ntfy.Responses.ApiSuccess
+  fullName: ntfy.Responses.ApiSuccess
+  nameWithType: ApiSuccess
+- uid: ntfy.Responses.ApiSuccess.Success
+  name: Success
+  href: api/ntfy.Responses.ApiSuccess.html#ntfy_Responses_ApiSuccess_Success
+  commentId: P:ntfy.Responses.ApiSuccess.Success
+  fullName: ntfy.Responses.ApiSuccess.Success
+  nameWithType: ApiSuccess.Success
+- uid: ntfy.Responses.ApiSuccess.Success*
+  name: Success
+  href: api/ntfy.Responses.ApiSuccess.html#ntfy_Responses_ApiSuccess_Success_
+  commentId: Overload:ntfy.Responses.ApiSuccess.Success
+  isSpec: "True"
+  fullName: ntfy.Responses.ApiSuccess.Success
+  nameWithType: ApiSuccess.Success
+- uid: ntfy.Responses.Attachment
+  name: Attachment
+  href: api/ntfy.Responses.Attachment.html
+  commentId: T:ntfy.Responses.Attachment
+  fullName: ntfy.Responses.Attachment
+  nameWithType: Attachment
+- uid: ntfy.Responses.Attachment.Expires
+  name: Expires
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Expires
+  commentId: P:ntfy.Responses.Attachment.Expires
+  fullName: ntfy.Responses.Attachment.Expires
+  nameWithType: Attachment.Expires
+- uid: ntfy.Responses.Attachment.Expires*
+  name: Expires
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Expires_
+  commentId: Overload:ntfy.Responses.Attachment.Expires
+  isSpec: "True"
+  fullName: ntfy.Responses.Attachment.Expires
+  nameWithType: Attachment.Expires
+- uid: ntfy.Responses.Attachment.Name
+  name: Name
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Name
+  commentId: P:ntfy.Responses.Attachment.Name
+  fullName: ntfy.Responses.Attachment.Name
+  nameWithType: Attachment.Name
+- uid: ntfy.Responses.Attachment.Name*
+  name: Name
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Name_
+  commentId: Overload:ntfy.Responses.Attachment.Name
+  isSpec: "True"
+  fullName: ntfy.Responses.Attachment.Name
+  nameWithType: Attachment.Name
+- uid: ntfy.Responses.Attachment.Size
+  name: Size
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Size
+  commentId: P:ntfy.Responses.Attachment.Size
+  fullName: ntfy.Responses.Attachment.Size
+  nameWithType: Attachment.Size
+- uid: ntfy.Responses.Attachment.Size*
+  name: Size
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Size_
+  commentId: Overload:ntfy.Responses.Attachment.Size
+  isSpec: "True"
+  fullName: ntfy.Responses.Attachment.Size
+  nameWithType: Attachment.Size
+- uid: ntfy.Responses.Attachment.Type
+  name: Type
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Type
+  commentId: P:ntfy.Responses.Attachment.Type
+  fullName: ntfy.Responses.Attachment.Type
+  nameWithType: Attachment.Type
+- uid: ntfy.Responses.Attachment.Type*
+  name: Type
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Type_
+  commentId: Overload:ntfy.Responses.Attachment.Type
+  isSpec: "True"
+  fullName: ntfy.Responses.Attachment.Type
+  nameWithType: Attachment.Type
+- uid: ntfy.Responses.Attachment.Url
+  name: Url
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Url
+  commentId: P:ntfy.Responses.Attachment.Url
+  fullName: ntfy.Responses.Attachment.Url
+  nameWithType: Attachment.Url
+- uid: ntfy.Responses.Attachment.Url*
+  name: Url
+  href: api/ntfy.Responses.Attachment.html#ntfy_Responses_Attachment_Url_
+  commentId: Overload:ntfy.Responses.Attachment.Url
+  isSpec: "True"
+  fullName: ntfy.Responses.Attachment.Url
+  nameWithType: Attachment.Url
+- uid: ntfy.Responses.ReceivedMessage
+  name: ReceivedMessage
+  href: api/ntfy.Responses.ReceivedMessage.html
+  commentId: T:ntfy.Responses.ReceivedMessage
+  fullName: ntfy.Responses.ReceivedMessage
+  nameWithType: ReceivedMessage
+- uid: ntfy.Responses.ReceivedMessage.Actions
+  name: Actions
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Actions
+  commentId: P:ntfy.Responses.ReceivedMessage.Actions
+  fullName: ntfy.Responses.ReceivedMessage.Actions
+  nameWithType: ReceivedMessage.Actions
+- uid: ntfy.Responses.ReceivedMessage.Actions*
+  name: Actions
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Actions_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Actions
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Actions
+  nameWithType: ReceivedMessage.Actions
+- uid: ntfy.Responses.ReceivedMessage.Attachment
+  name: Attachment
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Attachment
+  commentId: P:ntfy.Responses.ReceivedMessage.Attachment
+  fullName: ntfy.Responses.ReceivedMessage.Attachment
+  nameWithType: ReceivedMessage.Attachment
+- uid: ntfy.Responses.ReceivedMessage.Attachment*
+  name: Attachment
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Attachment_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Attachment
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Attachment
+  nameWithType: ReceivedMessage.Attachment
+- uid: ntfy.Responses.ReceivedMessage.Click
+  name: Click
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Click
+  commentId: P:ntfy.Responses.ReceivedMessage.Click
+  fullName: ntfy.Responses.ReceivedMessage.Click
+  nameWithType: ReceivedMessage.Click
+- uid: ntfy.Responses.ReceivedMessage.Click*
+  name: Click
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Click_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Click
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Click
+  nameWithType: ReceivedMessage.Click
+- uid: ntfy.Responses.ReceivedMessage.Event
+  name: Event
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Event
+  commentId: P:ntfy.Responses.ReceivedMessage.Event
+  fullName: ntfy.Responses.ReceivedMessage.Event
+  nameWithType: ReceivedMessage.Event
+- uid: ntfy.Responses.ReceivedMessage.Event*
+  name: Event
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Event_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Event
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Event
+  nameWithType: ReceivedMessage.Event
+- uid: ntfy.Responses.ReceivedMessage.Id
+  name: Id
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Id
+  commentId: P:ntfy.Responses.ReceivedMessage.Id
+  fullName: ntfy.Responses.ReceivedMessage.Id
+  nameWithType: ReceivedMessage.Id
+- uid: ntfy.Responses.ReceivedMessage.Id*
+  name: Id
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Id_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Id
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Id
+  nameWithType: ReceivedMessage.Id
+- uid: ntfy.Responses.ReceivedMessage.Message
+  name: Message
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Message
+  commentId: P:ntfy.Responses.ReceivedMessage.Message
+  fullName: ntfy.Responses.ReceivedMessage.Message
+  nameWithType: ReceivedMessage.Message
+- uid: ntfy.Responses.ReceivedMessage.Message*
+  name: Message
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Message_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Message
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Message
+  nameWithType: ReceivedMessage.Message
+- uid: ntfy.Responses.ReceivedMessage.Priority
+  name: Priority
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Priority
+  commentId: P:ntfy.Responses.ReceivedMessage.Priority
+  fullName: ntfy.Responses.ReceivedMessage.Priority
+  nameWithType: ReceivedMessage.Priority
+- uid: ntfy.Responses.ReceivedMessage.Priority*
+  name: Priority
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Priority_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Priority
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Priority
+  nameWithType: ReceivedMessage.Priority
+- uid: ntfy.Responses.ReceivedMessage.Tags
+  name: Tags
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Tags
+  commentId: P:ntfy.Responses.ReceivedMessage.Tags
+  fullName: ntfy.Responses.ReceivedMessage.Tags
+  nameWithType: ReceivedMessage.Tags
+- uid: ntfy.Responses.ReceivedMessage.Tags*
+  name: Tags
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Tags_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Tags
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Tags
+  nameWithType: ReceivedMessage.Tags
+- uid: ntfy.Responses.ReceivedMessage.Time
+  name: Time
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Time
+  commentId: P:ntfy.Responses.ReceivedMessage.Time
+  fullName: ntfy.Responses.ReceivedMessage.Time
+  nameWithType: ReceivedMessage.Time
+- uid: ntfy.Responses.ReceivedMessage.Time*
+  name: Time
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Time_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Time
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Time
+  nameWithType: ReceivedMessage.Time
+- uid: ntfy.Responses.ReceivedMessage.Title
+  name: Title
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Title
+  commentId: P:ntfy.Responses.ReceivedMessage.Title
+  fullName: ntfy.Responses.ReceivedMessage.Title
+  nameWithType: ReceivedMessage.Title
+- uid: ntfy.Responses.ReceivedMessage.Title*
+  name: Title
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Title_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Title
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Title
+  nameWithType: ReceivedMessage.Title
+- uid: ntfy.Responses.ReceivedMessage.Topic
+  name: Topic
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Topic
+  commentId: P:ntfy.Responses.ReceivedMessage.Topic
+  fullName: ntfy.Responses.ReceivedMessage.Topic
+  nameWithType: ReceivedMessage.Topic
+- uid: ntfy.Responses.ReceivedMessage.Topic*
+  name: Topic
+  href: api/ntfy.Responses.ReceivedMessage.html#ntfy_Responses_ReceivedMessage_Topic_
+  commentId: Overload:ntfy.Responses.ReceivedMessage.Topic
+  isSpec: "True"
+  fullName: ntfy.Responses.ReceivedMessage.Topic
+  nameWithType: ReceivedMessage.Topic
+- uid: ntfy.Responses.ServerHealth
+  name: ServerHealth
+  href: api/ntfy.Responses.ServerHealth.html
+  commentId: T:ntfy.Responses.ServerHealth
+  fullName: ntfy.Responses.ServerHealth
+  nameWithType: ServerHealth
+- uid: ntfy.Responses.ServerHealth.Healthy
+  name: Healthy
+  href: api/ntfy.Responses.ServerHealth.html#ntfy_Responses_ServerHealth_Healthy
+  commentId: P:ntfy.Responses.ServerHealth.Healthy
+  fullName: ntfy.Responses.ServerHealth.Healthy
+  nameWithType: ServerHealth.Healthy
+- uid: ntfy.Responses.ServerHealth.Healthy*
+  name: Healthy
+  href: api/ntfy.Responses.ServerHealth.html#ntfy_Responses_ServerHealth_Healthy_
+  commentId: Overload:ntfy.Responses.ServerHealth.Healthy
+  isSpec: "True"
+  fullName: ntfy.Responses.ServerHealth.Healthy
+  nameWithType: ServerHealth.Healthy
+- uid: ntfy.Responses.ServerInfo
   name: ServerInfo
-  href: api/ntfy.ServerInfo.html
-  commentId: T:ntfy.ServerInfo
-  fullName: ntfy.ServerInfo
+  href: api/ntfy.Responses.ServerInfo.html
+  commentId: T:ntfy.Responses.ServerInfo
+  fullName: ntfy.Responses.ServerInfo
   nameWithType: ServerInfo
-- uid: ntfy.ServerInfo.AppRoot
+- uid: ntfy.Responses.ServerInfo.AppRoot
   name: AppRoot
-  href: api/ntfy.ServerInfo.html#ntfy_ServerInfo_AppRoot
-  commentId: P:ntfy.ServerInfo.AppRoot
-  fullName: ntfy.ServerInfo.AppRoot
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_AppRoot
+  commentId: P:ntfy.Responses.ServerInfo.AppRoot
+  fullName: ntfy.Responses.ServerInfo.AppRoot
   nameWithType: ServerInfo.AppRoot
-- uid: ntfy.ServerInfo.AppRoot*
+- uid: ntfy.Responses.ServerInfo.AppRoot*
   name: AppRoot
-  href: api/ntfy.ServerInfo.html#ntfy_ServerInfo_AppRoot_
-  commentId: Overload:ntfy.ServerInfo.AppRoot
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_AppRoot_
+  commentId: Overload:ntfy.Responses.ServerInfo.AppRoot
   isSpec: "True"
-  fullName: ntfy.ServerInfo.AppRoot
+  fullName: ntfy.Responses.ServerInfo.AppRoot
   nameWithType: ServerInfo.AppRoot
-- uid: ntfy.ServerInfo.DisallowedTopics
+- uid: ntfy.Responses.ServerInfo.BaseUrl
+  name: BaseUrl
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_BaseUrl
+  commentId: P:ntfy.Responses.ServerInfo.BaseUrl
+  fullName: ntfy.Responses.ServerInfo.BaseUrl
+  nameWithType: ServerInfo.BaseUrl
+- uid: ntfy.Responses.ServerInfo.BaseUrl*
+  name: BaseUrl
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_BaseUrl_
+  commentId: Overload:ntfy.Responses.ServerInfo.BaseUrl
+  isSpec: "True"
+  fullName: ntfy.Responses.ServerInfo.BaseUrl
+  nameWithType: ServerInfo.BaseUrl
+- uid: ntfy.Responses.ServerInfo.DisallowedTopics
   name: DisallowedTopics
-  href: api/ntfy.ServerInfo.html#ntfy_ServerInfo_DisallowedTopics
-  commentId: P:ntfy.ServerInfo.DisallowedTopics
-  fullName: ntfy.ServerInfo.DisallowedTopics
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_DisallowedTopics
+  commentId: P:ntfy.Responses.ServerInfo.DisallowedTopics
+  fullName: ntfy.Responses.ServerInfo.DisallowedTopics
   nameWithType: ServerInfo.DisallowedTopics
-- uid: ntfy.ServerInfo.DisallowedTopics*
+- uid: ntfy.Responses.ServerInfo.DisallowedTopics*
   name: DisallowedTopics
-  href: api/ntfy.ServerInfo.html#ntfy_ServerInfo_DisallowedTopics_
-  commentId: Overload:ntfy.ServerInfo.DisallowedTopics
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_DisallowedTopics_
+  commentId: Overload:ntfy.Responses.ServerInfo.DisallowedTopics
   isSpec: "True"
-  fullName: ntfy.ServerInfo.DisallowedTopics
+  fullName: ntfy.Responses.ServerInfo.DisallowedTopics
   nameWithType: ServerInfo.DisallowedTopics
-- uid: ntfy.Since
-  name: Since
-  href: api/ntfy.Since.html
-  commentId: T:ntfy.Since
-  fullName: ntfy.Since
-  nameWithType: Since
-- uid: ntfy.Since.#ctor(ntfy.DelayDuration)
-  name: Since(DelayDuration)
-  href: api/ntfy.Since.html#ntfy_Since__ctor_ntfy_DelayDuration_
-  commentId: M:ntfy.Since.#ctor(ntfy.DelayDuration)
-  fullName: ntfy.Since.Since(ntfy.DelayDuration)
-  nameWithType: Since.Since(DelayDuration)
-- uid: ntfy.Since.#ctor(ntfy.DelayTime)
-  name: Since(DelayTime)
-  href: api/ntfy.Since.html#ntfy_Since__ctor_ntfy_DelayTime_
-  commentId: M:ntfy.Since.#ctor(ntfy.DelayTime)
-  fullName: ntfy.Since.Since(ntfy.DelayTime)
-  nameWithType: Since.Since(DelayTime)
-- uid: ntfy.Since.#ctor(System.String)
-  name: Since(String)
-  href: api/ntfy.Since.html#ntfy_Since__ctor_System_String_
-  commentId: M:ntfy.Since.#ctor(System.String)
-  fullName: ntfy.Since.Since(System.String)
-  nameWithType: Since.Since(String)
-- uid: ntfy.Since.#ctor*
-  name: Since
-  href: api/ntfy.Since.html#ntfy_Since__ctor_
-  commentId: Overload:ntfy.Since.#ctor
+- uid: ntfy.Responses.ServerInfo.LoginEnabled
+  name: LoginEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_LoginEnabled
+  commentId: P:ntfy.Responses.ServerInfo.LoginEnabled
+  fullName: ntfy.Responses.ServerInfo.LoginEnabled
+  nameWithType: ServerInfo.LoginEnabled
+- uid: ntfy.Responses.ServerInfo.LoginEnabled*
+  name: LoginEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_LoginEnabled_
+  commentId: Overload:ntfy.Responses.ServerInfo.LoginEnabled
   isSpec: "True"
-  fullName: ntfy.Since.Since
-  nameWithType: Since.Since
-- uid: ntfy.Since.All
-  name: All
-  href: api/ntfy.Since.html#ntfy_Since_All
-  commentId: F:ntfy.Since.All
-  fullName: ntfy.Since.All
-  nameWithType: Since.All
-- uid: ntfy.Since.op_Implicit(ntfy.DelayDuration)~ntfy.Since
-  name: Implicit(DelayDuration to Since)
-  href: api/ntfy.Since.html#ntfy_Since_op_Implicit_ntfy_DelayDuration__ntfy_Since
-  commentId: M:ntfy.Since.op_Implicit(ntfy.DelayDuration)~ntfy.Since
-  name.vb: Widening(DelayDuration to Since)
-  fullName: ntfy.Since.Implicit(ntfy.DelayDuration to ntfy.Since)
-  fullName.vb: ntfy.Since.Widening(ntfy.DelayDuration to ntfy.Since)
-  nameWithType: Since.Implicit(DelayDuration to Since)
-  nameWithType.vb: Since.Widening(DelayDuration to Since)
-- uid: ntfy.Since.op_Implicit(ntfy.DelayTime)~ntfy.Since
-  name: Implicit(DelayTime to Since)
-  href: api/ntfy.Since.html#ntfy_Since_op_Implicit_ntfy_DelayTime__ntfy_Since
-  commentId: M:ntfy.Since.op_Implicit(ntfy.DelayTime)~ntfy.Since
-  name.vb: Widening(DelayTime to Since)
-  fullName: ntfy.Since.Implicit(ntfy.DelayTime to ntfy.Since)
-  fullName.vb: ntfy.Since.Widening(ntfy.DelayTime to ntfy.Since)
-  nameWithType: Since.Implicit(DelayTime to Since)
-  nameWithType.vb: Since.Widening(DelayTime to Since)
-- uid: ntfy.Since.op_Implicit(System.Int32)~ntfy.Since
-  name: Implicit(Int32 to Since)
-  href: api/ntfy.Since.html#ntfy_Since_op_Implicit_System_Int32__ntfy_Since
-  commentId: M:ntfy.Since.op_Implicit(System.Int32)~ntfy.Since
-  name.vb: Widening(Int32 to Since)
-  fullName: ntfy.Since.Implicit(System.Int32 to ntfy.Since)
-  fullName.vb: ntfy.Since.Widening(System.Int32 to ntfy.Since)
-  nameWithType: Since.Implicit(Int32 to Since)
-  nameWithType.vb: Since.Widening(Int32 to Since)
-- uid: ntfy.Since.op_Implicit(System.String)~ntfy.Since
-  name: Implicit(String to Since)
-  href: api/ntfy.Since.html#ntfy_Since_op_Implicit_System_String__ntfy_Since
-  commentId: M:ntfy.Since.op_Implicit(System.String)~ntfy.Since
-  name.vb: Widening(String to Since)
-  fullName: ntfy.Since.Implicit(System.String to ntfy.Since)
-  fullName.vb: ntfy.Since.Widening(System.String to ntfy.Since)
-  nameWithType: Since.Implicit(String to Since)
-  nameWithType.vb: Since.Widening(String to Since)
-- uid: ntfy.Since.op_Implicit*
-  name: Implicit
-  href: api/ntfy.Since.html#ntfy_Since_op_Implicit_
-  commentId: Overload:ntfy.Since.op_Implicit
+  fullName: ntfy.Responses.ServerInfo.LoginEnabled
+  nameWithType: ServerInfo.LoginEnabled
+- uid: ntfy.Responses.ServerInfo.PaymentsEnabled
+  name: PaymentsEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_PaymentsEnabled
+  commentId: P:ntfy.Responses.ServerInfo.PaymentsEnabled
+  fullName: ntfy.Responses.ServerInfo.PaymentsEnabled
+  nameWithType: ServerInfo.PaymentsEnabled
+- uid: ntfy.Responses.ServerInfo.PaymentsEnabled*
+  name: PaymentsEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_PaymentsEnabled_
+  commentId: Overload:ntfy.Responses.ServerInfo.PaymentsEnabled
   isSpec: "True"
-  name.vb: Widening
-  fullName: ntfy.Since.Implicit
-  fullName.vb: ntfy.Since.Widening
-  nameWithType: Since.Implicit
-  nameWithType.vb: Since.Widening
+  fullName: ntfy.Responses.ServerInfo.PaymentsEnabled
+  nameWithType: ServerInfo.PaymentsEnabled
+- uid: ntfy.Responses.ServerInfo.SignupEnabled
+  name: SignupEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_SignupEnabled
+  commentId: P:ntfy.Responses.ServerInfo.SignupEnabled
+  fullName: ntfy.Responses.ServerInfo.SignupEnabled
+  nameWithType: ServerInfo.SignupEnabled
+- uid: ntfy.Responses.ServerInfo.SignupEnabled*
+  name: SignupEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_SignupEnabled_
+  commentId: Overload:ntfy.Responses.ServerInfo.SignupEnabled
+  isSpec: "True"
+  fullName: ntfy.Responses.ServerInfo.SignupEnabled
+  nameWithType: ServerInfo.SignupEnabled
+- uid: ntfy.Responses.ServerInfo.TopicReservationsEnabled
+  name: TopicReservationsEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_TopicReservationsEnabled
+  commentId: P:ntfy.Responses.ServerInfo.TopicReservationsEnabled
+  fullName: ntfy.Responses.ServerInfo.TopicReservationsEnabled
+  nameWithType: ServerInfo.TopicReservationsEnabled
+- uid: ntfy.Responses.ServerInfo.TopicReservationsEnabled*
+  name: TopicReservationsEnabled
+  href: api/ntfy.Responses.ServerInfo.html#ntfy_Responses_ServerInfo_TopicReservationsEnabled_
+  commentId: Overload:ntfy.Responses.ServerInfo.TopicReservationsEnabled
+  isSpec: "True"
+  fullName: ntfy.Responses.ServerInfo.TopicReservationsEnabled
+  nameWithType: ServerInfo.TopicReservationsEnabled
+- uid: ntfy.Responses.UserInfo
+  name: UserInfo
+  href: api/ntfy.Responses.UserInfo.html
+  commentId: T:ntfy.Responses.UserInfo
+  fullName: ntfy.Responses.UserInfo
+  nameWithType: UserInfo
+- uid: ntfy.Responses.UserInfo.Limits
+  name: Limits
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Limits
+  commentId: P:ntfy.Responses.UserInfo.Limits
+  fullName: ntfy.Responses.UserInfo.Limits
+  nameWithType: UserInfo.Limits
+- uid: ntfy.Responses.UserInfo.Limits*
+  name: Limits
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Limits_
+  commentId: Overload:ntfy.Responses.UserInfo.Limits
+  isSpec: "True"
+  fullName: ntfy.Responses.UserInfo.Limits
+  nameWithType: UserInfo.Limits
+- uid: ntfy.Responses.UserInfo.Role
+  name: Role
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Role
+  commentId: P:ntfy.Responses.UserInfo.Role
+  fullName: ntfy.Responses.UserInfo.Role
+  nameWithType: UserInfo.Role
+- uid: ntfy.Responses.UserInfo.Role*
+  name: Role
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Role_
+  commentId: Overload:ntfy.Responses.UserInfo.Role
+  isSpec: "True"
+  fullName: ntfy.Responses.UserInfo.Role
+  nameWithType: UserInfo.Role
+- uid: ntfy.Responses.UserInfo.Stats
+  name: Stats
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Stats
+  commentId: P:ntfy.Responses.UserInfo.Stats
+  fullName: ntfy.Responses.UserInfo.Stats
+  nameWithType: UserInfo.Stats
+- uid: ntfy.Responses.UserInfo.Stats*
+  name: Stats
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Stats_
+  commentId: Overload:ntfy.Responses.UserInfo.Stats
+  isSpec: "True"
+  fullName: ntfy.Responses.UserInfo.Stats
+  nameWithType: UserInfo.Stats
+- uid: ntfy.Responses.UserInfo.SyncTopic
+  name: SyncTopic
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_SyncTopic
+  commentId: P:ntfy.Responses.UserInfo.SyncTopic
+  fullName: ntfy.Responses.UserInfo.SyncTopic
+  nameWithType: UserInfo.SyncTopic
+- uid: ntfy.Responses.UserInfo.SyncTopic*
+  name: SyncTopic
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_SyncTopic_
+  commentId: Overload:ntfy.Responses.UserInfo.SyncTopic
+  isSpec: "True"
+  fullName: ntfy.Responses.UserInfo.SyncTopic
+  nameWithType: UserInfo.SyncTopic
+- uid: ntfy.Responses.UserInfo.Username
+  name: Username
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Username
+  commentId: P:ntfy.Responses.UserInfo.Username
+  fullName: ntfy.Responses.UserInfo.Username
+  nameWithType: UserInfo.Username
+- uid: ntfy.Responses.UserInfo.Username*
+  name: Username
+  href: api/ntfy.Responses.UserInfo.html#ntfy_Responses_UserInfo_Username_
+  commentId: Overload:ntfy.Responses.UserInfo.Username
+  isSpec: "True"
+  fullName: ntfy.Responses.UserInfo.Username
+  nameWithType: UserInfo.Username
+- uid: ntfy.Responses.UserLimits
+  name: UserLimits
+  href: api/ntfy.Responses.UserLimits.html
+  commentId: T:ntfy.Responses.UserLimits
+  fullName: ntfy.Responses.UserLimits
+  nameWithType: UserLimits
+- uid: ntfy.Responses.UserLimits.AttachmentBandwidth
+  name: AttachmentBandwidth
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentBandwidth
+  commentId: P:ntfy.Responses.UserLimits.AttachmentBandwidth
+  fullName: ntfy.Responses.UserLimits.AttachmentBandwidth
+  nameWithType: UserLimits.AttachmentBandwidth
+- uid: ntfy.Responses.UserLimits.AttachmentBandwidth*
+  name: AttachmentBandwidth
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentBandwidth_
+  commentId: Overload:ntfy.Responses.UserLimits.AttachmentBandwidth
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.AttachmentBandwidth
+  nameWithType: UserLimits.AttachmentBandwidth
+- uid: ntfy.Responses.UserLimits.AttachmentExpiryDuration
+  name: AttachmentExpiryDuration
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentExpiryDuration
+  commentId: P:ntfy.Responses.UserLimits.AttachmentExpiryDuration
+  fullName: ntfy.Responses.UserLimits.AttachmentExpiryDuration
+  nameWithType: UserLimits.AttachmentExpiryDuration
+- uid: ntfy.Responses.UserLimits.AttachmentExpiryDuration*
+  name: AttachmentExpiryDuration
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentExpiryDuration_
+  commentId: Overload:ntfy.Responses.UserLimits.AttachmentExpiryDuration
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.AttachmentExpiryDuration
+  nameWithType: UserLimits.AttachmentExpiryDuration
+- uid: ntfy.Responses.UserLimits.AttachmentFileSize
+  name: AttachmentFileSize
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentFileSize
+  commentId: P:ntfy.Responses.UserLimits.AttachmentFileSize
+  fullName: ntfy.Responses.UserLimits.AttachmentFileSize
+  nameWithType: UserLimits.AttachmentFileSize
+- uid: ntfy.Responses.UserLimits.AttachmentFileSize*
+  name: AttachmentFileSize
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentFileSize_
+  commentId: Overload:ntfy.Responses.UserLimits.AttachmentFileSize
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.AttachmentFileSize
+  nameWithType: UserLimits.AttachmentFileSize
+- uid: ntfy.Responses.UserLimits.AttachmentTotalSize
+  name: AttachmentTotalSize
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentTotalSize
+  commentId: P:ntfy.Responses.UserLimits.AttachmentTotalSize
+  fullName: ntfy.Responses.UserLimits.AttachmentTotalSize
+  nameWithType: UserLimits.AttachmentTotalSize
+- uid: ntfy.Responses.UserLimits.AttachmentTotalSize*
+  name: AttachmentTotalSize
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_AttachmentTotalSize_
+  commentId: Overload:ntfy.Responses.UserLimits.AttachmentTotalSize
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.AttachmentTotalSize
+  nameWithType: UserLimits.AttachmentTotalSize
+- uid: ntfy.Responses.UserLimits.Basic
+  name: Basic
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Basic
+  commentId: P:ntfy.Responses.UserLimits.Basic
+  fullName: ntfy.Responses.UserLimits.Basic
+  nameWithType: UserLimits.Basic
+- uid: ntfy.Responses.UserLimits.Basic*
+  name: Basic
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Basic_
+  commentId: Overload:ntfy.Responses.UserLimits.Basic
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.Basic
+  nameWithType: UserLimits.Basic
+- uid: ntfy.Responses.UserLimits.Emails
+  name: Emails
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Emails
+  commentId: P:ntfy.Responses.UserLimits.Emails
+  fullName: ntfy.Responses.UserLimits.Emails
+  nameWithType: UserLimits.Emails
+- uid: ntfy.Responses.UserLimits.Emails*
+  name: Emails
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Emails_
+  commentId: Overload:ntfy.Responses.UserLimits.Emails
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.Emails
+  nameWithType: UserLimits.Emails
+- uid: ntfy.Responses.UserLimits.Messages
+  name: Messages
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Messages
+  commentId: P:ntfy.Responses.UserLimits.Messages
+  fullName: ntfy.Responses.UserLimits.Messages
+  nameWithType: UserLimits.Messages
+- uid: ntfy.Responses.UserLimits.Messages*
+  name: Messages
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Messages_
+  commentId: Overload:ntfy.Responses.UserLimits.Messages
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.Messages
+  nameWithType: UserLimits.Messages
+- uid: ntfy.Responses.UserLimits.MessagesExpiryDuration
+  name: MessagesExpiryDuration
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_MessagesExpiryDuration
+  commentId: P:ntfy.Responses.UserLimits.MessagesExpiryDuration
+  fullName: ntfy.Responses.UserLimits.MessagesExpiryDuration
+  nameWithType: UserLimits.MessagesExpiryDuration
+- uid: ntfy.Responses.UserLimits.MessagesExpiryDuration*
+  name: MessagesExpiryDuration
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_MessagesExpiryDuration_
+  commentId: Overload:ntfy.Responses.UserLimits.MessagesExpiryDuration
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.MessagesExpiryDuration
+  nameWithType: UserLimits.MessagesExpiryDuration
+- uid: ntfy.Responses.UserLimits.Reservations
+  name: Reservations
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Reservations
+  commentId: P:ntfy.Responses.UserLimits.Reservations
+  fullName: ntfy.Responses.UserLimits.Reservations
+  nameWithType: UserLimits.Reservations
+- uid: ntfy.Responses.UserLimits.Reservations*
+  name: Reservations
+  href: api/ntfy.Responses.UserLimits.html#ntfy_Responses_UserLimits_Reservations_
+  commentId: Overload:ntfy.Responses.UserLimits.Reservations
+  isSpec: "True"
+  fullName: ntfy.Responses.UserLimits.Reservations
+  nameWithType: UserLimits.Reservations
+- uid: ntfy.Responses.UserStats
+  name: UserStats
+  href: api/ntfy.Responses.UserStats.html
+  commentId: T:ntfy.Responses.UserStats
+  fullName: ntfy.Responses.UserStats
+  nameWithType: UserStats
+- uid: ntfy.Responses.UserStats.AttachmentTotalSize
+  name: AttachmentTotalSize
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_AttachmentTotalSize
+  commentId: P:ntfy.Responses.UserStats.AttachmentTotalSize
+  fullName: ntfy.Responses.UserStats.AttachmentTotalSize
+  nameWithType: UserStats.AttachmentTotalSize
+- uid: ntfy.Responses.UserStats.AttachmentTotalSize*
+  name: AttachmentTotalSize
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_AttachmentTotalSize_
+  commentId: Overload:ntfy.Responses.UserStats.AttachmentTotalSize
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.AttachmentTotalSize
+  nameWithType: UserStats.AttachmentTotalSize
+- uid: ntfy.Responses.UserStats.AttachmentTotalSizeRemaining
+  name: AttachmentTotalSizeRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_AttachmentTotalSizeRemaining
+  commentId: P:ntfy.Responses.UserStats.AttachmentTotalSizeRemaining
+  fullName: ntfy.Responses.UserStats.AttachmentTotalSizeRemaining
+  nameWithType: UserStats.AttachmentTotalSizeRemaining
+- uid: ntfy.Responses.UserStats.AttachmentTotalSizeRemaining*
+  name: AttachmentTotalSizeRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_AttachmentTotalSizeRemaining_
+  commentId: Overload:ntfy.Responses.UserStats.AttachmentTotalSizeRemaining
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.AttachmentTotalSizeRemaining
+  nameWithType: UserStats.AttachmentTotalSizeRemaining
+- uid: ntfy.Responses.UserStats.Emails
+  name: Emails
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_Emails
+  commentId: P:ntfy.Responses.UserStats.Emails
+  fullName: ntfy.Responses.UserStats.Emails
+  nameWithType: UserStats.Emails
+- uid: ntfy.Responses.UserStats.Emails*
+  name: Emails
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_Emails_
+  commentId: Overload:ntfy.Responses.UserStats.Emails
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.Emails
+  nameWithType: UserStats.Emails
+- uid: ntfy.Responses.UserStats.EmailsRemaining
+  name: EmailsRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_EmailsRemaining
+  commentId: P:ntfy.Responses.UserStats.EmailsRemaining
+  fullName: ntfy.Responses.UserStats.EmailsRemaining
+  nameWithType: UserStats.EmailsRemaining
+- uid: ntfy.Responses.UserStats.EmailsRemaining*
+  name: EmailsRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_EmailsRemaining_
+  commentId: Overload:ntfy.Responses.UserStats.EmailsRemaining
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.EmailsRemaining
+  nameWithType: UserStats.EmailsRemaining
+- uid: ntfy.Responses.UserStats.Messages
+  name: Messages
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_Messages
+  commentId: P:ntfy.Responses.UserStats.Messages
+  fullName: ntfy.Responses.UserStats.Messages
+  nameWithType: UserStats.Messages
+- uid: ntfy.Responses.UserStats.Messages*
+  name: Messages
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_Messages_
+  commentId: Overload:ntfy.Responses.UserStats.Messages
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.Messages
+  nameWithType: UserStats.Messages
+- uid: ntfy.Responses.UserStats.MessagesRemaining
+  name: MessagesRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_MessagesRemaining
+  commentId: P:ntfy.Responses.UserStats.MessagesRemaining
+  fullName: ntfy.Responses.UserStats.MessagesRemaining
+  nameWithType: UserStats.MessagesRemaining
+- uid: ntfy.Responses.UserStats.MessagesRemaining*
+  name: MessagesRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_MessagesRemaining_
+  commentId: Overload:ntfy.Responses.UserStats.MessagesRemaining
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.MessagesRemaining
+  nameWithType: UserStats.MessagesRemaining
+- uid: ntfy.Responses.UserStats.Reservations
+  name: Reservations
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_Reservations
+  commentId: P:ntfy.Responses.UserStats.Reservations
+  fullName: ntfy.Responses.UserStats.Reservations
+  nameWithType: UserStats.Reservations
+- uid: ntfy.Responses.UserStats.Reservations*
+  name: Reservations
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_Reservations_
+  commentId: Overload:ntfy.Responses.UserStats.Reservations
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.Reservations
+  nameWithType: UserStats.Reservations
+- uid: ntfy.Responses.UserStats.ReservationsRemaining
+  name: ReservationsRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_ReservationsRemaining
+  commentId: P:ntfy.Responses.UserStats.ReservationsRemaining
+  fullName: ntfy.Responses.UserStats.ReservationsRemaining
+  nameWithType: UserStats.ReservationsRemaining
+- uid: ntfy.Responses.UserStats.ReservationsRemaining*
+  name: ReservationsRemaining
+  href: api/ntfy.Responses.UserStats.html#ntfy_Responses_UserStats_ReservationsRemaining_
+  commentId: Overload:ntfy.Responses.UserStats.ReservationsRemaining
+  isSpec: "True"
+  fullName: ntfy.Responses.UserStats.ReservationsRemaining
+  nameWithType: UserStats.ReservationsRemaining
+- uid: ntfy.Responses.UserTokenDetails
+  name: UserTokenDetails
+  href: api/ntfy.Responses.UserTokenDetails.html
+  commentId: T:ntfy.Responses.UserTokenDetails
+  fullName: ntfy.Responses.UserTokenDetails
+  nameWithType: UserTokenDetails
+- uid: ntfy.Responses.UserTokenDetails.Expires
+  name: Expires
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_Expires
+  commentId: P:ntfy.Responses.UserTokenDetails.Expires
+  fullName: ntfy.Responses.UserTokenDetails.Expires
+  nameWithType: UserTokenDetails.Expires
+- uid: ntfy.Responses.UserTokenDetails.Expires*
+  name: Expires
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_Expires_
+  commentId: Overload:ntfy.Responses.UserTokenDetails.Expires
+  isSpec: "True"
+  fullName: ntfy.Responses.UserTokenDetails.Expires
+  nameWithType: UserTokenDetails.Expires
+- uid: ntfy.Responses.UserTokenDetails.LastAccess
+  name: LastAccess
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_LastAccess
+  commentId: P:ntfy.Responses.UserTokenDetails.LastAccess
+  fullName: ntfy.Responses.UserTokenDetails.LastAccess
+  nameWithType: UserTokenDetails.LastAccess
+- uid: ntfy.Responses.UserTokenDetails.LastAccess*
+  name: LastAccess
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_LastAccess_
+  commentId: Overload:ntfy.Responses.UserTokenDetails.LastAccess
+  isSpec: "True"
+  fullName: ntfy.Responses.UserTokenDetails.LastAccess
+  nameWithType: UserTokenDetails.LastAccess
+- uid: ntfy.Responses.UserTokenDetails.LastOrigin
+  name: LastOrigin
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_LastOrigin
+  commentId: P:ntfy.Responses.UserTokenDetails.LastOrigin
+  fullName: ntfy.Responses.UserTokenDetails.LastOrigin
+  nameWithType: UserTokenDetails.LastOrigin
+- uid: ntfy.Responses.UserTokenDetails.LastOrigin*
+  name: LastOrigin
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_LastOrigin_
+  commentId: Overload:ntfy.Responses.UserTokenDetails.LastOrigin
+  isSpec: "True"
+  fullName: ntfy.Responses.UserTokenDetails.LastOrigin
+  nameWithType: UserTokenDetails.LastOrigin
+- uid: ntfy.Responses.UserTokenDetails.Token
+  name: Token
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_Token
+  commentId: P:ntfy.Responses.UserTokenDetails.Token
+  fullName: ntfy.Responses.UserTokenDetails.Token
+  nameWithType: UserTokenDetails.Token
+- uid: ntfy.Responses.UserTokenDetails.Token*
+  name: Token
+  href: api/ntfy.Responses.UserTokenDetails.html#ntfy_Responses_UserTokenDetails_Token_
+  commentId: Overload:ntfy.Responses.UserTokenDetails.Token
+  isSpec: "True"
+  fullName: ntfy.Responses.UserTokenDetails.Token
+  nameWithType: UserTokenDetails.Token
 - uid: ntfy.TooManyRequestsException
   name: TooManyRequestsException
   href: api/ntfy.TooManyRequestsException.html
@@ -1342,18 +2155,33 @@ references:
   fullName: ntfy.User
   nameWithType: User
 - uid: ntfy.User.#ctor(System.String,System.String)
-  name: User(String, String)
+  name: User(string, string)
   href: api/ntfy.User.html#ntfy_User__ctor_System_String_System_String_
   commentId: M:ntfy.User.#ctor(System.String,System.String)
-  fullName: ntfy.User.User(System.String, System.String)
-  nameWithType: User.User(String, String)
+  name.vb: New(String, String)
+  fullName: ntfy.User.User(string, string)
+  fullName.vb: ntfy.User.New(String, String)
+  nameWithType: User.User(string, string)
+  nameWithType.vb: User.New(String, String)
+- uid: ntfy.User.#ctor(System.String)
+  name: User(string)
+  href: api/ntfy.User.html#ntfy_User__ctor_System_String_
+  commentId: M:ntfy.User.#ctor(System.String)
+  name.vb: New(String)
+  fullName: ntfy.User.User(string)
+  fullName.vb: ntfy.User.New(String)
+  nameWithType: User.User(string)
+  nameWithType.vb: User.New(String)
 - uid: ntfy.User.#ctor*
   name: User
   href: api/ntfy.User.html#ntfy_User__ctor_
   commentId: Overload:ntfy.User.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: ntfy.User.User
+  fullName.vb: ntfy.User.New
   nameWithType: User.User
+  nameWithType.vb: User.New
 - uid: ntfy.User.ToString
   name: ToString()
   href: api/ntfy.User.html#ntfy_User_ToString
@@ -1367,102 +2195,43 @@ references:
   isSpec: "True"
   fullName: ntfy.User.ToString
   nameWithType: User.ToString
-- uid: ntfy.UserStats
-  name: UserStats
-  href: api/ntfy.UserStats.html
-  commentId: T:ntfy.UserStats
-  fullName: ntfy.UserStats
-  nameWithType: UserStats
-- uid: ntfy.UserStats.AttachmentFileSizeLimit
-  name: AttachmentFileSizeLimit
-  href: api/ntfy.UserStats.html#ntfy_UserStats_AttachmentFileSizeLimit
-  commentId: P:ntfy.UserStats.AttachmentFileSizeLimit
-  fullName: ntfy.UserStats.AttachmentFileSizeLimit
-  nameWithType: UserStats.AttachmentFileSizeLimit
-- uid: ntfy.UserStats.AttachmentFileSizeLimit*
-  name: AttachmentFileSizeLimit
-  href: api/ntfy.UserStats.html#ntfy_UserStats_AttachmentFileSizeLimit_
-  commentId: Overload:ntfy.UserStats.AttachmentFileSizeLimit
-  isSpec: "True"
-  fullName: ntfy.UserStats.AttachmentFileSizeLimit
-  nameWithType: UserStats.AttachmentFileSizeLimit
-- uid: ntfy.UserStats.VisitorAttachmentBytesRemaining
-  name: VisitorAttachmentBytesRemaining
-  href: api/ntfy.UserStats.html#ntfy_UserStats_VisitorAttachmentBytesRemaining
-  commentId: P:ntfy.UserStats.VisitorAttachmentBytesRemaining
-  fullName: ntfy.UserStats.VisitorAttachmentBytesRemaining
-  nameWithType: UserStats.VisitorAttachmentBytesRemaining
-- uid: ntfy.UserStats.VisitorAttachmentBytesRemaining*
-  name: VisitorAttachmentBytesRemaining
-  href: api/ntfy.UserStats.html#ntfy_UserStats_VisitorAttachmentBytesRemaining_
-  commentId: Overload:ntfy.UserStats.VisitorAttachmentBytesRemaining
-  isSpec: "True"
-  fullName: ntfy.UserStats.VisitorAttachmentBytesRemaining
-  nameWithType: UserStats.VisitorAttachmentBytesRemaining
-- uid: ntfy.UserStats.VisitorAttachmentBytesTotal
-  name: VisitorAttachmentBytesTotal
-  href: api/ntfy.UserStats.html#ntfy_UserStats_VisitorAttachmentBytesTotal
-  commentId: P:ntfy.UserStats.VisitorAttachmentBytesTotal
-  fullName: ntfy.UserStats.VisitorAttachmentBytesTotal
-  nameWithType: UserStats.VisitorAttachmentBytesTotal
-- uid: ntfy.UserStats.VisitorAttachmentBytesTotal*
-  name: VisitorAttachmentBytesTotal
-  href: api/ntfy.UserStats.html#ntfy_UserStats_VisitorAttachmentBytesTotal_
-  commentId: Overload:ntfy.UserStats.VisitorAttachmentBytesTotal
-  isSpec: "True"
-  fullName: ntfy.UserStats.VisitorAttachmentBytesTotal
-  nameWithType: UserStats.VisitorAttachmentBytesTotal
-- uid: ntfy.UserStats.VisitorAttachmentBytesUsed
-  name: VisitorAttachmentBytesUsed
-  href: api/ntfy.UserStats.html#ntfy_UserStats_VisitorAttachmentBytesUsed
-  commentId: P:ntfy.UserStats.VisitorAttachmentBytesUsed
-  fullName: ntfy.UserStats.VisitorAttachmentBytesUsed
-  nameWithType: UserStats.VisitorAttachmentBytesUsed
-- uid: ntfy.UserStats.VisitorAttachmentBytesUsed*
-  name: VisitorAttachmentBytesUsed
-  href: api/ntfy.UserStats.html#ntfy_UserStats_VisitorAttachmentBytesUsed_
-  commentId: Overload:ntfy.UserStats.VisitorAttachmentBytesUsed
-  isSpec: "True"
-  fullName: ntfy.UserStats.VisitorAttachmentBytesUsed
-  nameWithType: UserStats.VisitorAttachmentBytesUsed
+- uid: ntfy.UserAlreadyExistsException
+  name: UserAlreadyExistsException
+  href: api/ntfy.UserAlreadyExistsException.html
+  commentId: T:ntfy.UserAlreadyExistsException
+  fullName: ntfy.UserAlreadyExistsException
+  nameWithType: UserAlreadyExistsException
 - uid: ntfy.Utilities
   name: Utilities
   href: api/ntfy.Utilities.html
   commentId: T:ntfy.Utilities
   fullName: ntfy.Utilities
   nameWithType: Utilities
-- uid: ntfy.Utilities.GenerateRandomPassphrase(System.Int32)
-  name: GenerateRandomPassphrase(Int32)
-  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassphrase_System_Int32_
-  commentId: M:ntfy.Utilities.GenerateRandomPassphrase(System.Int32)
-  fullName: ntfy.Utilities.GenerateRandomPassphrase(System.Int32)
-  nameWithType: Utilities.GenerateRandomPassphrase(Int32)
-- uid: ntfy.Utilities.GenerateRandomPassphrase*
-  name: GenerateRandomPassphrase
-  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassphrase_
-  commentId: Overload:ntfy.Utilities.GenerateRandomPassphrase
+- uid: ntfy.Utilities.GenerateRandomSendingMessagee(System.Boolean,System.String,System.String)
+  name: GenerateRandomSendingMessagee(bool, string, string)
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomSendingMessagee_System_Boolean_System_String_System_String_
+  commentId: M:ntfy.Utilities.GenerateRandomSendingMessagee(System.Boolean,System.String,System.String)
+  name.vb: GenerateRandomSendingMessagee(Boolean, String, String)
+  fullName: ntfy.Utilities.GenerateRandomSendingMessagee(bool, string, string)
+  fullName.vb: ntfy.Utilities.GenerateRandomSendingMessagee(Boolean, String, String)
+  nameWithType: Utilities.GenerateRandomSendingMessagee(bool, string, string)
+  nameWithType.vb: Utilities.GenerateRandomSendingMessagee(Boolean, String, String)
+- uid: ntfy.Utilities.GenerateRandomSendingMessagee*
+  name: GenerateRandomSendingMessagee
+  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomSendingMessagee_
+  commentId: Overload:ntfy.Utilities.GenerateRandomSendingMessagee
   isSpec: "True"
-  fullName: ntfy.Utilities.GenerateRandomPassphrase
-  nameWithType: Utilities.GenerateRandomPassphrase
-- uid: ntfy.Utilities.GenerateRandomPassword(System.Int32,System.Boolean)
-  name: GenerateRandomPassword(Int32, Boolean)
-  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassword_System_Int32_System_Boolean_
-  commentId: M:ntfy.Utilities.GenerateRandomPassword(System.Int32,System.Boolean)
-  fullName: ntfy.Utilities.GenerateRandomPassword(System.Int32, System.Boolean)
-  nameWithType: Utilities.GenerateRandomPassword(Int32, Boolean)
-- uid: ntfy.Utilities.GenerateRandomPassword*
-  name: GenerateRandomPassword
-  href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomPassword_
-  commentId: Overload:ntfy.Utilities.GenerateRandomPassword
-  isSpec: "True"
-  fullName: ntfy.Utilities.GenerateRandomPassword
-  nameWithType: Utilities.GenerateRandomPassword
+  fullName: ntfy.Utilities.GenerateRandomSendingMessagee
+  nameWithType: Utilities.GenerateRandomSendingMessagee
 - uid: ntfy.Utilities.GenerateRandomTopic(System.Boolean)
-  name: GenerateRandomTopic(Boolean)
+  name: GenerateRandomTopic(bool)
   href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomTopic_System_Boolean_
   commentId: M:ntfy.Utilities.GenerateRandomTopic(System.Boolean)
-  fullName: ntfy.Utilities.GenerateRandomTopic(System.Boolean)
-  nameWithType: Utilities.GenerateRandomTopic(Boolean)
+  name.vb: GenerateRandomTopic(Boolean)
+  fullName: ntfy.Utilities.GenerateRandomTopic(bool)
+  fullName.vb: ntfy.Utilities.GenerateRandomTopic(Boolean)
+  nameWithType: Utilities.GenerateRandomTopic(bool)
+  nameWithType.vb: Utilities.GenerateRandomTopic(Boolean)
 - uid: ntfy.Utilities.GenerateRandomTopic*
   name: GenerateRandomTopic
   href: api/ntfy.Utilities.html#ntfy_Utilities_GenerateRandomTopic_
