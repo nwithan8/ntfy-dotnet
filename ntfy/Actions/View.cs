@@ -10,6 +10,22 @@ namespace ntfy.Actions;
 /// </summary>
 public class View : Action
 {
+    /// <summary>
+    ///     Constructor for a View action.
+    /// </summary>
+    /// <param name="label">The label for the action.</param>
+    /// <param name="url">The URL to open when the action is tapped.</param>
+    public View(string label, Uri url) : base(label)
+    {
+        Url = url;
+    }
+
+    /// <summary>
+    ///     The type of this action, as an <see cref="ActionType" /> enum.
+    /// </summary>
+    [JsonIgnore]
+    public override ActionType Type { get; } = ActionType.View;
+
     #region JSON Properties
 
     /// <summary>
@@ -26,20 +42,4 @@ public class View : Action
     public Uri Url { get; set; }
 
     #endregion
-
-    /// <summary>
-    ///     The type of this action, as an <see cref="ActionType" /> enum.
-    /// </summary>
-    [JsonIgnore]
-    public override ActionType Type { get; } = ActionType.View;
-
-    /// <summary>
-    ///     Constructor for a View action.
-    /// </summary>
-    /// <param name="label">The label for the action.</param>
-    /// <param name="url">The URL to open when the action is tapped.</param>
-    public View(string label, Uri url) : base(label)
-    {
-        Url = url;
-    }
 }

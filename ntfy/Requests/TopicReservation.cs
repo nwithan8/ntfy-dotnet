@@ -1,4 +1,3 @@
-using NetTools.HTTP;
 using Newtonsoft.Json;
 
 namespace ntfy.Requests;
@@ -8,22 +7,6 @@ namespace ntfy.Requests;
 /// </summary>
 internal class TopicReservation
 {
-    #region JSON Properties
-
-    /// <summary>
-    ///     The name of the topic to reserve.
-    /// </summary>
-    [JsonProperty("topic", Required = Required.Always)]
-    internal string Topic { get; set; }
-    
-    /// <summary>
-    ///     The permission to grant to others for the topic.
-    /// </summary>
-    [JsonProperty("everyone", Required = Required.Always)]
-    internal string Permission { get; set; }
-
-    #endregion
-    
     /// <summary>
     ///     Construct a new <see cref="TopicReservation" /> instance.
     /// </summary>
@@ -41,6 +24,22 @@ internal class TopicReservation
     /// <returns>A JSON data string representation of this request payload.</returns>
     internal string ToData()
     {
-        return JsonSerialization.ConvertObjectToJson(this);
+        return JsonConvert.SerializeObject(this);
     }
+
+    #region JSON Properties
+
+    /// <summary>
+    ///     The name of the topic to reserve.
+    /// </summary>
+    [JsonProperty("topic", Required = Required.Always)]
+    internal string Topic { get; set; }
+
+    /// <summary>
+    ///     The permission to grant to others for the topic.
+    /// </summary>
+    [JsonProperty("everyone", Required = Required.Always)]
+    internal string Permission { get; set; }
+
+    #endregion
 }
