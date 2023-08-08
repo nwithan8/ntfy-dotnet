@@ -1,4 +1,3 @@
-using NetTools.HTTP;
 using Newtonsoft.Json;
 
 namespace ntfy.Requests;
@@ -8,22 +7,6 @@ namespace ntfy.Requests;
 /// </summary>
 internal class UserSignup
 {
-    #region JSON Properties
-
-    /// <summary>
-    ///     The username of the user to create.
-    /// </summary>
-    [JsonProperty("username", Required = Required.Always)]
-    internal string Username { get; set; }
-    
-    /// <summary>
-    ///     The password of the user to create.
-    /// </summary>
-    [JsonProperty("password", Required = Required.Always)]
-    internal string Password { get; set; }
-
-    #endregion
-    
     /// <summary>
     ///     Construct a new <see cref="UserSignup" /> instance.
     /// </summary>
@@ -41,6 +24,22 @@ internal class UserSignup
     /// <returns>A JSON data string representation of this request payload.</returns>
     internal string ToData()
     {
-        return JsonSerialization.ConvertObjectToJson(this);
+        return JsonConvert.SerializeObject(this);
     }
+
+    #region JSON Properties
+
+    /// <summary>
+    ///     The username of the user to create.
+    /// </summary>
+    [JsonProperty("username", Required = Required.Always)]
+    internal string Username { get; set; }
+
+    /// <summary>
+    ///     The password of the user to create.
+    /// </summary>
+    [JsonProperty("password", Required = Required.Always)]
+    internal string Password { get; set; }
+
+    #endregion
 }

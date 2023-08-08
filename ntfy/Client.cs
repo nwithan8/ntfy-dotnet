@@ -1,11 +1,11 @@
 ﻿using System.Net;
-using Microsoft.AspNetCore.StaticFiles;
 using NetTools;
-using NetTools.HTTP;
+using Newtonsoft.Json;
 using ntfy.Filters;
 using ntfy.Requests;
 using ntfy.Responses;
 using RestSharp;
+using RestSharp.Serializers.NewtonsoftJson;
 
 namespace ntfy;
 
@@ -20,11 +20,6 @@ public class Client
     private readonly string _serverUrl;
 
     /// <summary>
-    ///     The user agent to use when making requests to the ntfy.sh API.
-    /// </summary>
-    private static string UserAgent => $"ntfy-dotnet/{RuntimeInfo.ApplicationInfo.ApplicationVersion}";
-
-    /// <summary>
     ///     Constructs a new <see cref="Client" />.
     /// </summary>
     /// <param name="serverUrl">The base URL of the ntfy.sh server.</param>
@@ -32,6 +27,11 @@ public class Client
     {
         _serverUrl = serverUrl ?? Constants.DefaultServer;
     }
+
+    /// <summary>
+    ///     The user agent to use when making requests to the ntfy.sh API.
+    /// </summary>
+    private static string UserAgent => $"ntfy-dotnet/{RuntimeInfo.ApplicationInfo.ApplicationVersion}";
 
     /// <summary>
     ///     Check if the provided user is authorized to access the provided topic.
@@ -45,9 +45,11 @@ public class Client
     {
         var endpoint = Constants.TopicAuth(topic);
 
-        var client = GetClient(15, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+        var
+            client = GetClient(15,
+                user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
-        var request = new RestRequest(endpoint, Method.Get);
+        var request = new RestRequest(endpoint);
 
         var response = await client.ExecuteAsync(request);
 
@@ -55,8 +57,10 @@ public class Client
         var allowed = false;
         var @switch = new SwitchCase
         {
-            { Http.StatusCodeIs2xx(response.StatusCode), () => { allowed = true; } }, // Do nothing if the request was successful
-            { user == null && (int)response.StatusCode == 404, () => { allowed = true; } }, // Special case: Anonymous login to old servers return 404 since /<topic>/auth doesn't exist
+            { response.IsSuccessStatusCode, () => { allowed = true; } }, // Do nothing if the request was successful
+            {
+                user == null && (int)response.StatusCode == 404, () => { allowed = true; }
+            }, // Special case: Anonymous login to old servers return 404 since /<topic>/auth doesn't exist
             { (int)response.StatusCode == 401, () => { allowed = false; } },
             { (int)response.StatusCode == 403, () => { allowed = false; } },
             { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") }
@@ -140,9 +144,10 @@ public class Client
     {
         const string endpoint = Constants.Endpoints.ServerInfo;
 
-        var client = GetClient(15); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+        var
+            client = GetClient(); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
-        var request = new RestRequest(endpoint, Method.Get);
+        var request = new RestRequest(endpoint);
 
         var response = await client.ExecuteAsync(request);
 
@@ -157,13 +162,14 @@ public class Client
     {
         const string endpoint = Constants.Endpoints.ServerHealth;
 
-        var client = GetClient(15); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+        var
+            client = GetClient(); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
-        var request = new RestRequest(endpoint, Method.Get);
+        var request = new RestRequest(endpoint);
 
-        var response = await client.ExecuteAsync<ServerHealth>(request);
-
-        return response.Data;
+        var response = await client.ExecuteAsync(request);
+        
+        return JsonConvert.DeserializeObject<ServerHealth>(response.Content);
     }
 
 
@@ -177,9 +183,11 @@ public class Client
     {
         const string endpoint = Constants.Endpoints.UserAccount;
 
-        var client = GetClient(15, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+        var
+            client = GetClient(15,
+                user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
-        var request = new RestRequest(endpoint, Method.Get);
+        var request = new RestRequest(endpoint);
 
         var response = await client.ExecuteAsync<UserInfo>(request);
 
@@ -216,7 +224,7 @@ public class Client
     {
         const string endpoint = Constants.Endpoints.UserAccount;
 
-        var client = GetClient(15);
+        var client = GetClient();
 
         var request = new RestRequest(endpoint, Method.Post);
 
@@ -233,7 +241,7 @@ public class Client
             // Can't get 401 or 403 because we're never including a user
             { HttpStatusCode.Conflict, () => throw new UserAlreadyExistsException(username) },
             { HttpStatusCode.TooManyRequests, () => throw new TooManyRequestsException() },
-            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") }
         };
         @switch.MatchFirst(response.StatusCode);
 
@@ -260,7 +268,7 @@ public class Client
             { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
             // Can't get 401 or 403 because we're never not including a user
             { HttpStatusCode.BadRequest, () => throw new InvalidCredentialsException() },
-            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") }
         };
         @switch.MatchFirst(response.StatusCode);
 
@@ -296,7 +304,7 @@ public class Client
             { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
             // Can't get 401 or 403 because we're never not including a user
             { HttpStatusCode.BadRequest, () => throw new InvalidCredentialsException() },
-            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") }
         };
 
         @switch.MatchFirst(response.StatusCode);
@@ -322,7 +330,7 @@ public class Client
         {
             { HttpStatusCode.OK, () => { } }, // Do nothing if the request was successful
             { HttpStatusCode.Unauthorized, () => throw new InvalidCredentialsException() },
-            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") }
         };
 
         @switch.MatchFirst(response.StatusCode);
@@ -357,11 +365,15 @@ public class Client
     /// <param name="filters">Optional additional filters to use when polling.</param>
     /// <param name="user">Optional user to use when polling.</param>
     /// <returns>A list of all filtered <see cref="ReceivedMessage" /> objects.</returns>
-    public async Task<List<ReceivedMessage>> Poll(IEnumerable<string> topics, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null)
+    public async Task<List<ReceivedMessage>> Poll(IEnumerable<string> topics, Since? since = null,
+        bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null)
     {
-        var endpoint = Constants.TopicReceive(StreamType.Json, topics, since ?? Constants.DefaultSince, getScheduledMessages, filters, true);
+        var endpoint = Constants.TopicReceive(StreamType.Json, topics, since ?? Constants.DefaultSince,
+            getScheduledMessages, filters, true);
 
-        var client = GetClient(15, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
+        var
+            client = GetClient(15,
+                user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L18
 
         var response = client.StreamJsonAsync<ReceivedMessage>(endpoint, default);
 
@@ -384,7 +396,9 @@ public class Client
     /// <exception cref="UnexpectedException">An unexpected HTTP status code was encountered during the request.</exception>
     public async Task Publish(string topic, SendingMessage message, User? user = null)
     {
-        var client = GetClient(5 * 60, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L24
+        var
+            client = GetClient(5 * 60,
+                user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L24
 
         // Since we're sending the data as JSON, we don't need to post to a specific topic endpoint.
         var request = new RestRequest("/", Method.Post);
@@ -403,14 +417,15 @@ public class Client
             { HttpStatusCode.Forbidden, () => throw new UnauthorizedException(user) },
             { HttpStatusCode.RequestEntityTooLarge, () => throw new EntityTooLargeException() },
             { HttpStatusCode.TooManyRequests, () => throw new TooManyRequestsException() },
-            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") },
+            { Scenario.Default, () => throw new UnexpectedException($"Unexpected status code {response.StatusCode}") }
         };
         @switch.MatchFirst(response.StatusCode);
     }
 
     /// <summary>
     ///     Subscribe to a topic.
-    ///     Opens an asynchronous stream to the server and returns an IAsyncEnumerable of <see cref="ReceivedMessage"/> objects.
+    ///     Opens an asynchronous stream to the server and returns an IAsyncEnumerable of <see cref="ReceivedMessage" />
+    ///     objects.
     ///     New messages will be pushed to the stream as they are received.
     /// </summary>
     /// <param name="topics">List of topics to subscribe to.</param>
@@ -420,12 +435,17 @@ public class Client
     /// <param name="user">Optional user to use when polling.</param>
     /// <param name="cancellationToken">Optional cancellation token to use to cancel the stream.</param>
     /// <param name="ignoreKeepAlive">Ignore keepalive messages. Defaults to <c>true</c>.</param>
-    /// <returns>An IAsyncEnumerable of <see cref="ReceivedMessage"/> objects.</returns>
-    public async IAsyncEnumerable<ReceivedMessage> Subscribe(IEnumerable<string> topics, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null, CancellationToken? cancellationToken = default, bool ignoreKeepAlive = true)
+    /// <returns>An IAsyncEnumerable of <see cref="ReceivedMessage" /> objects.</returns>
+    public async IAsyncEnumerable<ReceivedMessage> Subscribe(IEnumerable<string> topics, Since? since = null,
+        bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null,
+        CancellationToken? cancellationToken = default, bool ignoreKeepAlive = true)
     {
-        var endpoint = Constants.TopicReceive(StreamType.Json, topics, since ?? Constants.DefaultSince, getScheduledMessages, filters);
+        var endpoint = Constants.TopicReceive(StreamType.Json, topics, since ?? Constants.DefaultSince,
+            getScheduledMessages, filters);
 
-        var client = GetClient(77, user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L30
+        var
+            client = GetClient(77,
+                user); // https://github.com/binwiederhier/ntfy-android/blob/6333a063a13d7a01797ea40ccd1031bcd3025045/app/src/main/java/io/heckel/ntfy/msg/ApiService.kt#L30
 
         var response = client.StreamJsonAsync<ReceivedMessage>(endpoint, cancellationToken ?? default);
 
@@ -456,9 +476,12 @@ public class Client
     /// <param name="user">Optional user to use when polling.</param>
     /// <param name="cancellationToken">Optional cancellation token to use to cancel the stream.</param>
     /// <param name="ignoreKeepAlive">Ignore (do not process) keepalive messages. Defaults to <c>true</c>.</param>
-    public async Task SubscribeAndProcess(IEnumerable<string> topics, Func<ReceivedMessage, Task> onNotification, Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null, CancellationToken? cancellationToken = default, bool ignoreKeepAlive = true)
+    public async Task SubscribeAndProcess(IEnumerable<string> topics, Func<ReceivedMessage, Task> onNotification,
+        Since? since = null, bool getScheduledMessages = false, ReceptionFilters? filters = null, User? user = null,
+        CancellationToken? cancellationToken = default, bool ignoreKeepAlive = true)
     {
-        await foreach (var notification in Subscribe(topics, since, getScheduledMessages, filters, user, cancellationToken, ignoreKeepAlive))
+        await foreach (var notification in Subscribe(topics, since, getScheduledMessages, filters, user,
+                           cancellationToken, ignoreKeepAlive))
             if (onNotification != null)
                 await onNotification(notification);
     }
@@ -480,11 +503,9 @@ public class Client
             MaxTimeout = timeout * 1000, // turn seconds into milliseconds
         };
 
-        var client = new RestClient(clientOptions);
+        var client = new RestClient(clientOptions, configureSerialization: config => config.UseNewtonsoftJson());
 
         if (user != null) client.AddDefaultHeader("Authorization", user.AuthHeaderValue);
-
-        client.UseSerializer(() => new RestSharpSerializer());
 
         return client;
     }

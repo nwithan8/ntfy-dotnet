@@ -10,6 +10,33 @@ namespace ntfy.Actions;
 /// </summary>
 public class Http : Action
 {
+    /// <summary>
+    ///     Constructor for an Http action.
+    /// </summary>
+    /// <param name="label">The label for the action.</param>
+    /// <param name="url">The URL to which the HTTP request will be sent.</param>
+    public Http(string label, Uri url) : base(label)
+    {
+        Url = url;
+    }
+
+    /// <summary>
+    ///     The type of this action, as an <see cref="ActionType" /> enum.
+    /// </summary>
+    [JsonIgnore]
+    public override ActionType Type { get; } = ActionType.Http;
+
+    /// <summary>
+    ///     The HTTP method to use when sending the request.
+    ///     Defaults to <c>HttpMethod.Post</c>
+    /// </summary>
+    [JsonIgnore]
+    public HttpMethod? Method
+    {
+        get => new(MethodString!);
+        set => MethodString = value?.Method;
+    }
+
     #region JSON Properties
 
     /// <summary>
@@ -47,31 +74,4 @@ public class Http : Action
     public Uri Url { get; set; }
 
     #endregion
-
-    /// <summary>
-    ///     The type of this action, as an <see cref="ActionType" /> enum.
-    /// </summary>
-    [JsonIgnore]
-    public override ActionType Type { get; } = ActionType.Http;
-
-    /// <summary>
-    ///     The HTTP method to use when sending the request.
-    ///     Defaults to <c>HttpMethod.Post</c>
-    /// </summary>
-    [JsonIgnore]
-    public HttpMethod? Method
-    {
-        get => new(MethodString!);
-        set => MethodString = value?.Method;
-    }
-
-    /// <summary>
-    ///     Constructor for an Http action.
-    /// </summary>
-    /// <param name="label">The label for the action.</param>
-    /// <param name="url">The URL to which the HTTP request will be sent.</param>
-    public Http(string label, Uri url) : base(label)
-    {
-        Url = url;
-    }
 }

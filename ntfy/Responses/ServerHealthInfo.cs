@@ -5,7 +5,7 @@ namespace ntfy.Responses;
 /// <summary>
 ///     Health information about the ntfy server.
 /// </summary>
-public abstract class ServerHealth
+public class ServerHealth
 {
     #region JSON Properties
 

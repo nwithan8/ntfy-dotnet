@@ -1,4 +1,3 @@
-using NetTools.HTTP;
 using Newtonsoft.Json;
 
 namespace ntfy.Requests;
@@ -8,22 +7,6 @@ namespace ntfy.Requests;
 /// </summary>
 internal class UserChangePassword
 {
-    #region JSON Properties
-
-    /// <summary>
-    ///     The old password of the user.
-    /// </summary>
-    [JsonProperty("password", Required = Required.Always)]
-    internal string OldPassword { get; set; }
-    
-    /// <summary>
-    ///     The new password of the user.
-    /// </summary>
-    [JsonProperty("new_password", Required = Required.Always)]
-    internal string NewPassword { get; set; }
-
-    #endregion
-    
     /// <summary>
     ///     Construct a new <see cref="UserChangePassword" /> instance.
     /// </summary>
@@ -41,6 +24,22 @@ internal class UserChangePassword
     /// <returns>A JSON data string representation of this request payload.</returns>
     internal string ToData()
     {
-        return JsonSerialization.ConvertObjectToJson(this);
+        return JsonConvert.SerializeObject(this);
     }
+
+    #region JSON Properties
+
+    /// <summary>
+    ///     The old password of the user.
+    /// </summary>
+    [JsonProperty("password", Required = Required.Always)]
+    internal string OldPassword { get; set; }
+
+    /// <summary>
+    ///     The new password of the user.
+    /// </summary>
+    [JsonProperty("new_password", Required = Required.Always)]
+    internal string NewPassword { get; set; }
+
+    #endregion
 }

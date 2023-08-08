@@ -11,6 +11,67 @@ namespace ntfy.Actions;
 /// </summary>
 public abstract class Action : IAction
 {
+    /// <summary>
+    ///     Constructor for an action.
+    /// </summary>
+    /// <param name="label">The label for the action.</param>
+    protected Action(string label)
+    {
+        Label = label;
+    }
+
+    /// <summary>
+    ///     The type of this action, as an <see cref="ActionType" /> enum.
+    /// </summary>
+    [JsonIgnore]
+    public abstract ActionType Type { get; }
+
+    internal static Action[] DataToActions(Dictionary<string, object>[]? data)
+    {
+        var actions = new List<Action>();
+
+        if (data == null)
+            return actions.ToArray();
+
+        foreach (var entry in data)
+        {
+            if (!entry.ContainsKey("action"))
+                continue;
+
+            var entryString = JsonConvert.SerializeObject(entry);
+
+            Action? action = null;
+
+            var @switch = new SwitchCase
+            {
+                { ActionType.Http.ToString()!, () => action = JsonConvert.DeserializeObject<Http>(entryString) },
+                {
+                    ActionType.Broadcast.ToString()!,
+                    () => action = JsonConvert.DeserializeObject<Broadcast>(entryString)
+                },
+                { ActionType.View.ToString()!, () => action = JsonConvert.DeserializeObject<View>(entryString) },
+                { Scenario.Default, () => action = null }
+            };
+
+            @switch.MatchFirst((entry["action"] as string)!);
+
+            if (action != null)
+                actions.Add(action);
+        }
+
+        return actions.ToArray();
+    }
+
+    internal static Dictionary<string, object>[]? ActionsToData(Action[]? actions)
+    {
+        if (actions == null || actions.Length == 0)
+            return null;
+
+        var actionsDataString = JsonConvert.SerializeObject(actions);
+
+        return JsonConvert.DeserializeObject<Dictionary<string, object>[]>(actionsDataString);
+    }
+
     #region JSON Properties
 
     /// <summary>
@@ -27,64 +88,6 @@ public abstract class Action : IAction
     public string Label { get; set; }
 
     #endregion
-
-    /// <summary>
-    ///     The type of this action, as an <see cref="ActionType" /> enum.
-    /// </summary>
-    [JsonIgnore]
-    public abstract ActionType Type { get; }
-
-    /// <summary>
-    ///     Constructor for an action.
-    /// </summary>
-    /// <param name="label">The label for the action.</param>
-    protected Action(string label)
-    {
-        Label = label;
-    }
-
-    internal static Action[] DataToActions(Dictionary<string, object>[]? data)
-    {
-        var actions = new List<Action>();
-
-        if (data == null)
-            return actions.ToArray();
-
-        foreach (var entry in data)
-        {
-            if (!entry.ContainsKey("action"))
-                continue;
-
-            var entryString = NetTools.HTTP.JsonSerialization.ConvertObjectToJson(entry);
-
-            Action? action = null;
-
-            var @switch = new NetTools.SwitchCase
-            {
-                { ActionType.Http.ToString()!, () => action = NetTools.HTTP.JsonSerialization.ConvertJsonToObject<Http>(entryString) },
-                { ActionType.Broadcast.ToString()!, () => action = NetTools.HTTP.JsonSerialization.ConvertJsonToObject<Broadcast>(entryString) },
-                { ActionType.View.ToString()!, () => action = NetTools.HTTP.JsonSerialization.ConvertJsonToObject<View>(entryString) },
-                { Scenario.Default, () => action = null }
-            };
-
-            @switch.MatchFirst((entry["action"] as string)!);
-
-            if (action != null)
-                actions.Add(action);
-        }
-
-        return actions.ToArray();
-    }
-
-    internal static Dictionary<string, object>[]? ActionsToData(ntfy.Actions.Action[]? actions)
-    {
-        if (actions == null || actions.Length == 0)
-            return null;
-
-        var actionsDataString = NetTools.HTTP.JsonSerialization.ConvertObjectToJson(actions);
-        
-        return NetTools.HTTP.JsonSerialization.ConvertJsonToObject<Dictionary<string, object>[]>(actionsDataString);
-    }
 }
 
 /// <summary>
