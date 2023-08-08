@@ -5,7 +5,7 @@
         <id>ntfy</id>
         <title>ntfy</title>
         <description>A .NET package for interacting with a ntfy instance</description>
-        <version>0.3.0</version>
+        <version>0.4.0</version>
         <authors>Nate Harris</authors>
         <owners>nwithan8</owners>
         <projectUrl>https://github.com/nwithan8/ntfy-dotnet</projectUrl>
@@ -17,22 +17,22 @@
         <dependencies>
             <group targetFramework="netcoreapp3.1">
                 <dependency id="Microsoft.Bcl.AsyncInterfaces" version="6.0.0"/>
-                <dependency id="N8.NetTools.HTTP" version="0.2.0"/>
+                <dependency id="RestSharp.Serializers.NewtonsoftJson" version="110.2.0"/>
                 <dependency id="N8.NetTools.Crypto" version="0.2.0"/>
             </group>
             <group targetFramework="net5.0">
                 <dependency id="Microsoft.Bcl.AsyncInterfaces" version="6.0.0"/>
-                <dependency id="N8.NetTools.HTTP" version="0.2.0"/>
+                <dependency id="RestSharp.Serializers.NewtonsoftJson" version="110.2.0"/>
                 <dependency id="N8.NetTools.Crypto" version="0.2.0"/>
             </group>
             <group targetFramework="net6.0">
                 <dependency id="Microsoft.Bcl.AsyncInterfaces" version="6.0.0"/>
-                <dependency id="N8.NetTools.HTTP" version="0.2.0"/>
+                <dependency id="RestSharp.Serializers.NewtonsoftJson" version="110.2.0"/>
                 <dependency id="N8.NetTools.Crypto" version="0.2.0"/>
             </group>
             <group targetFramework="net7.0">
                 <dependency id="Microsoft.Bcl.AsyncInterfaces" version="6.0.0"/>
-                <dependency id="N8.NetTools.HTTP" version="0.2.0"/>
+                <dependency id="RestSharp.Serializers.NewtonsoftJson" version="110.2.0"/>
                 <dependency id="N8.NetTools.Crypto" version="0.2.0"/>
             </group>
         </dependencies>
